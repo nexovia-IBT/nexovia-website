@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --use-npm)",
+      "Bash(mkdir -p _ref)",
+      "Bash(mv CLAUDE-CODE-BRIEF.md nexovia-design-README.md nexovia-homepage-design.html _ref/)"
+    ]
+  }
+}
