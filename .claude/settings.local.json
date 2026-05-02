@@ -3,7 +3,19 @@
     "allow": [
       "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --use-npm)",
       "Bash(mkdir -p _ref)",
-      "Bash(mv CLAUDE-CODE-BRIEF.md nexovia-design-README.md nexovia-homepage-design.html _ref/)"
+      "Bash(mv CLAUDE-CODE-BRIEF.md nexovia-design-README.md nexovia-homepage-design.html _ref/)",
+      "Bash(npm remove *)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(taskkill /F /IM node.exe)",
+      "PowerShell(Get-Process *)",
+      "Bash(node -e \"const gsap = require\\('gsap'\\); console.log\\(gsap.version\\)\")",
+      "Bash(node -e \"const g = require\\('./node_modules/gsap/dist/gsap.cjs.js'\\); console.log\\(g.gsap ? g.gsap.version : 'no version'\\)\")",
+      "PowerShell(Get-NetTCPConnection *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
