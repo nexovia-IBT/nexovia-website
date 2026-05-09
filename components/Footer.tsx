@@ -1,8 +1,6 @@
 const FOOTER_LINKS = [
-  { label: 'Formula', href: '#orbit-outer' },
-  { label: 'Protocol', href: '#protocol-section' },
-  { label: 'Science', href: '#sa-section' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Recovery Guides', href: '/blog' },
+  { label: 'Contact',         href: '/contact' },
 ] as const
 
 export default function Footer() {
