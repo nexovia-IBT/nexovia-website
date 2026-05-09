@@ -71,9 +71,16 @@ export default function RecoveryGuidesDropdown() {
         className="flex min-h-[44px] items-center gap-2 font-sans text-[12px] uppercase tracking-[0.12em] text-dark/70 transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35"
       >
         Recovery Guides
-        <span aria-hidden="true" className={open ? 'rotate-180 text-burgundy transition-transform duration-200' : 'text-burgundy transition-transform duration-200'}>
-          v
-        </span>
+        <svg
+          aria-hidden="true"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="none"
+          className={`text-burgundy transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+        >
+          <path d="M2 3.5 L5 6.5 L8 3.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
       </button>
 
       <AnimatePresence>
