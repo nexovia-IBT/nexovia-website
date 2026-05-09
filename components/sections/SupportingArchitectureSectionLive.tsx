@@ -411,20 +411,20 @@ export default function SupportingArchitectureSection() {
                   zIndex: 4,
                   pointerEvents: 'auto',
                   textAlign: 'center',
-                  width: '78%',
-                  maxWidth: 740,
+                  whiteSpace: 'nowrap',
                 }}
               >
                 <h3
                   className="font-serif"
                   style={{
-                    fontSize: 'clamp(60px, 8vw, 120px)',
+                    fontSize: 'clamp(48px, 7vw, 110px)',
                     fontWeight: 400,
                     color: '#732C3F',
                     opacity: 0.18,
                     letterSpacing: '-0.02em',
                     lineHeight: 1,
                     margin: 0,
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   {slide.title}
