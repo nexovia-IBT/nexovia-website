@@ -7,8 +7,8 @@ const SANS = '"Helvetica Neue", Helvetica, Arial, sans-serif'
 
 const CARDS = [
   {
-    title: '[Feature One]',
-    body: '[Feature one description. Replace with final copy from content team.]',
+    title: 'Engineered Synergy',
+    body: 'Most serums feature one or two actives at token doses. Nexovia\'s ABA.4 architecture combines four bio-amplifiers, each at concentrations that stand up to scrutiny. PDRN at 1%. NAD+ at 1%. Plant exosomes at 4 billion particles per milliliter. A multi-peptide matrix. They work as a system, not a highlight reel.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <circle cx="10" cy="10" r="3" stroke={GOLD} strokeWidth="1.5" />
@@ -24,8 +24,8 @@ const CARDS = [
     ),
   },
   {
-    title: '[Feature Two]',
-    body: '[Feature two description. Replace with final copy from content team.]',
+    title: 'Purpose-Built for Aftercare',
+    body: 'Nexovia is not a general skincare product repositioned for post-procedure use. It was formulated from the ground up for the 14-to-28-day recovery window. One product. One protocol. One purpose. Every ingredient decision was made with post-treatment skin in mind.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -45,8 +45,8 @@ const CARDS = [
     ),
   },
   {
-    title: '[Feature Three]',
-    body: '[Feature three description. Replace with final copy from content team.]',
+    title: 'K-Beauty Formulation Science',
+    body: 'Manufactured in South Korea under ISO 22716 GMP standards. The ABA.4 bio-amplifier architecture was developed specifically for post-procedure skin: four actives, each selected for a distinct function in the recovery window, formulated together at concentrations most brands will not match.',
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path
@@ -62,10 +62,10 @@ const CARDS = [
 ]
 
 const STATS = [
-  { value: '[96%]', label: '[Efficacy Rate]' },
-  { value: '[4.9]', label: '[Customer Rating]' },
-  { value: '[30K+]', label: '[Customers Served]' },
-  { value: '[12]', label: '[Active Ingredients]' },
+  { value: '4', label: 'Protocol Phases' },
+  { value: '8', label: 'Formula Pillars' },
+  { value: 'AM', label: 'Morning Use' },
+  { value: 'PM', label: 'Evening Use' },
 ]
 
 const fadeUp = {
@@ -76,6 +76,7 @@ const fadeUp = {
 export default function WhyNexoviaSection() {
   return (
     <section
+      id="why-nexovia"
       style={{
         backgroundColor: '#C57C8A',
         padding: 'clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px)',
@@ -141,7 +142,7 @@ export default function WhyNexoviaSection() {
             marginRight: 'auto',
           }}
         >
-          [Subtitle placeholder. Replace with final copy from content team.]
+          Designed for the quiet part of skincare: the days when consistency, comfort, and restraint matter most.
         </p>
       </motion.div>
 

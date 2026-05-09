@@ -1,16 +1,17 @@
-import Nav from '@/components/Nav'
+import MainNav from '@/components/MainNav'
 import Footer from '@/components/Footer'
 import ScrollProgress from '@/components/ScrollProgress'
 import OrbitSection from '@/components/sections/OrbitSection'
-import SupportingArchitectureSection from '@/components/sections/SupportingArchitectureSection'
+import SupportingArchitectureSection from '@/components/sections/SupportingArchitectureSectionLive'
 import ProtocolSection from '@/components/sections/ProtocolSection'
 import WhyNexoviaSection from '@/components/sections/WhyNexoviaSection'
 import FAQSection from '@/components/sections/FAQSection'
+import CopyEditor from '@/components/CopyEditor'
 
 export default function Home() {
   return (
     <>
-      <Nav />
+      <MainNav />
       <ScrollProgress />
       <main>
         <OrbitSection />
@@ -20,6 +21,7 @@ export default function Home() {
         <FAQSection />
       </main>
       <Footer />
+      <CopyEditor />
     </>
   )
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { GFS_Didot } from 'next/font/google'
+import { GFS_Didot, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 
 const gfsDidot = GFS_Didot({
@@ -9,9 +9,17 @@ const gfsDidot = GFS_Didot({
   display: 'swap',
 })
 
+const cormorant = Cormorant_Garamond({
+  weight: ['300', '400'],
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
-  title: 'Nexovia — Post-Procedure Skincare',
-  description: 'Post-procedure skincare reimagined.',
+  metadataBase: new URL('https://nexovia.pro'),
+  title: 'Nexovia - Post-Procedure Skincare',
+  description: 'A focused post-procedure serum for comfort, hydration, and barrier support.',
 }
 
 export default function RootLayout({
@@ -20,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={gfsDidot.variable}>
+    <html lang="en" className={`${gfsDidot.variable} ${cormorant.variable}`}>
       <body>{children}</body>
     </html>
   )

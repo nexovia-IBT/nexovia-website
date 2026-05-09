@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme('colors.burgundy');
+  color: #ffffff;
+  font-family: theme('fontFamily.sans');
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}

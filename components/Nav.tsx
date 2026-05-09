@@ -1,8 +1,13 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-const NAV_LINKS = ['Formula', 'Protocol', 'Science', 'About'] as const
+const NAV_LINKS = [
+  { label: 'Home',              href: null },
+  { label: 'Recovery Guides',   href: '/recovery-guides' },
+  { label: 'For Practitioners', href: '/for-practitioners' },
+] as const
 
 export default function Nav() {
   const [visible, setVisible] = useState(false)
@@ -25,34 +30,36 @@ export default function Nav() {
         transition: 'opacity 0.8s ease, transform 0.8s ease',
       }}
     >
-      <a
+      <Link
         href="/"
         className="font-serif text-gold text-2xl tracking-[0.05em] no-underline"
       >
         Nexovia
-      </a>
+      </Link>
 
       <ul className="hidden lg:flex gap-10 list-none m-0 p-0">
         {NAV_LINKS.map((link) => (
-          <li key={link}>
+          <li key={link.label}>
             <a
-              href={`#${link.toLowerCase()}`}
+              href={link.href ?? '#'}
+              onClick={link.href ? undefined : (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'auto' }) }}
               className="text-[12px] uppercase tracking-[0.12em] text-white/60 no-underline
-                transition-colors duration-300 hover:text-gold"
+                transition-colors duration-300 hover:text-gold cursor-pointer"
             >
-              {link}
+              {link.label}
             </a>
           </li>
         ))}
       </ul>
 
-      <button
+      <a
+        href="mailto:hello@nexovia.pro"
         className="bg-gold text-burgundy text-[12px] uppercase tracking-[0.14em]
-          font-sans font-semibold px-6 py-[10px] border-0 cursor-pointer
+          font-sans font-semibold px-6 py-[10px] no-underline
           transition-opacity duration-300 hover:opacity-[0.85]"
       >
-        Shop Now
-      </button>
+        Contact
+      </a>
     </nav>
   )
 }

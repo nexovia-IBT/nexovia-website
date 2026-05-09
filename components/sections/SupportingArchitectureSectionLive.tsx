@@ -1,0 +1,598 @@
+'use client'
+
+/* eslint-disable react-hooks/immutability, react-hooks/set-state-in-effect */
+import { useEffect, useRef, useState } from 'react'
+import gsap from 'gsap'
+
+// â”€â”€ Ambient stage background per slide â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+const AMBIENT_BG = [
+  '#F7E8EC', '#F4E2E8', '#F8EBED', '#F2DDE5',
+  '#F6E6EB', '#F3E0E7', '#F8ECF0', '#EDD6DE',
+]
+
+// â”€â”€ Per-slide bottle rotation (degrees) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+const ILLUSTRATION_ROTATE = [-5, 8, -10, 6, -8, 12, -6, 9]
+
+// â”€â”€ Slide data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+const SLIDES = [
+  {
+    number: '01',
+    title: 'Niacinamide',
+    benefit: 'CELLULAR BALANCE',
+    description: 'A multifunctional form of vitamin B3, known for supporting epidermal barrier function, improving moisture retention, and helping reduce visible redness after aesthetic procedures.',
+    details: ['Moisture retention', 'Reduced visible redness', 'More even-looking skin'],
+    illustration: 'niacinamide',
+  },
+  {
+    number: '02',
+    title: 'Biosaccharide',
+    benefit: 'MOISTURE RETENTION',
+    description: 'A plant-derived polysaccharide that forms a lightweight moisture film to reduce water loss and support skin comfort following aesthetic treatment.',
+    details: ['Moisture retention', 'Reduced water loss (Decrease TEWL)', 'Skin comfort'],
+    illustration: 'biosaccharide',
+  },
+  {
+    number: '03',
+    title: 'Hyaluronic Acid',
+    benefit: 'MULTI-WEIGHT HYDRATION',
+    description: 'A blend of hyaluronic acid molecules of varying weights designed to attract and retain moisture across multiple layers of the skin following aesthetic treatment.',
+    details: ['Multi-layer hydration', 'Moisture retention', 'Improved skin suppleness'],
+    illustration: 'hyaluronic',
+  },
+  {
+    number: '04',
+    title: 'Adenosine',
+    benefit: 'CELLULAR SIGNALING',
+    description: 'A naturally occurring nucleoside included to support skin recovery, improve visible smoothness, and support collagen production following aesthetic treatment.',
+    details: ['Skin recovery', 'Soothing', 'Collagen support'],
+    illustration: 'adenosine',
+  },
+  {
+    number: '05',
+    title: 'Centella Asiatica',
+    benefit: 'BOTANICAL RECOVERY SUPPORT',
+    description: 'Centella Asiatica extract and callus culture included to reduce visible redness, support skin comfort, and reinforce post-procedure skin recovery.',
+    details: ['Reduced visible redness', 'Skin comfort', 'Post-procedure recovery'],
+    illustration: 'centella',
+  },
+  {
+    number: '06',
+    title: 'Allantoin',
+    benefit: 'SKIN COMFORT SUPPORT',
+    description: 'A botanical-derived active included to reduce visible irritation, support skin comfort, and improve skin texture following aesthetic treatment.',
+    details: ['Reduced visible irritation', 'Skin comfort', 'Improved texture'],
+    illustration: 'allantoin',
+  },
+  {
+    number: '07',
+    title: 'Panthenol',
+    benefit: 'MOISTURE & BARRIER SUPPORT',
+    description: 'Provitamin B5 included to support moisture retention, reduce dryness, and improve skin comfort following aesthetic treatment.',
+    details: ['Moisture retention', 'Reduced dryness', 'Skin comfort'],
+    illustration: 'panthenol',
+  },
+  {
+    number: '08',
+    title: 'Botanical Complex',
+    benefit: 'BOTANICAL ANTIOXIDANT SUPPORT',
+    description: 'A blend of chamomile, aloe, green tea, lotus, sea buckthorn, and edelweiss included to provide antioxidant support and improve skin comfort following aesthetic treatment.',
+    details: ['Antioxidant support', 'Skin comfort', 'Glass skin finish'],
+    illustration: 'botanical',
+  },
+]
+
+// â”€â”€ Component â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+type IllustrationKind = typeof SLIDES[number]['illustration']
+
+function IngredientIllustration({ kind }: { kind: IllustrationKind }) {
+  const common = {
+    stroke: '#732C3F',
+    strokeWidth: 2,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  }
+
+
+
+  return (
+    <svg viewBox="0 0 260 260" aria-hidden="true" style={{ width: '100%', height: '100%', display: 'block' }}>
+      <defs>
+        <radialGradient id={`glow-${kind}`} cx="50%" cy="45%" r="60%">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.95" />
+          <stop offset="56%" stopColor="#F5C5D0" stopOpacity="0.54" />
+          <stop offset="100%" stopColor="#C57C8A" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id={`rose-${kind}`} x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#FFF6F4" />
+          <stop offset="48%" stopColor="#F4B9C6" />
+          <stop offset="100%" stopColor="#C57C8A" />
+        </linearGradient>
+        <linearGradient id={`gold-${kind}`} x1="10%" y1="0%" x2="90%" y2="100%">
+          <stop offset="0%" stopColor="#FFF0A6" />
+          <stop offset="50%" stopColor="#EDC967" />
+          <stop offset="100%" stopColor="#B78336" />
+        </linearGradient>
+      </defs>
+      <circle cx="130" cy="130" r="116" fill={`url(#glow-${kind})`} />
+
+      {kind === 'niacinamide' && (
+        <g>
+          <polygon points="130,54 190,88 190,158 130,194 70,158 70,88" fill="rgba(255,255,255,0.42)" {...common} />
+          <polygon points="130,80 168,102 168,146 130,168 92,146 92,102" fill="none" {...common} opacity="0.5" />
+          <circle cx="130" cy="124" r="18" fill={`url(#gold-${kind})`} stroke="#732C3F" strokeWidth="1.5" />
+          <text x="130" y="130" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="16" fontWeight="700" fill="#732C3F">B3</text>
+          {[[130,54], [190,88], [190,158], [130,194], [70,158], [70,88]].map(([x, y]) => (
+            <circle key={`${x}-${y}`} cx={x} cy={y} r="8" fill={`url(#rose-${kind})`} stroke="#732C3F" strokeWidth="1.4" />
+          ))}
+        </g>
+      )}
+
+      {kind === 'biosaccharide' && (
+        <g>
+          {[76, 112, 148, 184].map((x, i) => (
+            <g key={x} transform={`translate(${x} ${i % 2 === 0 ? 120 : 140})`}>
+              <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill={i % 2 === 0 ? `url(#gold-${kind})` : `url(#rose-${kind})`} {...common} />
+            </g>
+          ))}
+          <path d="M96 132c10 10 18 10 30 0M132 130c11-10 20-10 32 0M168 132c10 10 18 10 30 0" fill="none" {...common} opacity="0.58" />
+        </g>
+      )}
+
+      {kind === 'hyaluronic' && (
+        <g>
+          <path d="M130 42c33 46 58 81 58 119 0 34-25 59-58 59s-58-25-58-59c0-38 25-73 58-119Z" fill={`url(#rose-${kind})`} {...common} />
+          {[84, 178, 190].map((x, i) => (
+            <circle key={x} cx={x} cy={i === 0 ? 84 : i === 1 ? 190 : 96} r={i === 1 ? 8 : 10} fill={i === 2 ? '#fff' : `url(#gold-${kind})`} opacity={i === 2 ? 0.72 : 0.9} />
+          ))}
+        </g>
+      )}
+      {kind === 'adenosine' && (
+        <image
+          href="/products/adenosine-molecule.png"
+          x="40"
+          y="48"
+          width="180"
+          height="166"
+          preserveAspectRatio="xMidYMid meet"
+        />
+      )}
+      {kind === 'centella' && (
+        <g>
+          <path d="M132 205c-4-44 0-81 10-111" {...common} />
+          <path d="M132 128C85 92 83 55 83 55s46 2 70 49c-16 1-27 9-21 24Z" fill={`url(#rose-${kind})`} {...common} />
+          <path d="M142 121c44-36 80-25 80-25s-12 43-62 55c1-15-6-27-18-30Z" fill="rgba(237,201,103,0.62)" {...common} />
+          <path d="M126 150c-46-8-68 18-68 18s31 29 77 12c-10-9-13-19-9-30Z" fill="rgba(255,255,255,0.52)" {...common} />
+          <path d="M91 67c18 16 32 37 41 61M174 116c-18 10-30 20-38 34M86 168c20-8 34-10 48-8" {...common} opacity="0.32" />
+        </g>
+      )}
+
+      {kind === 'allantoin' && (
+        <image
+          href="/products/allantoin-molecule.svg"
+          x="22"
+          y="70"
+          width="216"
+          height="118"
+          preserveAspectRatio="xMidYMid meet"
+        />
+      )}
+      {kind === 'panthenol' && (
+        <g>
+          <polygon points="130,64 184,96 184,158 130,190 76,158 76,96" fill={`url(#rose-${kind})`} {...common} />
+          <polygon points="130,88 162,107 162,145 130,164 98,145 98,107" fill="rgba(255,255,255,0.38)" stroke="#732C3F" strokeWidth="1.5" />
+          <line x1="130" y1="64" x2="130" y2="88" {...common} opacity="0.5" />
+          <line x1="184" y1="96" x2="162" y2="107" {...common} opacity="0.5" />
+          <line x1="184" y1="158" x2="162" y2="145" {...common} opacity="0.5" />
+          <line x1="130" y1="190" x2="130" y2="164" {...common} opacity="0.5" />
+          <line x1="76" y1="158" x2="98" y2="145" {...common} opacity="0.5" />
+          <line x1="76" y1="96" x2="98" y2="107" {...common} opacity="0.5" />
+          {[[130,64], [184,96], [184,158], [130,190], [76,158], [76,96]].map(([x, y]) => (
+            <circle key={`${x}-${y}`} cx={x} cy={y} r="7" fill={`url(#gold-${kind})`} stroke="#732C3F" strokeWidth="1.4" />
+          ))}
+          <text x="130" y="134" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="23" fontWeight="700" fill="#732C3F">B5</text>
+          <circle cx="190" cy="74" r="9" fill="rgba(255,255,255,0.75)" />
+        </g>
+      )}
+
+      {kind === 'botanical' && (
+        <g>
+          {[[130,72,0], [174,98,60], [174,150,120], [130,176,180], [86,150,240], [86,98,300]].map(([x, y, r]) => (
+            <g key={`${x}-${y}`} transform={`translate(${x} ${y}) rotate(${r})`}>
+              <path d="M0-36c21 11 28 31 0 56-28-25-21-45 0-56Z" fill={`url(#rose-${kind})`} {...common} />
+            </g>
+          ))}
+          <circle cx="130" cy="130" r="26" fill={`url(#gold-${kind})`} stroke="#732C3F" strokeWidth="1.5" />
+          <circle cx="130" cy="130" r="8" fill="#fff" opacity="0.7" />
+        </g>
+      )}    </svg>
+  )
+}
+export default function SupportingArchitectureSection() {
+  const [reducedMotion, setReducedMotion] = useState(false)
+
+  const sectionRef   = useRef<HTMLElement>(null)
+  const stageRef     = useRef<HTMLDivElement>(null)
+  const slideRefs    = useRef<(HTMLDivElement | null)[]>([])
+  const illustrationRefs = useRef<(HTMLDivElement | null)[]>([])
+  const dotRefs      = useRef<(HTMLDivElement | null)[]>([])
+  const currentSlide = useRef(0)
+
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setReducedMotion(true)
+      return
+    }
+
+    let scrollRaf: number | null = null
+
+    const getSectionProgress = () => {
+      const section = sectionRef.current
+      if (!section) return 0
+
+      const top = section.getBoundingClientRect().top + window.scrollY
+      const distance = Math.max(section.offsetHeight - window.innerHeight, 1)
+      return Math.min(Math.max((window.scrollY - top) / distance, 0), 1)
+    }
+
+    const updateFromScroll = () => {
+      const progress = getSectionProgress()
+      const idx = Math.min(Math.floor(progress * SLIDES.length), SLIDES.length - 1)
+
+      if (idx !== currentSlide.current) {
+        transitionSlide(idx, currentSlide.current)
+      }
+    }
+
+    const requestUpdate = () => {
+      if (scrollRaf !== null) return
+      scrollRaf = window.requestAnimationFrame(() => {
+        scrollRaf = null
+        updateFromScroll()
+      })
+    }
+
+    const ctx = gsap.context(() => {
+      // Hide all slides except 0
+      slideRefs.current.forEach((el, i) => {
+        if (!el || i === 0) return
+        gsap.set(el, { opacity: 0, y: 60, pointerEvents: 'none', zIndex: 0 })
+      })
+
+      // Apply initial tilt to slide 0's illustration
+      gsap.set(illustrationRefs.current[0], { rotate: ILLUSTRATION_ROTATE[0] })
+    })
+
+    updateFromScroll()
+    window.addEventListener('scroll', requestUpdate, { passive: true })
+    window.addEventListener('resize', requestUpdate)
+
+    return () => {
+      window.removeEventListener('scroll', requestUpdate)
+      window.removeEventListener('resize', requestUpdate)
+      if (scrollRaf !== null) window.cancelAnimationFrame(scrollRaf)
+      ctx.revert()
+    }
+  }, [])
+
+  function transitionSlide(next: number, prev: number) {
+    currentSlide.current = next
+
+    const slides = slideRefs.current
+
+    // Kill ALL in-progress slide tweens immediately
+    slides.forEach(s => { if (s) gsap.killTweensOf(s) })
+
+    // Force-hide every slide except the incoming one
+    slides.forEach((s, i) => {
+      if (!s || i === next) return
+      gsap.set(s, { opacity: 0, y: 0, pointerEvents: 'none', zIndex: 0 })
+    })
+
+    // Animate incoming slide in from the correct direction
+    const dir = next > prev ? 60 : -60
+    gsap.fromTo(
+      slides[next],
+      { opacity: 0, y: dir, pointerEvents: 'auto', zIndex: 5 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+      },
+    )
+
+    // Illustration: start from outgoing angle, then settle into its own tilt
+    const illustration = illustrationRefs.current[next]
+    if (illustration) {
+      gsap.killTweensOf(illustration)
+      gsap.set(illustration, { rotate: ILLUSTRATION_ROTATE[prev], scale: 0.96 })
+      gsap.to(illustration, { rotate: ILLUSTRATION_ROTATE[next], scale: 1, duration: 0.7, ease: 'power2.out' })
+    }
+
+    // Ambient background shift
+    gsap.to(stageRef.current, { backgroundColor: AMBIENT_BG[next], duration: 0.6, ease: 'power2.inOut' })
+
+    // Progress dots
+    dotRefs.current.forEach((dot, i) => {
+      if (!dot) return
+      gsap.to(dot, { backgroundColor: i === next ? '#732C3F' : 'rgba(197,124,138,0.2)', duration: 0.3 })
+    })
+  }
+
+  // â”€â”€ Reduced-motion fallback â€” stacked slides â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  if (reducedMotion) {
+    return (
+      <section id="sa-section" style={{ backgroundColor: '#F7E8EC', padding: '80px 0' }}>
+        {SLIDES.map((slide, i) => (
+          <div
+            key={i}
+            style={{
+              padding: '64px 8%',
+              borderTop: i > 0 ? '1px solid rgba(115,44,63,0.08)' : undefined,
+            }}
+          >
+            <p style={{ fontSize: 11, letterSpacing: '0.12em', color: '#C57C8A', marginBottom: 8, textTransform: 'uppercase', fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+              {slide.number} / 08
+            </p>
+            <h3 className="font-serif" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 400, color: '#732C3F', margin: '0 0 12px' }}>
+              {slide.title}
+            </h3>
+            <p style={{ fontSize: 13, color: '#5A1F2E', lineHeight: 1.75, maxWidth: 520, margin: 0, fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+              {slide.description}
+            </p>
+          </div>
+        ))}
+      </section>
+    )
+  }
+
+  // â”€â”€ Animated layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  return (
+    <section id="sa-section" ref={sectionRef} style={{ height: '800vh', backgroundColor: '#F7E8EC' }}>
+      <div
+        ref={stageRef}
+        style={{
+          position: 'sticky',
+          top: 0,
+          height: '100vh',
+          backgroundColor: AMBIENT_BG[0],
+          display: 'flex',
+          flexDirection: 'column',
+          paddingTop: 88,
+          overflow: 'hidden',
+        }}
+      >
+
+        {/* Section header â€” always visible */}
+        <div style={{ flexShrink: 0, textAlign: 'center', paddingBottom: 14, zIndex: 10 }}>
+          <h2
+            className="font-serif"
+            style={{
+              fontSize: 'clamp(22px, 2.6vw, 36px)',
+              fontWeight: 400,
+              color: '#732C3F',
+              lineHeight: 1.1,
+              margin: '0 0 8px',
+            }}
+          >
+            Supporting Architecture
+          </h2>
+          <p
+            style={{
+              fontSize: 11,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#C57C8A',
+              margin: 0,
+              fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+            }}
+          >
+            Formula Components
+          </p>
+        </div>
+
+        {/* Slides area */}
+        <div style={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
+          {SLIDES.map((slide, i) => (
+            <div
+              key={i}
+              ref={(el) => { slideRefs.current[i] = el }}
+              style={{ position: 'absolute', inset: 0, opacity: i === 0 ? 1 : 0, pointerEvents: i === 0 ? 'auto' : 'none', zIndex: i === 0 ? 5 : 0 }}
+            >
+
+              {/* Ingredient title - always visible */}
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? '76%' : '68%',
+                  transform: 'translateX(-50%)',
+                  zIndex: 4,
+                  pointerEvents: 'auto',
+                  textAlign: 'center',
+                  width: '78%',
+                  maxWidth: 740,
+                }}
+              >
+                <h3
+                  className="font-serif"
+                  style={{
+                    fontSize: 'clamp(60px, 8vw, 120px)',
+                    fontWeight: 400,
+                    color: '#732C3F',
+                    opacity: 0.18,
+                    letterSpacing: '-0.02em',
+                    lineHeight: 1,
+                    margin: 0,
+                  }}
+                >
+                  {slide.title}
+                </h3>
+              </div>
+              {/* Bottle â€” GSAP animates rotate, translate stays via inline style */}
+              <div
+                ref={(el) => { illustrationRefs.current[i] = el }}
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? '50%' : '47%',
+                  transform: 'translate(-50%, -50%)',
+                  width: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? 'min(390px, 42vw)' : 'min(280px, 30vw)',
+                  height: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? 'min(390px, 54vh)' : 'min(280px, 42vh)',
+                  zIndex: 3,
+                  background: 'transparent',
+                  filter: 'drop-shadow(0 24px 34px rgba(115,44,63,0.16))',
+                }}
+              >
+                <IngredientIllustration kind={slide.illustration} />
+              </div>
+
+              {/* Ingredient number â€” top left */}
+              <div style={{ position: 'absolute', top: 20, left: 48, zIndex: 4 }}>
+                <span
+                  style={{
+                    fontSize: 13,
+                    fontWeight: 600,
+                    letterSpacing: '0.1em',
+                    color: '#732C3F',
+                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  {slide.number}
+                </span>
+                <span
+                  style={{
+                    fontSize: 11,
+                    color: '#C57C8A',
+                    letterSpacing: '0.06em',
+                    marginLeft: 5,
+                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  / 08
+                </span>
+              </div>
+
+              {/* Description â€” upper right */}
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '13%',
+                  right: 52,
+                  maxWidth: 168,
+                  zIndex: 4,
+                  textAlign: 'right',
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: 10,
+                    letterSpacing: '0.13em',
+                    textTransform: 'uppercase',
+                    color: '#C57C8A',
+                    margin: '0 0 8px',
+                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  {slide.benefit}
+                </p>
+                <p
+                  style={{
+                    fontSize: 12,
+                    lineHeight: 1.7,
+                    color: '#5A1F2E',
+                    opacity: 0.72,
+                    margin: 0,
+                    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                  }}
+                >
+                  {slide.description}
+                </p>
+              </div>
+
+              {/* Detail lines â€” bottom left */}
+              <div style={{ position: 'absolute', bottom: 36, left: 48, zIndex: 4 }}>
+                {slide.details.map((detail, d) => (
+                  <div
+                    key={d}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      marginBottom: d < slide.details.length - 1 ? 8 : 0,
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 20,
+                        height: 1,
+                        backgroundColor: 'rgba(115,44,63,0.3)',
+                        flexShrink: 0,
+                      }}
+                    />
+                    <span
+                      style={{
+                        fontSize: 11,
+                        color: '#732C3F',
+                        opacity: 0.58,
+                        letterSpacing: '0.05em',
+                        fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                      }}
+                    >
+                      {detail}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+        {/* Progress dots â€” right edge of stage */}
+        <div
+          style={{
+            position: 'absolute',
+            right: 26,
+            top: '50%',
+            transform: 'translateY(-50%)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 8,
+            zIndex: 20,
+          }}
+        >
+          {SLIDES.map((_, i) => (
+            <div
+              key={i}
+              ref={(el) => { dotRefs.current[i] = el }}
+              style={{
+                width: 6,
+                height: 6,
+                borderRadius: '50%',
+                backgroundColor: i === 0 ? '#732C3F' : 'rgba(197,124,138,0.2)',
+              }}
+            />
+          ))}
+        </div>
+
+      </div>
+    </section>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,9 @@
-const FOOTER_LINKS = ['Formula', 'Protocol', 'Science', 'Privacy', 'Terms'] as const
+const FOOTER_LINKS = [
+  { label: 'Formula', href: '#orbit-outer' },
+  { label: 'Protocol', href: '#protocol-section' },
+  { label: 'Science', href: '#sa-section' },
+  { label: 'FAQ', href: '#faq' },
+] as const
 
 export default function Footer() {
   return (
@@ -10,19 +15,19 @@ export default function Footer() {
         <div>
           <p className="font-serif text-gold text-[26px] leading-none">Nexovia</p>
           <p className="text-[10px] uppercase tracking-[0.15em] text-white/30 mt-1.5">
-            [Tagline Placeholder]
+            Post-procedure skincare
           </p>
         </div>
 
         <ul className="flex flex-wrap gap-7 list-none m-0 p-0 justify-center md:justify-end">
           {FOOTER_LINKS.map((link) => (
-            <li key={link}>
+            <li key={link.label}>
               <a
-                href="#"
+                href={link.href}
                 className="text-[10px] uppercase tracking-[0.12em] text-white/30 no-underline
                   transition-colors duration-300 hover:text-gold"
               >
-                {link}
+                {link.label}
               </a>
             </li>
           ))}
@@ -32,7 +37,7 @@ export default function Footer() {
 
       <div className="max-w-[1360px] mx-auto text-center mt-9 pt-[22px] border-t border-white/5">
         <p className="text-[10px] text-white/30">
-          [Copyright and disclaimer placeholder text — replace with actual legal copy.]
+          Copyright 2026 Nexovia. Cosmetic skincare information only; follow practitioner guidance after procedures.
         </p>
       </div>
 

@@ -9,3 +9,91 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
+.article-html {
+  font-family: theme('fontFamily.body');
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgb(26 11 18 / 0.7);
+}
+
+.article-html figure {
+  margin: 0 0 3rem;
+}
+
+.article-html img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-html h2 {
+  margin: 3rem 0 1.25rem;
+  font-family: theme('fontFamily.display');
+  font-size: clamp(30px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: theme('colors.dark');
+}
+
+.article-html h3 {
+  margin: 2.25rem 0 1rem;
+  font-family: theme('fontFamily.display');
+  font-size: clamp(24px, 3vw, 28px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: theme('colors.dark');
+}
+
+.article-html h4 {
+  margin: 2rem 0 0.75rem;
+  font-family: theme('fontFamily.display');
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: theme('colors.dark');
+}
+
+.article-html h2 strong,
+.article-html h3 strong,
+.article-html h4 strong {
+  font-weight: 400;
+}
+
+.article-html p {
+  margin-bottom: 1.75rem;
+}
+
+.article-html a {
+  color: theme('colors.burgundy');
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.article-html ul,
+.article-html ol {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+}
+
+.article-html ul {
+  list-style: disc;
+}
+
+.article-html ol {
+  list-style: decimal;
+}
+
+.article-html li {
+  margin-bottom: 0.9rem;
+  padding-left: 0.2rem;
+}
+
+.article-html blockquote {
+  margin: 2.5rem 0;
+  border-left: 1px solid rgb(115 44 63 / 0.35);
+  padding-left: 1.5rem;
+  color: rgb(26 11 18 / 0.58);
+}

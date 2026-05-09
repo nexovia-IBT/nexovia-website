@@ -1,5 +1,6 @@
 'use client'
 
+/* eslint-disable react-hooks/immutability, react-hooks/set-state-in-effect */
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
@@ -33,104 +34,104 @@ const PHASES: PhaseData[] = [
   {
     number: '01',
     label: 'Phase One',
-    title: '[Phase One — The Foundation]',
-    subtext: '[Phase one description. Replace with final copy from content team.]',
+    title: 'The First 7 Days',
+    subtext: 'The protocol begins on the evening following aesthetic treatment with 1 mL applied to clean, dry skin. During the first 7 days, continue applying 1 mL morning and evening to support hydration, skin comfort, and post-procedure recovery.',
     bg: '#732C3F',
     bgWord: 'PROTOCOL',
     isDark: true,
     stripLabel: 'Protocol Timeline',
-    chips: ['Day 0–7', 'Day 7–14', 'Day 14–28'],
+    chips: ['Day 0-7', 'Day 7-14', 'Day 14-28'],
     activeChip: 0,
     accordion: [
       {
-        q: '[How does phase one activate the formula?]',
-        a: '[Answer explaining phase one mechanism. Replace with final copy.]',
+        q: 'What is the focus of phase one?',
+        a: 'The first seven days after your treatment are when your skin is working hardest. The barrier is at its most vulnerable. Hydration loss is at its peak. This is the intensive phase, and the protocol reflects it: twice-daily application at full dosage, morning and evening. Nexovia Skin Serum, formulated with plant exosomes and PDRN at 1%, supports the skin through this critical window.',
       },
       {
-        q: '[What should I expect in week one?]',
-        a: '[Answer describing expected results and timeline. Replace with final copy.]',
+        q: 'What should I expect in week one?',
+        a: 'In a clinical evaluation conducted on post-laser skin, 100% of subjects using Nexovia recovered full skin barrier function within 7 days. The untreated side showed no recovery. Hydration on the treated side measured 37.5% above pre-procedure baseline, compared to 20.6% on the untreated side. In practice, this means your skin should feel calmer, more hydrated, and noticeably more comfortable by the end of the first week',
       },
       {
-        q: '[When should I apply phase one?]',
-        a: '[Answer with usage instructions and timing. Replace with final copy.]',
+        q: 'When should I apply phase one?',
+        a: 'Phase 1 covers the day of your treatment through Day 7. On the evening of your procedure, apply one full dropper (1 mL) to clean skin. From Day 1 onward, apply one full dropper morning and evening. This is the intensive phase. Your skin\'s barrier is at its most vulnerable and its demand for support is at its highest. In the morning, layer SPF over Nexovia. In the evening, apply Nexovia serum before moisturizer.',
       },
     ],
   },
   {
     number: '02',
     label: 'Phase Two',
-    title: '[Phase Two — The Amplifier]',
-    subtext: '[Phase two description. Replace with final copy from content team.]',
+    title: 'Build Hydration',
+    subtext: 'Your skin has moved past the most intensive phase of recovery. The protocol reduces to a half dropper, morning and evening. The focus shifts from acute support to sustained hydration and surface smoothness.',
     bg: '#C57C8A',
     bgWord: 'PROTOCOL',
     isDark: false,
     stripLabel: 'Protocol Timeline',
-    chips: ['Day 0–7', 'Day 7–14', 'Day 14–28'],
+    chips: ['Day 0-7', 'Day 7-14', 'Day 14-28'],
     activeChip: 1,
     accordion: [
       {
-        q: '[How does phase two build on phase one?]',
-        a: '[Answer explaining synergy between phases. Replace with final copy.]',
+        q: 'How does phase two build on phase one?',
+        a: 'Phase 1 addressed the immediate post-procedure window when the barrier was most compromised. Phase 2 maintains consistent support as the skin stabilizes. The dosage reduces by half because the skin\'s acute demand has eased, but twice-daily frequency continues to sustain hydration levels built during the first week.',
       },
       {
-        q: '[Can I skip phase one?]',
-        a: '[Answer about protocol adherence. Replace with final copy.]',
+        q: 'Can I skip phase two?',
+        a: 'Phase 2 is where the hydration gains from the first week are consolidated. Stopping at Day 7 risks losing the momentum your skin built during the intensive phase. The barrier has recovered, but the skin is still stabilizing underneath. Seven more days of consistent, reduced-dose application helps lock in that progress.',
       },
       {
-        q: '[How long is phase two?]',
-        a: '[Answer with duration and schedule. Replace with final copy.]',
+        q: 'How long is phase two?',
+        a: 'Seven days. Day 8 through Day 14. Half a dropper (0.5 mL), morning and evening. By the end of Phase 2, your skin should feel noticeably more settled, with improved hydration and a smoother surface texture.',
       },
     ],
   },
   {
     number: '03',
     label: 'Phase Three',
-    title: '[Phase Three — The Seal]',
-    subtext: '[Phase three description. Replace with final copy from content team.]',
+    title: 'Refine The Finish',
+    subtext: 'Your skin has stabilized. The protocol reduces to a single morning application. The focus shifts from recovery support to refinement: smoother texture, more even tone, and a lasting foundation for your results.',
     bg: '#5A1F2E',
     bgWord: 'NEXOVIA',
     isDark: true,
     stripLabel: 'Protocol Timeline',
-    chips: ['Day 0–7', 'Day 7–14', 'Day 14–28'],
+    chips: ['Day 0-7', 'Day 7-14', 'Day 14-28'],
     activeChip: 2,
     accordion: [
       {
-        q: '[What results does phase three deliver?]',
-        a: '[Answer describing outcomes. Replace with final copy.]',
+        q: 'What results does phase three support?',
+        a: 'By this stage, the barrier is intact and hydration is established. The protocol\'s focus shifts from recovery to anti-aging. The peptide matrix, including EGF-mimetics, Matrixyl, and Argireline, supports skin firmness and smoothness. NAD+ at 1% supports cellular energy at a concentration up to ten times higher than most formulations. Phase 3 is where the serum transitions from aftercare into targeted anti-aging support, refining texture and tone evenness while your treatment results settle into place.',
       },
       {
-        q: '[Is phase three for all skin types?]',
-        a: '[Answer about skin compatibility. Replace with final copy.]',
+        q: 'Is phase three for all skin types?',
+        a: 'Yes. Nexovia is formulated at pH 5.5, compatible with all Fitzpatrick skin types. Our clinical evaluation included subjects across across multiple Fitzpatrick skin types. By Phase 3, the skin is past the sensitive post-procedure window, so tolerance is typically at its highest.',
       },
       {
-        q: '[How does phase three complete the protocol?]',
-        a: '[Answer explaining completion. Replace with final copy.]',
+        q: 'How does phase three complete the protocol?',
+        a: 'Phase 3 runs from Day 15 through Day 27. One half dropper (0.5 mL), morning only, under SPF. This gradual tapering mirrors your skin\'s decreasing need for targeted support. By Day 28, the post-procedure window closes and you transition back to your regular skincare routine',
       },
     ],
   },
   {
     number: '04',
     label: 'Phase Four',
-    title: '[Phase Four — Maintenance]',
-    subtext: '[Phase four description. Replace with final copy from content team.]',
+    title: 'Maintain Calm',
+    subtext: 'The 28-day protocol is complete. Your skin has been supported through every phase of recovery. What you built in the last four weeks is the foundation for how your treatment results age.',
     bg: '#1A0B12',
-    bgWord: null,
+    bgWord: 'NEXOVIA',
     isDark: true,
     stripLabel: 'Protocol Timeline',
-    chips: ['Day 0–7', 'Day 7–14', 'Day 14–28'],
+    chips: ['Day 0-7', 'Day 7-14', 'Day 14-28'],
     activeChip: 2,
     accordion: [
       {
-        q: '[How do I maintain results long-term?]',
-        a: '[Answer with maintenance routine. Replace with final copy.]',
+        q: 'How do I maintain results long-term?',
+        a: 'The post-procedure window is where treatment results are either protected or lost. In the 28 days following your procedure, your skin rebuilt its barrier, restored hydration, and refined its texture with the support of four bio-amplifiers at concentrations most formulations will not match. Maintaining those results long-term means protecting your skin with SPF daily, avoiding aggressive actives too soon, and repeating the Nexovia protocol after your next treatment.',
       },
       {
-        q: '[When will I see final results?]',
-        a: '[Answer with result timeline. Replace with final copy.]',
+        q: 'When will I see final results?',
+        a: 'Most aesthetic procedures reach their full visible results between four and twelve weeks post-treatment. The Nexovia protocol covers the first 28 days, the window where your skin is most responsive to targeted support. What you see at Day 28 is a strong foundation. What you see at week eight or twelve is the full expression of both the procedure and the care that followed it.',
       },
       {
-        q: '[Can the protocol be repeated?]',
-        a: '[Answer about protocol cycling. Replace with final copy.]',
+        q: 'Can the protocol be repeated?',
+        a: 'Yes. Nexovia is designed to be used after every aesthetic treatment. Each procedure opens a new post-procedure window, and each window benefits from the same structured support. One bottle, one protocol, one treatment cycle. The formula\'s anti-aging ingredients, including NAD+ at 1% and the peptide matrix, also mean that repeating the protocol builds cumulative benefits for skin firmness, smoothness, and tone over time.',
       },
     ],
   },
@@ -245,7 +246,7 @@ export default function ProtocolSection() {
     })
 
     return () => ctx.revert()
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [])
 
   function transitionPanel(next: number, prev: number) {
     const forward = next > prev
@@ -303,7 +304,7 @@ export default function ProtocolSection() {
   // ── Reduced-motion fallback — stacked panels ──────────────────────────────
   if (reducedMotion) {
     return (
-      <section>
+      <section id="protocol-section">
         {PHASES.map((phase, i) => {
           const c = getColors(phase.isDark)
           return (
@@ -374,7 +375,7 @@ export default function ProtocolSection() {
 
   // ── Animated layout ───────────────────────────────────────────────────────
   return (
-    <section ref={sectionRef} style={{ height: '600vh', backgroundColor: '#732C3F' }}>
+    <section id="protocol-section" ref={sectionRef} style={{ height: '600vh', backgroundColor: '#732C3F' }}>
       <div style={{ position: 'sticky', top: 0, height: '100vh', overflow: 'hidden' }}>
 
         {PHASES.map((phase, i) => {
@@ -474,14 +475,15 @@ export default function ProtocolSection() {
                 >
                   <div
                     ref={(el) => { bottleRefs.current[i] = el }}
-                    style={{ position: 'relative', width: 200, height: 320, flexShrink: 0 }}
+                    style={{ position: 'relative', width: 200, height: 320, flexShrink: 0, background: 'transparent' }}
                   >
                     <Image
-                      src="/products/Nexovia_Skin_serum.png"
+                      src="/products/Nexovia_wo_background.png"
                       alt="Nexovia Skin Serum"
                       fill
+                      unoptimized
                       sizes="200px"
-                      style={{ objectFit: 'contain' }}
+                      style={{ objectFit: 'contain', background: 'transparent' }}
                     />
                   </div>
                   <div style={{ textAlign: 'center' }}>
