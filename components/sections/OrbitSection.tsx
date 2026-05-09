@@ -437,8 +437,8 @@ export default function OrbitSection() {
             ref={bottleInnerRef}
             style={{
               position: 'relative',
-              width: 'clamp(260px, 31vw, 430px)',
-              height: 'clamp(390px, 48vw, 620px)',
+              width: 'clamp(220px, 25vw, 360px)',
+              height: 'clamp(330px, 38vw, 520px)',
               opacity: 1,
             }}
           >
@@ -460,7 +460,7 @@ export default function OrbitSection() {
                   sizes="(max-width: 768px) 62vw, 360px"
                   style={{
                     objectFit: 'contain',
-                    transform: 'scale(1.28)',
+                    transform: 'scale(1.1)',
                     transformOrigin: '50% 56%',
                     filter: 'drop-shadow(0 28px 42px rgba(72, 18, 35, 0.22))',
                   }}
