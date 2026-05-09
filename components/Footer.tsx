@@ -35,7 +35,7 @@ export default function Footer() {
 
       <div className="max-w-[1360px] mx-auto text-center mt-9 pt-[22px] border-t border-white/5">
         <p className="text-[10px] text-white/30">
-          Copyright 2026 Nexovia. Cosmetic skincare information only; follow practitioner guidance after procedures.
+          Copyright 2026 Nexovia.
         </p>
       </div>
 
