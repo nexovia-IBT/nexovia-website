@@ -13,6 +13,8 @@ export type PostFrontmatter = {
   readTime?: number
   order?: number
   format?: 'markdown' | 'html'
+  draft?: boolean
+  publishedAt?: string
 }
 
 export type Post = PostFrontmatter & {
@@ -66,6 +68,8 @@ async function loadPost(fullPath: string): Promise<Post | null> {
       readTime: typeof data.readTime === 'number' ? data.readTime : undefined,
       order: typeof data.order === 'number' ? data.order : undefined,
       format: data.format === 'html' ? 'html' : 'markdown',
+      draft: data.draft === true,
+      publishedAt: data.publishedAt ? String(data.publishedAt) : undefined,
       content,
     }
   } catch {
@@ -73,9 +77,20 @@ async function loadPost(fullPath: string): Promise<Post | null> {
   }
 }
 
+function isVisible(post: Post): boolean {
+  if (post.draft) return false
+  if (post.publishedAt) {
+    const today = new Date().toISOString().slice(0, 10)
+    if (post.publishedAt > today) return false
+  }
+  return true
+}
+
 export async function getAllPosts(): Promise<Post[]> {
   const files = await readAllPostPaths()
-  const posts = (await Promise.all(files.map(loadPost))).filter((post): post is Post => post !== null)
+  const posts = (await Promise.all(files.map(loadPost)))
+    .filter((post): post is Post => post !== null)
+    .filter(isVisible)
   return posts.sort((a, b) => {
     if (typeof a.order === 'number' && typeof b.order === 'number') return a.order - b.order
     if (typeof a.order === 'number') return -1

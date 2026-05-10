@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 'BBL Photofacial Aftercare: What to Expect and How to Heal'
 slug: bbl-photofacial-aftercare-what-to-expect-and-how-to-heal
 excerpt: >-
