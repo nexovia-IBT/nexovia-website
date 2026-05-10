@@ -189,13 +189,21 @@ Return STRICT JSON with these keys exactly:
   "html": "the full article body as HTML (no <html>/<body>, just inner content). MUST include the two <figure> tags using src '/images/blog/${slug}.webp' and '/images/blog/${slug}-2.webp'."
 }
 
-Image guidelines for both prompts:
-- Editorial luxury photo, soft cinematic light, shallow depth of field, magazine-quality.
-- Brand palette: pale blush/pink (#F7E8EC), deep burgundy (#732C3F), muted gold (#EDC967), near-black (#1A0B12).
-- Subjects: close-up skin texture, hands gently applying serum, droplets on glass, soft botanical ingredients (centella leaves, allantoin crystals, clean lab dish), abstract liquid macro, calm spa surfaces (marble, travertine, linen).
-- NO text, NO logos, NO product packaging or branded bottles, NO faces shown directly (suggest profile, hands, neck or shoulder).
-- Composition: 16:9 landscape, leave negative space for typography, soft tonal palette only.
-- Photoreal, not illustrated. Avoid clinical hospital sterility - aim for hushed, refined, editorial.
+Image guidelines (BOTH prompts must be visually distinct from each other AND match the article subject):
+
+PICK SCENE TYPE BASED ON THE ARTICLE TOPIC:
+- If the article is about a SPECIFIC TREATMENT or DEVICE (e.g. HydraFacial, microneedling, laser, BBL, PRP, Morpheus8, RF microneedling, IPL, dermaplaning, sofwave, peels): one of the two images SHOULD show a practitioner-patient scene — gloved practitioner hands operating the device on a patient's face/cheek/forehead in an upscale clinic, photoreal, professional, calm. The patient's eyes can be closed or face partially shown in soft profile (no full identifiable face). The OTHER image can be a related close-up (skin recovery texture, serum macro, soothing botanical, calm spa surface).
+- If the article is about a ROUTINE / PROTOCOL / TIMELINE / DAY-BY-DAY (e.g. day-by-day recovery, how to layer products, when to reintroduce X, prep before procedure): one image can be a thoughtful editorial flat-lay of skincare products and tools arranged on linen/marble (no branded packaging). The other can be a calendar/diary page or hands holding a planner — minimalist, no text visible, suggesting structure and time. Avoid literal infographic style with words.
+- If the article is about an INGREDIENT (e.g. niacinamide, peptides, hyaluronic acid, panthenol, centella, allantoin, exosomes, NAD+, PDRN): one image can be the botanical or molecular subject in artistic macro (centella leaves under soft light, salmon fillet abstracted, water sphere with green tint for green tea, lab pipette and petri dish). The other can be a close-up of skin showing the result (luminous skin texture, calm cheek with soft light).
+- If the article is about a LIFESTYLE TOPIC (sleep, stress, diet, alcohol, exercise, travel, sun exposure): show the lifestyle moment in editorial taste — hands holding a glass of water, a bedside table with linen pillow at dawn, a passport on stone, runner's silhouette at golden hour. Tie back to skin via a paired skin close-up.
+- If the article is about a SYMPTOM or SKIN STATE (redness, swelling, tightness, sensitivity, barrier compromise): close-up of bare cheek/jawline showing realistic redness, gentle hand applying compress, ice cube macro, soothed skin texture comparison.
+
+UNIVERSAL RULES (apply to every prompt):
+- 16:9 landscape, photoreal, editorial luxury, soft cinematic light, shallow depth of field, magazine-quality.
+- Brand palette only: pale blush/pink (#F7E8EC), deep burgundy (#732C3F), muted gold (#EDC967), near-black (#1A0B12). Avoid bright primaries.
+- NO text, NO logos, NO product packaging or branded bottles, NO clearly identifiable faces (profile, partial face, eyes closed, or framed below the eyes is fine).
+- Photoreal, not illustrated. Hushed, refined, hospitality-grade — not sterile hospital aesthetic.
+- The TWO image prompts MUST NOT both be "drop of serum" macros. They must be visually different scenes appropriate to the article subject.
 
 Output JSON only.`
 }
@@ -322,8 +330,15 @@ async function main() {
     }
   }
 
-  console.log('\nNext step: cd to project root, then:')
-  console.log('  git add content/posts public/images/blog')
+  const folderUrl = 'file:///' + imgFolderPath.replace(/\\/g, '/').replace(/ /g, '%20')
+  console.log('\n=========== ARTICLE FOLDER ===========')
+  console.log('Path:  ' + imgFolderPath)
+  console.log('Click: ' + folderUrl)
+  console.log('Open:  explorer "' + imgFolderPath + '"')
+  console.log('======================================\n')
+
+  console.log('Next step: cd to project root, then:')
+  console.log('  git add public/images/blog')
   console.log(`  git commit -m "Add article: ${title}"`)
   console.log('  git push')
 }
