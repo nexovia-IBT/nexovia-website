@@ -1,0 +1,8 @@
+IMAGE PROMPTS for: How to Care for Your Skin After a HydraFacial: A Complete Aftercare Guide
+Slug: how-to-care-for-your-skin-after-a-hydrafacial-a-complete-aftercare-guide
+
+--- TOP IMAGE  ---  save as: public/images/blog/how-to-care-for-your-skin-after-a-hydrafacial-a-complete-aftercare-guide.webp
+Close-up of clear serum droplets on a smooth, clean glass surface, reflecting soft cinematic light. The background features blurred, pale blush tones, emphasizing purity and hydration. Editorial luxury, shallow depth of field, magazine quality, no text or logos. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  save as: public/images/blog/how-to-care-for-your-skin-after-a-hydrafacial-a-complete-aftercare-guide-2.webp
+A serene close-up of a hand gently applying a translucent serum onto a patch of skin, soft cinematic light catching the texture. The background is blurred, showcasing muted gold and deep burgundy tones, suggesting a luxurious and calming application ritual. Editorial luxury, shallow depth of field, no faces, no product packaging. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
