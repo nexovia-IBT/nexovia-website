@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: BBL Photofacial Aftercare: What to Expect and How to Heal
+Slug: bbl-photofacial-aftercare-what-to-expect-and-how-to-heal
+Folder: public/images/blog/Article 2 - bbl-photofacial-aftercare-what-to-expect-and-how-to-heal/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 2 - bbl-photofacial-aftercare-what-to-expect-and-how-to-heal/Article 2 - bbl-photofacial-aftercare-what-to-expect-and-how-to-heal_1.webp
+Editorial luxury photo. Close-up of a hand gently applying a translucent serum to the back of another hand, highlighting smooth skin texture. Soft cinematic light, shallow depth of field, magazine-quality. Muted gold and pale blush tones. No faces, no packaging. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  save as: public/images/blog/Article 2 - bbl-photofacial-aftercare-what-to-expect-and-how-to-heal/Article 2 - bbl-photofacial-aftercare-what-to-expect-and-how-to-heal_2.webp
+Editorial luxury photo. Abstract macro shot of a single viscous serum droplet suspended on a smooth, pale marble surface. Soft cinematic light, subtle reflections. Deep burgundy and near-black accents in the background. No text, no faces, no packaging. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.

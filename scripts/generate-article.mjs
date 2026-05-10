@@ -74,18 +74,48 @@ function todayIso() {
 
 // --- Gemini calls ---
 async function callGeminiJson(prompt) {
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${TEXT_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.7, responseMimeType: 'application/json' },
-    }),
-  })
-  if (!res.ok) throw new Error(`Gemini text ${res.status}: ${await res.text()}`)
-  const data = await res.json()
-  const text = data?.candidates?.[0]?.content?.parts?.map(p => p.text).join('') ?? ''
-  return JSON.parse(text)
+  const RETRYABLE = new Set([429, 500, 502, 503, 504])
+  const MAX_TRIES = 6
+  for (let attempt = 1; attempt <= MAX_TRIES; attempt++) {
+    let res
+    try {
+      res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${TEXT_MODEL}:generateContent?key=${process.env.GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.7, responseMimeType: 'application/json' },
+        }),
+      })
+    } catch (e) {
+      if (attempt === MAX_TRIES) throw e
+      console.warn(`  !! network error, retry ${attempt}/${MAX_TRIES} in 8s...`)
+      await new Promise(r => setTimeout(r, 8000))
+      continue
+    }
+    if (res.ok) {
+      const data = await res.json()
+      const text = data?.candidates?.[0]?.content?.parts?.map(p => p.text).join('') ?? ''
+      try {
+        return JSON.parse(text)
+      } catch (e) {
+        // Sometimes Gemini emits unescaped quotes inside the html field. Retry with more attempts.
+        if (attempt === MAX_TRIES) {
+          console.error('Last raw output snippet:', text.slice(0, 600))
+          throw new Error(`JSON parse failed after ${MAX_TRIES} tries: ${e.message}`)
+        }
+        console.warn(`  !! JSON parse error, retry ${attempt}/${MAX_TRIES} in 5s...`)
+        await new Promise(r => setTimeout(r, 5000))
+        continue
+      }
+    }
+    const body = await res.text()
+    if (!RETRYABLE.has(res.status) || attempt === MAX_TRIES) throw new Error(`Gemini text ${res.status}: ${body.slice(0, 250)}`)
+    const wait = Math.min(60, 8 * attempt) * 1000
+    console.warn(`  !! ${res.status}, retry ${attempt}/${MAX_TRIES} in ${wait/1000}s...`)
+    await new Promise(r => setTimeout(r, wait))
+  }
+  throw new Error('unreachable')
 }
 
 async function callGeminiImage(prompt) {
@@ -236,7 +266,9 @@ async function main() {
     order,
     format: 'html',
   })
-  const mdPath = path.join(POSTS_DIR, `${slug}.md`)
+  // Ensure article folder exists, then write article.md inside it
+  await import('node:fs/promises').then(m => m.mkdir(imgFolderPath, { recursive: true }))
+  const mdPath = path.join(imgFolderPath, 'article.md')
   await writeFile(mdPath, frontmatter, 'utf8')
   console.log(`  -> wrote ${path.relative(ROOT, mdPath)}`)
 
@@ -246,7 +278,8 @@ async function main() {
   console.log(`  -> CSV row marked published`)
 
   // 3b. Save image prompts to a sidecar file so you can copy/paste them into ChatGPT or Gemini chat
-  const sidecar = path.join(POSTS_DIR, `${slug}.images.txt`)
+  await import('node:fs/promises').then(m => m.mkdir(imgFolderPath, { recursive: true }))
+  const sidecar = path.join(imgFolderPath, 'images.txt')
   const sidecarBody = [
     `IMAGE PROMPTS for: ${title}`,
     `Slug: ${slug}`,

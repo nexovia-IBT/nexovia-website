@@ -23,19 +23,34 @@ const cwdPostsDir = path.join(process.cwd(), 'content', 'posts')
 const localProjectRoot = 'C:/Users/orhun/Desktop/nexovia-website'
 const PROJECT_ROOT = process.env.NEXOVIA_PROJECT_ROOT || (existsSync(cwdPostsDir) ? process.cwd() : localProjectRoot)
 const POSTS_DIR = path.join(PROJECT_ROOT, 'content', 'posts')
+const BUNDLED_DIR = path.join(PROJECT_ROOT, 'public', 'images', 'blog')
 
-async function readPostsDir(): Promise<string[]> {
+// Returns full file paths to every article.md / *.md found in either:
+//   1) the legacy flat content/posts/*.md
+//   2) per-article bundled folders public/images/blog/Article N - {slug}/article.md
+async function readAllPostPaths(): Promise<string[]> {
+  const out: string[] = []
   try {
-    const files = await fs.readdir(POSTS_DIR)
-    return files.filter((file) => file.endsWith('.md') || file.endsWith('.mdx'))
-  } catch {
-    return []
-  }
+    const flat = await fs.readdir(POSTS_DIR)
+    for (const f of flat) {
+      if (f.endsWith('.md') || f.endsWith('.mdx')) out.push(path.join(POSTS_DIR, f))
+    }
+  } catch {}
+  try {
+    const dirs = await fs.readdir(BUNDLED_DIR, { withFileTypes: true })
+    for (const d of dirs) {
+      if (d.isDirectory() && /^Article \d+ - /.test(d.name)) {
+        const candidate = path.join(BUNDLED_DIR, d.name, 'article.md')
+        try { await fs.access(candidate); out.push(candidate) } catch {}
+      }
+    }
+  } catch {}
+  return out
 }
 
-async function loadPost(filename: string): Promise<Post | null> {
+async function loadPost(fullPath: string): Promise<Post | null> {
   try {
-    const fullPath = path.join(POSTS_DIR, filename)
+    const filename = path.basename(fullPath)
     const raw = await fs.readFile(fullPath, 'utf8')
     const { data, content } = matter(raw)
     const fallbackSlug = filename.replace(/\.(md|mdx)$/i, '')
@@ -59,7 +74,7 @@ async function loadPost(filename: string): Promise<Post | null> {
 }
 
 export async function getAllPosts(): Promise<Post[]> {
-  const files = await readPostsDir()
+  const files = await readAllPostPaths()
   const posts = (await Promise.all(files.map(loadPost))).filter((post): post is Post => post !== null)
   return posts.sort((a, b) => {
     if (typeof a.order === 'number' && typeof b.order === 'number') return a.order - b.order
