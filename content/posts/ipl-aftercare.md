@@ -46,7 +46,7 @@ format: "html"
 
 <p>Your skin needs hydration and calming support after IPL. Apply products containing ingredients that soothe inflammation and support barrier repair. Hyaluronic acid provides essential moisture. Centella Asiatica calms irritation. Niacinamide supports barrier function while helping manage pigmentation.</p>
 
-<p>Multi-technology formulations that combine several beneficial ingredients provide more comprehensive support than single-ingredient products. For a detailed breakdown of which ingredients help healing and which to avoid, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>. The ingredient principles apply across all post-procedure recovery.</p>
+<p>Multi-technology formulations that combine several beneficial ingredients provide more comprehensive support than single-ingredient products. For a detailed breakdown of which ingredients help healing and which to avoid, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>. The ingredient principles apply across all post-procedure recovery.</p>
 
 <h3><strong>Protect Your Skin From the Sun</strong></h3>
 
@@ -88,7 +88,7 @@ format: "html"
 
 <h3><strong>Avoid Makeup for 24 Hours</strong></h3>
 
-<p>Give your skin at least 24 hours before applying makeup. This allows the initial inflammation to subside and reduces the risk of introducing irritants or bacteria to treated skin. When you do resume makeup, choose mineral-based, fragrance-free formulas and apply with clean tools. For more guidance on safely reintroducing cosmetics, see our guide on <a href="/can-i-wear-makeup-after-microneedling">wearing makeup after microneedling</a>, as the same principles apply.</p>
+<p>Give your skin at least 24 hours before applying makeup. This allows the initial inflammation to subside and reduces the risk of introducing irritants or bacteria to treated skin. When you do resume makeup, choose mineral-based, fragrance-free formulas and apply with clean tools. For more guidance on safely reintroducing cosmetics, see our guide on <a href="/blog/can-i-wear-makeup-after-microneedling">wearing makeup after microneedling</a>, as the same principles apply.</p>
 
 <p>If you have treated visible pigmentation, you may prefer to wait until the darkening and flaking process is complete before wearing makeup, as coverage can be challenging during this phase.</p>
 
@@ -108,30 +108,15 @@ format: "html"
 <li><strong>Weeks 3 to 4:</strong> Full results become visible. Skin continues improving as any remaining healing completes.</li>
 </ul>
 
-<p>For a deeper look at managing redness specifically during laser and light-based treatment recovery, see our guide on <a href="/how-to-reduce-redness-after-laser-treatment">how to reduce redness after laser treatment</a>.</p>
+<p>For a deeper look at managing redness specifically during laser and light-based treatment recovery, see our guide on <a href="/blog/how-to-reduce-redness-after-laser-treatment">how to reduce redness after laser treatment</a>.</p>
 
 <p><strong>Not sure if your recovery is on track?</strong></p>
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Is it normal for pigmentation to look darker after IPL?</h3>
-
-<p>Yes, this is expected and indicates successful treatment. Treated melanin rises to the surface and darkens before flaking off over the following one to two weeks. The spots may look worse temporarily before revealing clearer skin beneath. Do not pick at the darkened areas.</p>
-
-<h3>How many IPL sessions will I need?</h3>
-
-<p>Most patients require three to six sessions spaced three to four weeks apart for optimal results, depending on the concerns being treated and their severity. Your practitioner will recommend a treatment plan based on your specific needs. Proper aftercare between sessions supports cumulative improvement.</p>
-
-<h3>Can I exercise after IPL treatment?</h3>
-
-<p>Avoid intense exercise that causes sweating for at least 48 to 72 hours after treatment. Heat and sweat can irritate treated skin and intensify inflammation. Light walking is generally fine from day one. Resume more vigorous activity once initial sensitivity resolves.</p>
-
-<h3>What if I accidentally got sun exposure after IPL?</h3>
-
-<p>If you experienced unprotected sun exposure after IPL, monitor your skin closely for any changes in pigmentation. Apply extra hydration and calming products. Contact your practitioner if you notice new dark spots developing or unusual skin changes. Moving forward, recommit to strict sun protection to prevent further damage.</p>
-
-<h3>What is the best serum to use after IPL treatment?</h3>
-
-<p>The best post-IPL serum calms inflammation, supports barrier repair, and helps manage pigmentation simultaneously. Single-ingredient products address only one of these needs at a time. Nexovia Skin Serum combines plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture, designed to support every aspect of post-procedure recovery in one formula.</p>
-
+<details><summary><strong>Is it normal for pigmentation to look darker after IPL?</strong></summary><p>Yes, this is expected and indicates successful treatment. Treated melanin rises to the surface and darkens before flaking off over the following one to two weeks. The spots may look worse temporarily before revealing clearer skin beneath. Do not pick at the darkened areas.</p></details>
+<details><summary><strong>How many IPL sessions will I need?</strong></summary><p>Most patients require three to six sessions spaced three to four weeks apart for optimal results, depending on the concerns being treated and their severity. Your practitioner will recommend a treatment plan based on your specific needs. Proper aftercare between sessions supports cumulative improvement.</p></details>
+<details><summary><strong>Can I exercise after IPL treatment?</strong></summary><p>Avoid intense exercise that causes sweating for at least 48 to 72 hours after treatment. Heat and sweat can irritate treated skin and intensify inflammation. Light walking is generally fine from day one. Resume more vigorous activity once initial sensitivity resolves.</p></details>
+<details><summary><strong>What if I accidentally got sun exposure after IPL?</strong></summary><p>If you experienced unprotected sun exposure after IPL, monitor your skin closely for any changes in pigmentation. Apply extra hydration and calming products. Contact your practitioner if you notice new dark spots developing or unusual skin changes. Moving forward, recommit to strict sun protection to prevent further damage.</p></details>
+<details><summary><strong>What is the best serum to use after IPL treatment?</strong></summary><p>The best post-IPL serum calms inflammation, supports barrier repair, and helps manage pigmentation simultaneously. Single-ingredient products address only one of these needs at a time. Nexovia Skin Serum combines plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture, designed to support every aspect of post-procedure recovery in one formula.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

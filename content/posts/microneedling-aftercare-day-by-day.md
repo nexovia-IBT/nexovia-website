@@ -75,24 +75,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Can I wash my face on day one after microneedling?</h3>
-
-<p>Yes, you can gently cleanse starting the morning after treatment. Use a non-foaming, fragrance-free cleanser with lukewarm water. Avoid rubbing or using any cleansing devices. Pat dry with a clean towel.</p>
-
-<h3>What if I accidentally used an active ingredient too soon?</h3>
-
-<p>Do not panic. Rinse your face gently with cool water and apply a soothing, hydrating product like a serum containing hyaluronic acid and centella asiatica. Monitor for increased redness or irritation. If you experience significant discomfort or your skin appears inflamed, contact your practitioner.</p>
-
-<h3>Can I exercise during microneedling recovery?</h3>
-
-<p>Avoid intense exercise that causes heavy sweating for at least 48 to 72 hours. Sweat can irritate open micro-channels and introduce bacteria. Light walking is generally fine from day one. You can gradually resume more vigorous workouts by day four or five.</p>
-
-<h3>How do I know if my skin is healing properly?</h3>
-
-<p>Normal healing includes redness that gradually fades over the first week, mild tightness or dryness, and possibly light flaking around days four to seven. Signs that something may be wrong include redness that intensifies after day three, increasing pain, signs of infection like pus or fever, or unusual discoloration. Contact your practitioner if you have concerns.</p>
-
-<h3>What is the best serum to use during microneedling recovery?</h3>
-
-<p>The most effective post-microneedling serum addresses multiple healing needs at once rather than relying on a single ingredient. Nexovia Skin Serum combines plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture, designed specifically to support every phase of post-procedure recovery.</p>
-
+<details><summary><strong>Can I wash my face on day one after microneedling?</strong></summary><p>Yes, you can gently cleanse starting the morning after treatment. Use a non-foaming, fragrance-free cleanser with lukewarm water. Avoid rubbing or using any cleansing devices. Pat dry with a clean towel.</p></details>
+<details><summary><strong>What if I accidentally used an active ingredient too soon?</strong></summary><p>Do not panic. Rinse your face gently with cool water and apply a soothing, hydrating product like a serum containing hyaluronic acid and centella asiatica. Monitor for increased redness or irritation. If you experience significant discomfort or your skin appears inflamed, contact your practitioner.</p></details>
+<details><summary><strong>Can I exercise during microneedling recovery?</strong></summary><p>Avoid intense exercise that causes heavy sweating for at least 48 to 72 hours. Sweat can irritate open micro-channels and introduce bacteria. Light walking is generally fine from day one. You can gradually resume more vigorous workouts by day four or five.</p></details>
+<details><summary><strong>How do I know if my skin is healing properly?</strong></summary><p>Normal healing includes redness that gradually fades over the first week, mild tightness or dryness, and possibly light flaking around days four to seven. Signs that something may be wrong include redness that intensifies after day three, increasing pain, signs of infection like pus or fever, or unusual discoloration. Contact your practitioner if you have concerns.</p></details>
+<details><summary><strong>What is the best serum to use during microneedling recovery?</strong></summary><p>The most effective post-microneedling serum addresses multiple healing needs at once rather than relying on a single ingredient. Nexovia Skin Serum combines plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture, designed specifically to support every phase of post-procedure recovery.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

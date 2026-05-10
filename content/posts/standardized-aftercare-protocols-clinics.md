@@ -32,11 +32,11 @@ format: "html"
 
 <p>Patient satisfaction scores increasingly influence practice success. Online reviews, referrals, and repeat bookings all correlate with patient experience. Anxiety during recovery, even when outcomes are ultimately good, negatively impacts satisfaction.</p>
 
-<p>Patients who feel uncertain about their aftercare experience stress that colors their perception of the entire treatment journey. They may leave lukewarm reviews despite excellent clinical results simply because the recovery period felt unsupported. Conversely, patients who feel confident and cared for throughout recovery report higher satisfaction even when experiencing normal healing challenges like <a href="/how-long-does-redness-last-after-microneedling">redness</a> or <a href="/skin-feels-tight-after-procedure">tightness</a>.</p>
+<p>Patients who feel uncertain about their aftercare experience stress that colors their perception of the entire treatment journey. They may leave lukewarm reviews despite excellent clinical results simply because the recovery period felt unsupported. Conversely, patients who feel confident and cared for throughout recovery report higher satisfaction even when experiencing normal healing challenges like <a href="/blog/how-long-does-redness-last-after-microneedling">redness</a> or <a href="/blog/skin-feels-tight-after-procedure">tightness</a>.</p>
 
 <h3><strong>Outcome Variability</strong></h3>
 
-<p>Clinical outcomes depend partly on factors beyond the treatment room. A perfectly executed procedure can be compromised by <a href="/aftercare-mistakes-ruin-procedure-results">inappropriate aftercare</a>. When patients use harsh products, neglect sun protection, or fail to support barrier recovery, results suffer.</p>
+<p>Clinical outcomes depend partly on factors beyond the treatment room. A perfectly executed procedure can be compromised by <a href="/blog/aftercare-mistakes-ruin-procedure-results">inappropriate aftercare</a>. When patients use harsh products, neglect sun protection, or fail to support barrier recovery, results suffer.</p>
 
 <p>This variability creates challenges for practitioners. Outcomes become less predictable, making it harder to set appropriate expectations. Occasional complications require additional appointments. Some patients attribute suboptimal results to the procedure itself rather than aftercare failures, damaging your clinical reputation unfairly.</p>
 
@@ -100,7 +100,7 @@ format: "html"
 
 <p>A protocol built around separate products for each challenge (one for hydration, one for inflammation, one for repair) introduces complexity that reduces compliance and increases the chance of product interactions or errors. A single formulation engineered to address all of these challenges simultaneously simplifies everything: the protocol is easier to explain, easier to follow, and produces more consistent results.</p>
 
-<p>The technologies that matter for post-procedure recovery include <a href="/plant-exosomes-skincare">plant exosomes</a> for cellular communication and inflammation modulation, <a href="/pdrn-in-skincare">PDRN</a> for tissue regeneration via adenosine A2A receptor activation, <a href="/nad-plus-for-skin">NAD+</a> for cellular energy and DNA repair, and <a href="/peptides-for-skin-barrier-repair">peptides</a> with growth factors for extracellular matrix rebuilding. When these technologies are combined in a single formulation at clinically meaningful concentrations, the result is a protocol cornerstone that addresses the full spectrum of recovery needs.</p>
+<p>The technologies that matter for post-procedure recovery include <a href="/blog/plant-exosomes-skincare">plant exosomes</a> for cellular communication and inflammation modulation, <a href="/blog/pdrn-in-skincare">PDRN</a> for tissue regeneration via adenosine A2A receptor activation, <a href="/blog/nad-plus-for-skin">NAD+</a> for cellular energy and DNA repair, and <a href="/blog/peptides-for-skin-barrier-repair">peptides</a> with growth factors for extracellular matrix rebuilding. When these technologies are combined in a single formulation at clinically meaningful concentrations, the result is a protocol cornerstone that addresses the full spectrum of recovery needs.</p>
 
 <h2><strong>Implementing a Standardized Protocol in Your Practice</strong></h2>
 
@@ -131,7 +131,7 @@ format: "html"
 
 <p>This multi-technology approach means one product addresses the full spectrum of post-procedure recovery needs. Clinics standardize on a single SKU across all procedure types rather than maintaining multiple product lines, simplifying inventory, training, and patient communication.</p>
 
-<p>Manufactured in <a href="/k-beauty-aftercare">South Korea</a> using the advanced formulation science and quality standards that Korean post-procedure skincare is known for, Nexovia provides the credibility and clinical performance that practitioners require from a protocol product.</p>
+<p>Manufactured in <a href="/blog/k-beauty-aftercare">South Korea</a> using the advanced formulation science and quality standards that Korean post-procedure skincare is known for, Nexovia provides the credibility and clinical performance that practitioners require from a protocol product.</p>
 
 <h2><strong>Measuring Protocol Success</strong></h2>
 
@@ -149,24 +149,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How do standardized protocols affect patient compliance?</h3>
-
-<p>Standardized protocols improve compliance compared to generic aftercare advice. When patients receive a specific product and clear instructions as part of their treatment experience, they are significantly more likely to follow through than when given vague guidance to &quot;find a gentle moisturizer.&quot; The professional recommendation carries clinical weight that generic advice lacks, and having the product in hand at checkout eliminates the barrier of a separate shopping trip.</p>
-
-<h3>Can one aftercare product work across different procedure types?</h3>
-
-<p>Yes, when the product addresses the fundamental challenges common to all post-procedure skin: barrier compromise, inflammation, increased water loss, and repair demands. The ABA.4 architecture addresses these shared challenges through four complementary technologies, making it appropriate across microneedling, laser treatments, chemical peels, IPL, and RF procedures. Protocol timing may vary by procedure intensity, but the product remains consistent.</p>
-
-<h3>What if patients want to use products they already own?</h3>
-
-<p>Education helps patients understand why professional aftercare products differ from daily skincare. Position the aftercare product as a short-term clinical tool that protects their procedure investment, similar to how a post-surgical patient uses prescribed wound care rather than household supplies. Most patients readily accept this framing, especially when the recommendation comes from their trusted practitioner.</p>
-
-<h3>How do we handle complications despite protocol adherence?</h3>
-
-<p>Standardized protocols do not eliminate all complications, but they reduce frequency and provide documentation of recommended care. When complications occur, you can assess whether the protocol was followed and respond appropriately. Consistent protocols also make pattern recognition easier across your patient population, helping identify systemic issues versus individual outliers.</p>
-
-<h3>What training is required for staff?</h3>
-
-<p>Staff should understand the rationale behind protocol components, specific product instructions, answers to common patient questions, and when to escalate concerns to practitioners. Nexovia provides training materials to support implementation. Most practices report that one training session of thirty to sixty minutes is sufficient for confident, consistent staff communication.</p>
-
+<details><summary><strong>How do standardized protocols affect patient compliance?</strong></summary><p>Standardized protocols improve compliance compared to generic aftercare advice. When patients receive a specific product and clear instructions as part of their treatment experience, they are significantly more likely to follow through than when given vague guidance to &quot;find a gentle moisturizer.&quot; The professional recommendation carries clinical weight that generic advice lacks, and having the product in hand at checkout eliminates the barrier of a separate shopping trip.</p></details>
+<details><summary><strong>Can one aftercare product work across different procedure types?</strong></summary><p>Yes, when the product addresses the fundamental challenges common to all post-procedure skin: barrier compromise, inflammation, increased water loss, and repair demands. The ABA.4 architecture addresses these shared challenges through four complementary technologies, making it appropriate across microneedling, laser treatments, chemical peels, IPL, and RF procedures. Protocol timing may vary by procedure intensity, but the product remains consistent.</p></details>
+<details><summary><strong>What if patients want to use products they already own?</strong></summary><p>Education helps patients understand why professional aftercare products differ from daily skincare. Position the aftercare product as a short-term clinical tool that protects their procedure investment, similar to how a post-surgical patient uses prescribed wound care rather than household supplies. Most patients readily accept this framing, especially when the recommendation comes from their trusted practitioner.</p></details>
+<details><summary><strong>How do we handle complications despite protocol adherence?</strong></summary><p>Standardized protocols do not eliminate all complications, but they reduce frequency and provide documentation of recommended care. When complications occur, you can assess whether the protocol was followed and respond appropriately. Consistent protocols also make pattern recognition easier across your patient population, helping identify systemic issues versus individual outliers.</p></details>
+<details><summary><strong>What training is required for staff?</strong></summary><p>Staff should understand the rationale behind protocol components, specific product instructions, answers to common patient questions, and when to escalate concerns to practitioners. Nexovia provides training materials to support implementation. Most practices report that one training session of thirty to sixty minutes is sufficient for confident, consistent staff communication.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

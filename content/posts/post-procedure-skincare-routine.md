@@ -14,7 +14,7 @@ format: "html"
 
 <p>Your bathroom counter is covered with products. Serums, toners, essences, actives, treatments, masks. Your normal skincare routine has evolved over years of experimentation into a multi-step ritual that works beautifully for your skin. But you just had a procedure, and suddenly everything you know about skincare feels uncertain. Which products are safe? What order should you use them? Should you use anything at all?</p>
 
-<p>Building a post-procedure skincare routine does not have to be complicated. In fact, simplicity is the goal. Your healing skin needs fewer products than your normal skin, but the products you choose matter significantly more. The right routine supports recovery, protects vulnerable tissue, and sets the stage for optimal results. The <a href="/aftercare-mistakes-ruin-procedure-results">wrong approach</a> can extend healing time, cause complications, or compromise your outcome.</p>
+<p>Building a post-procedure skincare routine does not have to be complicated. In fact, simplicity is the goal. Your healing skin needs fewer products than your normal skin, but the products you choose matter significantly more. The right routine supports recovery, protects vulnerable tissue, and sets the stage for optimal results. The <a href="/blog/aftercare-mistakes-ruin-procedure-results">wrong approach</a> can extend healing time, cause complications, or compromise your outcome.</p>
 
 <p>This guide walks you through building an effective post-procedure skincare routine from the ground up, explaining each essential step and how your regimen should evolve as your skin moves through different recovery phases. For the complete science behind post-procedure recovery, see our <a href="/post-procedure-skincare-guide">in-depth post-procedure skincare guide</a>.</p>
 
@@ -24,7 +24,7 @@ format: "html"
 
 <p>Your normal routine likely focuses on improvement: addressing concerns, preventing aging, optimizing appearance. Your recovery routine focuses on support: helping your skin heal efficiently, protecting vulnerable tissue, and avoiding anything that could interfere with repair.</p>
 
-<p>However, recovery and anti-aging do not need to be separate goals. The post-procedure period presents a unique opportunity. Your skin is already in repair mode, producing new collagen and renewing cells. The right aftercare amplifies these processes rather than simply waiting for healing to complete. Ingredients like <a href="/peptides-for-skin-barrier-repair">peptides</a>, <a href="/pdrn-in-skincare">PDRN</a>, <a href="/nad-plus-for-skin">NAD+</a>, and <a href="/plant-exosomes-skincare">plant exosomes</a> support healing while simultaneously delivering rejuvenating effects through mechanisms that complement rather than stress the repair process.</p>
+<p>However, recovery and anti-aging do not need to be separate goals. The post-procedure period presents a unique opportunity. Your skin is already in repair mode, producing new collagen and renewing cells. The right aftercare amplifies these processes rather than simply waiting for healing to complete. Ingredients like <a href="/blog/peptides-for-skin-barrier-repair">peptides</a>, <a href="/blog/pdrn-in-skincare">PDRN</a>, <a href="/blog/nad-plus-for-skin">NAD+</a>, and <a href="/blog/plant-exosomes-skincare">plant exosomes</a> support healing while simultaneously delivering rejuvenating effects through mechanisms that complement rather than stress the repair process.</p>
 
 <p>This means stripping your routine down to essentials and choosing each product intentionally. Every product in your post-procedure routine should serve a clear purpose. If you cannot articulate why a product belongs in your recovery regimen, it probably does not.</p>
 
@@ -34,7 +34,7 @@ format: "html"
 
 <h3><strong>Step 1: Gentle Cleansing</strong></h3>
 
-<p>Cleansing removes surface debris, excess oil, and product residue without compromising your healing <a href="/skin-feels-tight-after-procedure">barrier</a>. This step prepares your skin to receive the products that follow.</p>
+<p>Cleansing removes surface debris, excess oil, and product residue without compromising your healing <a href="/blog/skin-feels-tight-after-procedure">barrier</a>. This step prepares your skin to receive the products that follow.</p>
 
 <p>Choose a non-foaming, fragrance-free cleanser with a pH close to your skin&#x27;s natural level (around 5.5). Foaming cleansers contain surfactants that strip the lipids your barrier needs for repair. Apply with your fingertips using gentle, circular motions. Use lukewarm water, never hot. Pat dry with a clean, soft towel rather than rubbing.</p>
 
@@ -44,7 +44,7 @@ format: "html"
 
 <p>This is the most important step. While cleansing, moisturizing, and sun protection provide basic maintenance, your active recovery product actually supports the healing process at the cellular level.</p>
 
-<p>Your recovery serum should address the specific challenges post-procedure skin faces simultaneously: <a href="/skin-feels-tight-after-procedure">barrier compromise</a>, elevated inflammation, increased transepidermal water loss, and intensive repair demands. These challenges happen at the same time and interact with each other. A single-ingredient product cannot address all of them. A formulation combining multiple complementary technologies provides the coordinated support your skin needs.</p>
+<p>Your recovery serum should address the specific challenges post-procedure skin faces simultaneously: <a href="/blog/skin-feels-tight-after-procedure">barrier compromise</a>, elevated inflammation, increased transepidermal water loss, and intensive repair demands. These challenges happen at the same time and interact with each other. A single-ingredient product cannot address all of them. A formulation combining multiple complementary technologies provides the coordinated support your skin needs.</p>
 
 <p>Apply your recovery serum to clean, slightly damp skin, allowing it to absorb fully before proceeding to the next step. This positions the active ingredients for optimal penetration.</p>
 
@@ -58,7 +58,7 @@ format: "html"
 
 <h3><strong>Step 4: Sun Protection (Morning Only)</strong></h3>
 
-<p>Sun protection is non-negotiable. Your healing skin is extraordinarily vulnerable to UV damage, which can cause <a href="/preventing-hyperpigmentation-after-aesthetic-procedures">permanent hyperpigmentation</a> and compromise your results.</p>
+<p>Sun protection is non-negotiable. Your healing skin is extraordinarily vulnerable to UV damage, which can cause <a href="/blog/preventing-hyperpigmentation-after-aesthetic-procedures">permanent hyperpigmentation</a> and compromise your results.</p>
 
 <p>Choose a broad-spectrum SPF 50 or higher. Physical sunscreens containing zinc oxide or titanium dioxide are often better tolerated by sensitive post-procedure skin than chemical formulations. Apply as the final step in your morning routine, after moisturizer has absorbed. Use adequate quantity and do not forget often-missed areas like hairline, ears, and neck if treated.</p>
 
@@ -102,7 +102,7 @@ format: "html"
 
 <p>Continue your recovery serum once daily to support ongoing barrier health and anti-aging benefits. Begin gradually reintroducing products from your normal routine, one at a time, with several days between each addition. This allows you to identify any products that cause sensitivity.</p>
 
-<p>Start with gentler products before progressing to actives. <a href="/when-can-i-use-retinol-after-microneedling-laser">Retinol should be reintroduced last</a>, and with the cautious, graduated approach described in our retinol reintroduction guide.</p>
+<p>Start with gentler products before progressing to actives. <a href="/blog/when-can-i-use-retinol-after-microneedling-laser">Retinol should be reintroduced last</a>, and with the cautious, graduated approach described in our retinol reintroduction guide.</p>
 
 <h2><strong>What to Exclude From Your Recovery Routine</strong></h2>
 
@@ -128,24 +128,12 @@ format: "html"
 
 <p>Nexovia Skin Serum was designed on this principle. The ABA.4 Bio-Intelligent Architecture combines plant exosomes at 4 billion particles per milliliter for cellular communication and inflammation modulation, PDRN at 1% for tissue regeneration, NAD+ at 1% for cellular energy and DNA repair, and a peptide matrix with EGF-mimetics and matrikines for structural rebuilding. Each technology serves a distinct function. Together, they address the full spectrum of post-procedure recovery and anti-aging needs in a single application step.</p>
 
-<p>Made in <a href="/k-beauty-aftercare">South Korea</a> with the formulation science and manufacturing standards that Korean post-procedure skincare is known for, Nexovia simplifies your recovery routine to four products and five minutes while delivering more comprehensive support than a ten-step protocol could.</p>
+<p>Made in <a href="/blog/k-beauty-aftercare">South Korea</a> with the formulation science and manufacturing standards that Korean post-procedure skincare is known for, Nexovia simplifies your recovery routine to four products and five minutes while delivering more comprehensive support than a ten-step protocol could.</p>
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How many products do I really need for post-procedure recovery?</h3>
-
-<p>Four products are sufficient for a complete post-procedure routine: gentle cleanser, recovery serum, moisturizer, and SPF. This minimal approach reduces irritation risk while providing everything your healing skin needs, including anti-aging support through the recovery serum. Resist the urge to add more during the first two weeks.</p>
-
-<h3>Can I use my normal cleanser after a procedure?</h3>
-
-<p>Evaluate your normal cleanser honestly. If it foams, contains fragrance, or leaves your skin feeling tight, it is too harsh for post-procedure use. Choose a gentler alternative for recovery. You can return to your normal cleanser once healing completes.</p>
-
-<h3>When can I start adding my other products back?</h3>
-
-<p>Begin reintroducing products after day fourteen, one at a time, with several days between each addition. Start with gentler products and progress to actives like retinol last. If any product causes irritation, discontinue it and wait before trying again. Our <a href="/when-can-i-use-retinol-after-microneedling-laser">retinol reintroduction guide</a><a href="/when-can-i-use-retinol-after-microneedling-laser">covers exact timelines by pr</a> ocedure type.</p>
-
-<h3>What if my practitioner gave me different products?</h3>
-
-<p>Always follow your practitioner&#x27;s specific instructions. They know your treatment details and may have particular reasons for their recommendations. If you want to incorporate a multi-technology recovery serum into your routine, discuss this with your practitioner to ensure it aligns with their aftercare protocol.</p>
-
+<details><summary><strong>How many products do I really need for post-procedure recovery?</strong></summary><p>Four products are sufficient for a complete post-procedure routine: gentle cleanser, recovery serum, moisturizer, and SPF. This minimal approach reduces irritation risk while providing everything your healing skin needs, including anti-aging support through the recovery serum. Resist the urge to add more during the first two weeks.</p></details>
+<details><summary><strong>Can I use my normal cleanser after a procedure?</strong></summary><p>Evaluate your normal cleanser honestly. If it foams, contains fragrance, or leaves your skin feeling tight, it is too harsh for post-procedure use. Choose a gentler alternative for recovery. You can return to your normal cleanser once healing completes.</p></details>
+<details><summary><strong>When can I start adding my other products back?</strong></summary><p>Begin reintroducing products after day fourteen, one at a time, with several days between each addition. Start with gentler products and progress to actives like retinol last. If any product causes irritation, discontinue it and wait before trying again. Our <a href="/blog/when-can-i-use-retinol-after-microneedling-laser">retinol reintroduction guide</a><a href="/blog/when-can-i-use-retinol-after-microneedling-laser">covers exact timelines by pr</a> ocedure type.</p></details>
+<details><summary><strong>What if my practitioner gave me different products?</strong></summary><p>Always follow your practitioner&#x27;s specific instructions. They know your treatment details and may have particular reasons for their recommendations. If you want to incorporate a multi-technology recovery serum into your routine, discuss this with your practitioner to ensure it aligns with their aftercare protocol.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

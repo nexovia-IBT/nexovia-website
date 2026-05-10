@@ -34,7 +34,7 @@ format: "html"
 
 <p>Peptides support barrier repair through several mechanisms. They signal keratinocytes to produce the proteins and lipids essential for barrier integrity. They activate fibroblasts to produce collagen and extracellular matrix components that provide structural support. They promote cellular renewal so damaged cells are replaced with healthy ones. They modulate inflammation that can impair healing if prolonged.</p>
 
-<p>After aesthetic procedures that intentionally compromise the barrier, such as <a href="/microneedling-aftercare">microneedling</a>, <a href="/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/chemical-peel-aftercare">chemical peels</a>, peptide signaling becomes particularly valuable. Your skin is already in repair mode, and peptides amplify and direct that repair response for more efficient recovery.</p>
+<p>After aesthetic procedures that intentionally compromise the barrier, such as <a href="/microneedling-aftercare">microneedling</a>, <a href="/blog/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/blog/chemical-peel-aftercare">chemical peels</a>, peptide signaling becomes particularly valuable. Your skin is already in repair mode, and peptides amplify and direct that repair response for more efficient recovery.</p>
 
 <h2><strong>The Science Behind Key Peptides for Barrier Repair</strong></h2>
 
@@ -86,11 +86,11 @@ format: "html"
 
 <p>Peptides are powerful signaling molecules, but signals alone are not enough. Your cells also need energy to execute those signals, communication support to coordinate their response, and repair substrates to build with.</p>
 
-<p><a href="/plant-exosomes-skincare">Plant exosomes</a> complement peptides by supporting intercellular communication through different pathways and modulating inflammation. While peptides signal specific cellular activities, exosomes help coordinate the overall cellular response.</p>
+<p><a href="/blog/plant-exosomes-skincare">Plant exosomes</a> complement peptides by supporting intercellular communication through different pathways and modulating inflammation. While peptides signal specific cellular activities, exosomes help coordinate the overall cellular response.</p>
 
-<p><a href="/pdrn-in-skincare">PDRN</a> activates tissue regeneration through adenosine receptor pathways, providing additional repair signals that work synergistically with peptide messaging.</p>
+<p><a href="/blog/pdrn-in-skincare">PDRN</a> activates tissue regeneration through adenosine receptor pathways, providing additional repair signals that work synergistically with peptide messaging.</p>
 
-<p><a href="/nad-plus-for-skin">NAD+</a> supplies the cellular energy needed to execute the activities peptides signal. Peptides tell cells what to do. NAD+ ensures cells have the fuel to follow those instructions. Without adequate energy, even the best signaling goes unanswered.</p>
+<p><a href="/blog/nad-plus-for-skin">NAD+</a> supplies the cellular energy needed to execute the activities peptides signal. Peptides tell cells what to do. NAD+ ensures cells have the fuel to follow those instructions. Without adequate energy, even the best signaling goes unanswered.</p>
 
 <p>This is the core principle behind Nexovia&#x27;s ABA.4 Bio-Intelligent Architecture. The peptide matrix (sh-Oligopeptide-1, sh-Polypeptide-1, Palmitoyl Pentapeptide-4, Acetyl Hexapeptide-8) provides the repair blueprints. Plant exosomes at 4 billion particles per milliliter coordinate the cellular response. PDRN at 1% activates regeneration pathways. NAD+ at 1% fuels the entire operation. Four technologies, each essential, each amplifying the others.</p>
 
@@ -98,24 +98,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How long does it take for peptides to repair the skin barrier?</h3>
-
-<p>Peptide benefits for barrier repair begin accumulating immediately as they signal cellular activities supporting repair. Noticeable improvements in barrier function typically become apparent within one to two weeks of consistent use. For post-procedure recovery, peptides support faster healing throughout the recovery period. For general barrier strengthening, four to eight weeks of consistent use produces meaningful improvements in barrier resilience.</p>
-
-<h3>Can peptides irritate sensitive or compromised skin?</h3>
-
-<p>Peptides are generally very well tolerated, even by sensitive and compromised skin. Because they work by signaling natural cellular processes rather than introducing harsh actives, they do not typically cause irritation. In fact, many peptides have soothing effects that benefit reactive skin. This makes peptides ideal for post-procedure use when skin is vulnerable.</p>
-
-<h3>Are peptides safe to use with other skincare ingredients?</h3>
-
-<p>Peptides are compatible with most skincare ingredients. They work well alongside hydrating ingredients like hyaluronic acid, soothing ingredients like Centella Asiatica, and other actives like niacinamide and vitamin C. The main consideration is avoiding very low pH products applied simultaneously, as extreme acidity can potentially degrade peptide bonds. Applying peptide products and allowing absorption before layering other products ensures optimal efficacy.</p>
-
-<h3>Do peptides replace retinol for anti-aging?</h3>
-
-<p>Peptides and retinol work through different mechanisms and can complement each other in a comprehensive anti-aging routine. Peptides signal cellular activities like collagen production and matrix repair. Retinol influences gene expression and accelerates cellular turnover. During post-procedure recovery or when skin is compromised, peptides offer anti-aging benefits without the irritation potential of retinol, making them ideal for sensitive periods.</p>
-
-<h3>Which peptides are best for post-procedure recovery specifically?</h3>
-
-<p>For post-procedure recovery, EGF-mimetic peptides like sh-Oligopeptide-1 are particularly valuable because they directly support wound healing and cellular renewal. FGF-mimetic peptides like sh-Polypeptide-1 support fibroblast activity essential for tissue repair. Matrikines like Palmitoyl Pentapeptide-4 promote the matrix production needed for structural recovery. A combination of these peptide types provides comprehensive support for healing skin.</p>
-
+<details><summary><strong>How long does it take for peptides to repair the skin barrier?</strong></summary><p>Peptide benefits for barrier repair begin accumulating immediately as they signal cellular activities supporting repair. Noticeable improvements in barrier function typically become apparent within one to two weeks of consistent use. For post-procedure recovery, peptides support faster healing throughout the recovery period. For general barrier strengthening, four to eight weeks of consistent use produces meaningful improvements in barrier resilience.</p></details>
+<details><summary><strong>Can peptides irritate sensitive or compromised skin?</strong></summary><p>Peptides are generally very well tolerated, even by sensitive and compromised skin. Because they work by signaling natural cellular processes rather than introducing harsh actives, they do not typically cause irritation. In fact, many peptides have soothing effects that benefit reactive skin. This makes peptides ideal for post-procedure use when skin is vulnerable.</p></details>
+<details><summary><strong>Are peptides safe to use with other skincare ingredients?</strong></summary><p>Peptides are compatible with most skincare ingredients. They work well alongside hydrating ingredients like hyaluronic acid, soothing ingredients like Centella Asiatica, and other actives like niacinamide and vitamin C. The main consideration is avoiding very low pH products applied simultaneously, as extreme acidity can potentially degrade peptide bonds. Applying peptide products and allowing absorption before layering other products ensures optimal efficacy.</p></details>
+<details><summary><strong>Do peptides replace retinol for anti-aging?</strong></summary><p>Peptides and retinol work through different mechanisms and can complement each other in a comprehensive anti-aging routine. Peptides signal cellular activities like collagen production and matrix repair. Retinol influences gene expression and accelerates cellular turnover. During post-procedure recovery or when skin is compromised, peptides offer anti-aging benefits without the irritation potential of retinol, making them ideal for sensitive periods.</p></details>
+<details><summary><strong>Which peptides are best for post-procedure recovery specifically?</strong></summary><p>For post-procedure recovery, EGF-mimetic peptides like sh-Oligopeptide-1 are particularly valuable because they directly support wound healing and cellular renewal. FGF-mimetic peptides like sh-Polypeptide-1 support fibroblast activity essential for tissue repair. Matrikines like Palmitoyl Pentapeptide-4 promote the matrix production needed for structural recovery. A combination of these peptide types provides comprehensive support for healing skin.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

@@ -60,7 +60,7 @@ format: "html"
 
 <p>Heavy liquid foundations often contain irritating ingredients and require aggressive cleansing to remove. Waterproof or long-wear formulas need extra effort to cleanse off, stressing your healing barrier. Products containing active ingredients like retinol, AHAs, or vitamin C are too harsh. Glitter and shimmer particles can settle into healing micro-channels.</p>
 
-<p>For a full breakdown of which skincare ingredients are safe and which to avoid during recovery, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
+<p>For a full breakdown of which skincare ingredients are safe and which to avoid during recovery, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
 
 <h2><strong>How to Apply and Remove Makeup Safely During Recovery</strong></h2>
 
@@ -78,26 +78,14 @@ format: "html"
 
 <p>Strict sun protection with SPF 50 is also essential. UV exposure on compromised skin can worsen redness and trigger hyperpigmentation that takes far longer to resolve than the redness itself.</p>
 
-<p>For a deeper look at the redness timeline and what influences healing speed, see our guide on <a href="/how-long-does-redness-last-after-microneedling">how long redness lasts after microneedling</a>.</p>
+<p>For a deeper look at the redness timeline and what influences healing speed, see our guide on <a href="/blog/how-long-does-redness-last-after-microneedling">how long redness lasts after microneedling</a>.</p>
 
 <p><strong>Not sure what your skin needs during recovery?</strong></p>
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Can I wear tinted sunscreen instead of makeup after microneedling?</h3>
-
-<p>Tinted mineral sunscreens can be a great alternative to traditional makeup after microneedling. Look for formulas using zinc oxide or titanium dioxide that are free from fragrances and irritating additives. These products provide essential sun protection while offering light coverage. You can typically use tinted mineral sunscreen after the first 24 hours.</p>
-
-<h3>What if I have an important event the day after microneedling?</h3>
-
-<p>If you have an unmovable commitment within 24 to 48 hours of treatment, discuss this with your practitioner before your appointment. They may recommend scheduling differently or adjusting treatment intensity to minimize visible downtime. If you must attend an event during early recovery, stick exclusively to mineral makeup applied with a very light hand.</p>
-
-<h3>Will wearing makeup too soon ruin my microneedling results?</h3>
-
-<p>Wearing appropriate mineral makeup after the first 24 hours is unlikely to significantly impact your long-term results. However, applying makeup too early, using irritating products, or failing to remove makeup thoroughly can cause complications that may affect your outcome. Following the recommended timeline minimizes these risks.</p>
-
-<h3>How can I reduce redness faster so I need less makeup?</h3>
-
-<p>Supporting your skin with proper aftercare is the most effective way to reduce visible redness faster. Products formulated specifically for post-procedure skin, like Nexovia Skin Serum with its ABA.4 architecture combining plant exosomes, PDRN, NAD+, and peptides, address inflammation, barrier damage, and tissue repair simultaneously rather than treating just one symptom. Pair that with avoiding heat, sun exposure, and harsh products, and you will see redness resolve faster.</p>
-
+<details><summary><strong>Can I wear tinted sunscreen instead of makeup after microneedling?</strong></summary><p>Tinted mineral sunscreens can be a great alternative to traditional makeup after microneedling. Look for formulas using zinc oxide or titanium dioxide that are free from fragrances and irritating additives. These products provide essential sun protection while offering light coverage. You can typically use tinted mineral sunscreen after the first 24 hours.</p></details>
+<details><summary><strong>What if I have an important event the day after microneedling?</strong></summary><p>If you have an unmovable commitment within 24 to 48 hours of treatment, discuss this with your practitioner before your appointment. They may recommend scheduling differently or adjusting treatment intensity to minimize visible downtime. If you must attend an event during early recovery, stick exclusively to mineral makeup applied with a very light hand.</p></details>
+<details><summary><strong>Will wearing makeup too soon ruin my microneedling results?</strong></summary><p>Wearing appropriate mineral makeup after the first 24 hours is unlikely to significantly impact your long-term results. However, applying makeup too early, using irritating products, or failing to remove makeup thoroughly can cause complications that may affect your outcome. Following the recommended timeline minimizes these risks.</p></details>
+<details><summary><strong>How can I reduce redness faster so I need less makeup?</strong></summary><p>Supporting your skin with proper aftercare is the most effective way to reduce visible redness faster. Products formulated specifically for post-procedure skin, like Nexovia Skin Serum with its ABA.4 architecture combining plant exosomes, PDRN, NAD+, and peptides, address inflammation, barrier damage, and tissue repair simultaneously rather than treating just one symptom. Pair that with avoiding heat, sun exposure, and harsh products, and you will see redness resolve faster.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

@@ -120,32 +120,11 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Can I use my regular moisturizer after microneedling?</h3>
-
-<p>It depends on the ingredients. If your regular moisturizer is fragrance-free and contains no active ingredients like retinol, AHAs, or BHAs, it may be appropriate during recovery. However, many daily moisturizers contain ingredients that can irritate compromised skin, even ones you&#x27;ve used for years without issue. When in doubt, switch to a simple, bland moisturizer with minimal ingredients during the first two weeks.</p>
-
-<h3>How soon after microneedling can I apply serum?</h3>
-
-<p>Nexovia Skin Serum can be applied immediately after your microneedling treatment. Your practitioner can apply it directly at the clinic following a soothing mask while you are still in the chair. Once home, continue with 1ml in the morning and 1ml at night for the first seven days. During days eight through fourteen, reduce to 0.5ml morning and 0.5ml night. After day fourteen, apply once daily until the 30ml bottle is finished to extend your results and support ongoing skin health.</p>
-
-<h3>What if my skin feels extremely tight and dry after microneedling?</h3>
-
-<p>Tightness and dryness are normal responses to the temporary barrier compromise caused by microneedling. Nexovia contains the ABA-4 technology and hyaluronic acid to help moisturize the skin post-microneedling, counteracting the increased transepidermal water loss that occurs during recovery.</p>
-
-<h3>When can I wear makeup after microneedling?</h3>
-
-<p>Most practitioners recommend waiting at least 24 hours before applying makeup after microneedling. This allows the micro-channels to begin closing, reducing the risk of introducing bacteria or pigments into the skin. When you do resume makeup, choose mineral-based, non-comedogenic formulas.</p>
-
-<h3>Why do multi-ingredient formulas work better than single-ingredient products for post-procedure care?</h3>
-
-<p>Post-microneedling skin faces multiple simultaneous challenges including inflammation, barrier damage, increased water loss, and the need for tissue regeneration. A single ingredient can only address one or two of these concerns effectively. Multi-technology formulations that combine complementary ingredients like plant exosomes, PDRN, NAD+, and peptides can address all of these needs together, providing more comprehensive support during the critical recovery window.</p>
-
-<h3>Can I use vitamin C serum after microneedling?</h3>
-
-<p>Not immediately. Active vitamin C (L-ascorbic acid) formulations are too acidic for freshly treated skin and can cause stinging and irritation. Wait at least 5 to 7 days before reintroducing vitamin C, starting with a lower concentration than you normally use. Once your barrier has recovered, vitamin C is an excellent ingredient for maintaining and enhancing your microneedling results.</p>
-
-<h3>When can I use retinol again after microneedling?</h3>
-
-<p>Wait at least 5 to 7 days, and many practitioners recommend a full 2 weeks. When you do reintroduce retinol, start at a lower concentration or frequency than your pre-treatment routine and monitor for any signs of irritation. If you experience stinging or increased redness, wait a few more days.</p>
-
+<details><summary><strong>Can I use my regular moisturizer after microneedling?</strong></summary><p>It depends on the ingredients. If your regular moisturizer is fragrance-free and contains no active ingredients like retinol, AHAs, or BHAs, it may be appropriate during recovery. However, many daily moisturizers contain ingredients that can irritate compromised skin, even ones you&#x27;ve used for years without issue. When in doubt, switch to a simple, bland moisturizer with minimal ingredients during the first two weeks.</p></details>
+<details><summary><strong>How soon after microneedling can I apply serum?</strong></summary><p>Nexovia Skin Serum can be applied immediately after your microneedling treatment. Your practitioner can apply it directly at the clinic following a soothing mask while you are still in the chair. Once home, continue with 1ml in the morning and 1ml at night for the first seven days. During days eight through fourteen, reduce to 0.5ml morning and 0.5ml night. After day fourteen, apply once daily until the 30ml bottle is finished to extend your results and support ongoing skin health.</p></details>
+<details><summary><strong>What if my skin feels extremely tight and dry after microneedling?</strong></summary><p>Tightness and dryness are normal responses to the temporary barrier compromise caused by microneedling. Nexovia contains the ABA-4 technology and hyaluronic acid to help moisturize the skin post-microneedling, counteracting the increased transepidermal water loss that occurs during recovery.</p></details>
+<details><summary><strong>When can I wear makeup after microneedling?</strong></summary><p>Most practitioners recommend waiting at least 24 hours before applying makeup after microneedling. This allows the micro-channels to begin closing, reducing the risk of introducing bacteria or pigments into the skin. When you do resume makeup, choose mineral-based, non-comedogenic formulas.</p></details>
+<details><summary><strong>Why do multi-ingredient formulas work better than single-ingredient products for post-procedure care?</strong></summary><p>Post-microneedling skin faces multiple simultaneous challenges including inflammation, barrier damage, increased water loss, and the need for tissue regeneration. A single ingredient can only address one or two of these concerns effectively. Multi-technology formulations that combine complementary ingredients like plant exosomes, PDRN, NAD+, and peptides can address all of these needs together, providing more comprehensive support during the critical recovery window.</p></details>
+<details><summary><strong>Can I use vitamin C serum after microneedling?</strong></summary><p>Not immediately. Active vitamin C (L-ascorbic acid) formulations are too acidic for freshly treated skin and can cause stinging and irritation. Wait at least 5 to 7 days before reintroducing vitamin C, starting with a lower concentration than you normally use. Once your barrier has recovered, vitamin C is an excellent ingredient for maintaining and enhancing your microneedling results.</p></details>
+<details><summary><strong>When can I use retinol again after microneedling?</strong></summary><p>Wait at least 5 to 7 days, and many practitioners recommend a full 2 weeks. When you do reintroduce retinol, start at a lower concentration or frequency than your pre-treatment routine and monitor for any signs of irritation. If you experience stinging or increased redness, wait a few more days.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

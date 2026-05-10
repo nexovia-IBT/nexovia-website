@@ -54,7 +54,7 @@ format: "html"
 
 <p>PDRN activates adenosine A2A receptors, triggering anti-inflammatory signaling and tissue regeneration pathways. At 1% concentration (10,000 PPM), it accelerates healing, supports collagen synthesis, and reduces post-inflammatory redness. Korean aesthetic medicine adopted PDRN years before it reached Western skincare, and Korean formulations typically deliver it at clinically meaningful concentrations.</p>
 
-<p>Learn more in our <a href="/pdrn-in-skincare">complete guide to PDRN in skincare</a>.</p>
+<p>Learn more in our <a href="/blog/pdrn-in-skincare">complete guide to PDRN in skincare</a>.</p>
 
 <h3><strong>Plant Exosomes</strong></h3>
 
@@ -62,19 +62,19 @@ format: "html"
 
 <p>This concentration matters. Dilute exosome products cannot provide enough cellular interaction to meaningfully influence recovery. Korean formulation science solved the concentration and stability challenge.</p>
 
-<p>Read our <a href="/plant-exosomes-skincare">deep dive into plant exosomes in skincare</a>.</p>
+<p>Read our <a href="/blog/plant-exosomes-skincare">deep dive into plant exosomes in skincare</a>.</p>
 
 <h3><strong>NAD+</strong></h3>
 
 <p>NAD+ is the coenzyme that fuels ATP production, DNA repair (via PARPs), and sirtuin activation in every skin cell. After aesthetic procedures, cellular energy demand spikes. Korean formulations include NAD+ at 1% to meet that demand, supporting faster barrier reconstruction and reducing oxidative stress during the critical recovery window.</p>
 
-<p>Explore <a href="/nad-plus-for-skin">how NAD+ works in skin recovery and anti-aging</a>.</p>
+<p>Explore <a href="/blog/nad-plus-for-skin">how NAD+ works in skin recovery and anti-aging</a>.</p>
 
 <h3><strong>Advanced Peptide Matrices</strong></h3>
 
 <p>Korean formulations often combine multiple peptide classes in a single product: EGF-mimetics to promote cellular renewal, matrikines to stimulate extracellular matrix production, and signaling peptides to coordinate the overall repair response. This matrix approach reflects the Korean philosophy of multi-target formulation rather than relying on a single active.</p>
 
-<p>See our <a href="/peptides-for-skin-barrier-repair">guide to peptides for skin barrier repair</a>.</p>
+<p>See our <a href="/blog/peptides-for-skin-barrier-repair">guide to peptides for skin barrier repair</a>.</p>
 
 <figure><img src="/images/blog/k-beauty-aftercare-2.webp" alt="K-Beauty Aftercare: Why Korean Skincare Leads in Post-Procedure Recovery" /></figure>
 
@@ -96,7 +96,7 @@ format: "html"
 <li><strong>Transparent concentrations.</strong> Products that list actual ingredient percentages (1% PDRN, 1% NAD+, billions of particles per milliliter for exosomes) demonstrate formulation confidence. Vague &quot;contains&quot; claims without concentrations are a red flag.</li>
 <li><strong>Multi-mechanism design.</strong> Recovery requires addressing inflammation, energy, signaling, and matrix rebuilding simultaneously. A product built around a single ingredient, no matter how advanced, cannot cover all of these needs.</li>
 <li><strong>Post-procedure intent.</strong> The product should be explicitly designed for compromised, post-procedure skin. General-use moisturizers and serums, even high-quality Korean ones, are not formulated for the specific demands of healing after microneedling, lasers, or chemical peels.</li>
-<li><strong>Fragrance-free, irritant-free.</strong> Post-procedure formulations should contain no fragrance, no essential oils, and no active exfoliants. The barrier is already compromised. Additional irritants slow healing and increase the risk of <a href="/preventing-hyperpigmentation-after-aesthetic-procedures">post-inflammatory hyperpigmentation</a>.</li>
+<li><strong>Fragrance-free, irritant-free.</strong> Post-procedure formulations should contain no fragrance, no essential oils, and no active exfoliants. The barrier is already compromised. Additional irritants slow healing and increase the risk of <a href="/blog/preventing-hyperpigmentation-after-aesthetic-procedures">post-inflammatory hyperpigmentation</a>.</li>
 <li><strong>Clear usage protocol.</strong> Serious aftercare products provide dosing guidance aligned with recovery phases, not just &quot;apply as needed.&quot;</li>
 </ul>
 
@@ -104,24 +104,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Are all Korean skincare products good for post-procedure recovery?</h3>
-
-<p>No. K-Beauty is a broad category. Many Korean products contain active ingredients like AHAs, retinol, or fragrance that would irritate healing skin. Post-procedure recovery requires formulations specifically designed for compromised barriers, with ingredients chosen for repair rather than correction. Look for products that are explicitly formulated for aftercare, with transparent concentrations and multi-technology architecture.</p>
-
-<h3>What makes Korean ingredient innovation different from Western skincare?</h3>
-
-<p>Korea&#x27;s high rate of aesthetic procedures creates direct clinical demand for recovery-focused ingredients. Scientists and formulators work alongside practitioners, developing and refining products based on real patient outcomes. This practice-based development cycle is faster and more targeted than the trend-driven approach common in Western markets. Ingredients like PDRN, plant exosomes, and NAD+ were scaled for skincare in Korea years before they appeared elsewhere.</p>
-
-<h3>Is K-Beauty aftercare considered medical-grade?</h3>
-
-<p>The distinction between &quot;cosmetic&quot; and &quot;medical-grade&quot; varies by regulatory framework. In Korea, some retail formulations achieve ingredient concentrations and clinical performance that rival what other markets classify as medical-grade. The more useful question is whether a product delivers clinically meaningful concentrations of proven recovery ingredients and is designed for post-procedure skin. Nexovia Skin Serum, with 1% PDRN, 1% NAD+, 4 billion exosome particles per milliliter, and a full peptide matrix, meets that standard.</p>
-
-<h3>What if my practitioner recommends a different product?</h3>
-
-<p>Always follow your practitioner&#x27;s instructions. If you are interested in incorporating a K-Beauty aftercare formulation like Nexovia into your recovery routine, discuss it with your provider. Many practitioners are familiar with the ingredients in advanced Korean formulations and can advise on integration with their existing protocols.</p>
-
-<h3>Why is &quot;Made in South Korea&quot; relevant for aftercare products?</h3>
-
-<p>Korean cosmetic manufacturing infrastructure supports complex, multi-ingredient formulations with precise concentration control and rigorous stability testing. For a product that combines plant exosomes, PDRN, NAD+, and peptides in a single serum, the manufacturing environment directly affects whether those ingredients maintain their efficacy through production, storage, and use. Korea&#x27;s manufacturing excellence is not a marketing claim. It is a practical requirement for advanced post-procedure formulations.</p>
-
+<details><summary><strong>Are all Korean skincare products good for post-procedure recovery?</strong></summary><p>No. K-Beauty is a broad category. Many Korean products contain active ingredients like AHAs, retinol, or fragrance that would irritate healing skin. Post-procedure recovery requires formulations specifically designed for compromised barriers, with ingredients chosen for repair rather than correction. Look for products that are explicitly formulated for aftercare, with transparent concentrations and multi-technology architecture.</p></details>
+<details><summary><strong>What makes Korean ingredient innovation different from Western skincare?</strong></summary><p>Korea&#x27;s high rate of aesthetic procedures creates direct clinical demand for recovery-focused ingredients. Scientists and formulators work alongside practitioners, developing and refining products based on real patient outcomes. This practice-based development cycle is faster and more targeted than the trend-driven approach common in Western markets. Ingredients like PDRN, plant exosomes, and NAD+ were scaled for skincare in Korea years before they appeared elsewhere.</p></details>
+<details><summary><strong>Is K-Beauty aftercare considered medical-grade?</strong></summary><p>The distinction between &quot;cosmetic&quot; and &quot;medical-grade&quot; varies by regulatory framework. In Korea, some retail formulations achieve ingredient concentrations and clinical performance that rival what other markets classify as medical-grade. The more useful question is whether a product delivers clinically meaningful concentrations of proven recovery ingredients and is designed for post-procedure skin. Nexovia Skin Serum, with 1% PDRN, 1% NAD+, 4 billion exosome particles per milliliter, and a full peptide matrix, meets that standard.</p></details>
+<details><summary><strong>What if my practitioner recommends a different product?</strong></summary><p>Always follow your practitioner&#x27;s instructions. If you are interested in incorporating a K-Beauty aftercare formulation like Nexovia into your recovery routine, discuss it with your provider. Many practitioners are familiar with the ingredients in advanced Korean formulations and can advise on integration with their existing protocols.</p></details>
+<details><summary><strong>Why is &quot;Made in South Korea&quot; relevant for aftercare products?</strong></summary><p>Korean cosmetic manufacturing infrastructure supports complex, multi-ingredient formulations with precise concentration control and rigorous stability testing. For a product that combines plant exosomes, PDRN, NAD+, and peptides in a single serum, the manufacturing environment directly affects whether those ingredients maintain their efficacy through production, storage, and use. Korea&#x27;s manufacturing excellence is not a marketing claim. It is a practical requirement for advanced post-procedure formulations.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

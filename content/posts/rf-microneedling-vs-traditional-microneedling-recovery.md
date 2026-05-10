@@ -78,7 +78,7 @@ format: "html"
 
 <p>RF microneedling typically produces more intense and longer-lasting redness because the thermal energy creates additional inflammation beyond the mechanical micro-injuries. The heat causes controlled damage to dermal structures, which requires more robust healing. Expect redness to persist one to three days longer with RF microneedling compared to traditional treatment.</p>
 
-<p>For a detailed breakdown of what affects redness duration, see our guide on <a href="/how-long-does-redness-last-after-microneedling">how long redness lasts after microneedling</a>.</p>
+<p>For a detailed breakdown of what affects redness duration, see our guide on <a href="/blog/how-long-does-redness-last-after-microneedling">how long redness lasts after microneedling</a>.</p>
 
 <h3><strong>Swelling Patterns</strong></h3>
 
@@ -102,7 +102,7 @@ format: "html"
 
 <p>For both treatments, your aftercare during the first two weeks should focus on gentle cleansing with a non-foaming, fragrance-free cleanser. Apply a post-procedure serum containing calming and repairing ingredients like plant exosomes, PDRN, NAD+, peptides, hyaluronic acid, and centella asiatica. Follow with a simple moisturizer and broad-spectrum SPF 50 every morning. Avoid all active ingredients including retinoids, AHAs, BHAs, vitamin C, and benzoyl peroxide.</p>
 
-<p>For the full day-by-day routine, see our <a href="/microneedling-aftercare">complete microneedling aftercare guide</a>. For ingredient guidance, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
+<p>For the full day-by-day routine, see our <a href="/microneedling-aftercare">complete microneedling aftercare guide</a>. For ingredient guidance, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
 
 <h2><strong>Additional Considerations for RF Microneedling Aftercare</strong></h2>
 
@@ -116,28 +116,10 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Is RF microneedling recovery significantly harder than traditional microneedling?</h3>
-
-<p>RF microneedling recovery is slightly more intensive but not dramatically different. You can expect one to three additional days of visible redness and potentially more swelling during the first 48 hours. The fundamental experience is similar, and with proper aftercare, most patients navigate recovery comfortably. The added thermal component produces more significant collagen stimulation, which many patients find worth the slightly extended downtime.</p>
-
-<h3>Can I use the same aftercare products for both RF and traditional microneedling?</h3>
-
-<p>Yes, the same aftercare principles and products apply to both treatments. Your skin faces similar challenges with both procedures, including barrier compromise, inflammation, and the need for tissue repair. Products formulated with multiple complementary technologies like plant exosomes, PDRN, NAD+, and peptides, such as Nexovia Skin Serum with its ABA.4 architecture, support recovery effectively for either treatment type.</p>
-
-<h3>Which treatment has less downtime if I have an important event coming up?</h3>
-
-<p>Traditional microneedling typically offers shorter visible downtime, with most patients looking presentable by day four or five. RF microneedling may require six to seven days before visible recovery is complete. If you have a specific event, schedule traditional microneedling at least five days before and RF microneedling at least seven to ten days before to allow adequate healing time.</p>
-
-<h3>Is Morpheus8 recovery the same as other RF microneedling devices?</h3>
-
-<p>Morpheus8 is one of the most popular RF microneedling devices, alongside Potenza, Genius, and Vivace. Recovery is generally similar across RF microneedling devices, though the specific settings your practitioner uses (needle depth, RF energy level, number of passes) have a greater impact on recovery than the device brand itself. The aftercare principles outlined in this guide apply to all RF microneedling devices.</p>
-
-<h3>Does RF microneedling require longer sun avoidance than traditional microneedling?</h3>
-
-<p>Both treatments require diligent sun protection, but RF microneedling patients should be especially careful. The thermal component makes skin more vulnerable to UV-induced hyperpigmentation. Apply SPF 50 daily and avoid direct sun exposure for at least two weeks after RF treatment. Traditional microneedling also requires sun protection, but the risk of heat-related pigmentation issues is somewhat lower.</p>
-
-<h3>Will my aftercare routine differ based on which treatment I choose?</h3>
-
-<p>The core aftercare routine remains the same for both treatments. The main differences involve potentially extending the avoidance of retinoids, AHAs, BHAs, and other active ingredients by a few days after RF microneedling and being extra vigilant about sun protection. Some patients with more pronounced swelling after RF treatment benefit from sleeping elevated for the first two nights.</p>
-
+<details><summary><strong>Is RF microneedling recovery significantly harder than traditional microneedling?</strong></summary><p>RF microneedling recovery is slightly more intensive but not dramatically different. You can expect one to three additional days of visible redness and potentially more swelling during the first 48 hours. The fundamental experience is similar, and with proper aftercare, most patients navigate recovery comfortably. The added thermal component produces more significant collagen stimulation, which many patients find worth the slightly extended downtime.</p></details>
+<details><summary><strong>Can I use the same aftercare products for both RF and traditional microneedling?</strong></summary><p>Yes, the same aftercare principles and products apply to both treatments. Your skin faces similar challenges with both procedures, including barrier compromise, inflammation, and the need for tissue repair. Products formulated with multiple complementary technologies like plant exosomes, PDRN, NAD+, and peptides, such as Nexovia Skin Serum with its ABA.4 architecture, support recovery effectively for either treatment type.</p></details>
+<details><summary><strong>Which treatment has less downtime if I have an important event coming up?</strong></summary><p>Traditional microneedling typically offers shorter visible downtime, with most patients looking presentable by day four or five. RF microneedling may require six to seven days before visible recovery is complete. If you have a specific event, schedule traditional microneedling at least five days before and RF microneedling at least seven to ten days before to allow adequate healing time.</p></details>
+<details><summary><strong>Is Morpheus8 recovery the same as other RF microneedling devices?</strong></summary><p>Morpheus8 is one of the most popular RF microneedling devices, alongside Potenza, Genius, and Vivace. Recovery is generally similar across RF microneedling devices, though the specific settings your practitioner uses (needle depth, RF energy level, number of passes) have a greater impact on recovery than the device brand itself. The aftercare principles outlined in this guide apply to all RF microneedling devices.</p></details>
+<details><summary><strong>Does RF microneedling require longer sun avoidance than traditional microneedling?</strong></summary><p>Both treatments require diligent sun protection, but RF microneedling patients should be especially careful. The thermal component makes skin more vulnerable to UV-induced hyperpigmentation. Apply SPF 50 daily and avoid direct sun exposure for at least two weeks after RF treatment. Traditional microneedling also requires sun protection, but the risk of heat-related pigmentation issues is somewhat lower.</p></details>
+<details><summary><strong>Will my aftercare routine differ based on which treatment I choose?</strong></summary><p>The core aftercare routine remains the same for both treatments. The main differences involve potentially extending the avoidance of retinoids, AHAs, BHAs, and other active ingredients by a few days after RF microneedling and being extra vigilant about sun protection. Some patients with more pronounced swelling after RF treatment benefit from sleeping elevated for the first two nights.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

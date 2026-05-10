@@ -50,7 +50,7 @@ format: "html"
 
 <h3><strong>Inflammation Modulation</strong></h3>
 
-<p>Inflammation is a necessary part of healing, but prolonged or excessive inflammation causes problems ranging from persistent redness to increased risk of scarring and <a href="/preventing-hyperpigmentation-after-aesthetic-procedures">hyperpigmentation</a>. Plant exosomes help modulate inflammatory responses, supporting your skin in moving through the inflammatory phase efficiently rather than getting stuck in a prolonged reactive state.</p>
+<p>Inflammation is a necessary part of healing, but prolonged or excessive inflammation causes problems ranging from persistent redness to increased risk of scarring and <a href="/blog/preventing-hyperpigmentation-after-aesthetic-procedures">hyperpigmentation</a>. Plant exosomes help modulate inflammatory responses, supporting your skin in moving through the inflammatory phase efficiently rather than getting stuck in a prolonged reactive state.</p>
 
 <p>The phyto-miRNAs and other bioactive compounds within plant exosomes interact with inflammatory pathways in skin cells, helping to regulate the intensity and duration of the inflammatory response. This modulation supports healing without suppressing the inflammation entirely, which would impair recovery.</p>
 
@@ -64,7 +64,7 @@ format: "html"
 
 <p>Your skin barrier is a complex structure that requires continuous maintenance and repair. Plant exosomes support barrier homeostasis by delivering lipids and signaling molecules that help maintain barrier integrity and support rapid repair when the barrier is compromised.</p>
 
-<p>After procedures that disrupt the barrier, such as <a href="/microneedling-aftercare">microneedling</a>, <a href="/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/chemical-peel-aftercare">chemical peels</a>, this support for barrier homeostasis accelerates the restoration of healthy barrier function.</p>
+<p>After procedures that disrupt the barrier, such as <a href="/microneedling-aftercare">microneedling</a>, <a href="/blog/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/blog/chemical-peel-aftercare">chemical peels</a>, this support for barrier homeostasis accelerates the restoration of healthy barrier function.</p>
 
 <h2><strong>Plant Exosomes vs. Human-Derived Exosomes</strong></h2>
 
@@ -102,7 +102,7 @@ format: "html"
 
 <p>After aesthetic procedures, your skin experiences controlled injury that triggers inflammation, compromises the barrier, generates oxidative stress, and requires coordinated cellular response for optimal repair. Plant exosomes address each of these challenges simultaneously.</p>
 
-<p>Their ability to modulate inflammation helps <a href="/how-to-reduce-redness-after-laser-treatment">reduce prolonged redness</a> and supports the transition from inflammation to active repair. Their oxidative stress reduction protects healing cells from additional damage. Their support for barrier homeostasis accelerates the restoration of protective function. Their enhancement of intercellular communication helps your skin cells coordinate their repair efforts efficiently.</p>
+<p>Their ability to modulate inflammation helps <a href="/blog/how-to-reduce-redness-after-laser-treatment">reduce prolonged redness</a> and supports the transition from inflammation to active repair. Their oxidative stress reduction protects healing cells from additional damage. Their support for barrier homeostasis accelerates the restoration of protective function. Their enhancement of intercellular communication helps your skin cells coordinate their repair efforts efficiently.</p>
 
 <p>This multi-faceted support explains why plant exosomes have become a cornerstone of advanced post-procedure formulations.</p>
 
@@ -120,7 +120,7 @@ format: "html"
 
 <p>While plant exosomes are powerful, they deliver optimal results as part of a comprehensive formulation that addresses multiple aspects of skin recovery.</p>
 
-<p><a href="/pdrn-in-skincare">PDRN</a> complements plant exosomes by activating tissue regeneration pathways through adenosine receptor signaling. While exosomes support cellular communication and modulate inflammation, PDRN directly promotes repair processes and collagen synthesis through a completely different mechanism.</p>
+<p><a href="/blog/pdrn-in-skincare">PDRN</a> complements plant exosomes by activating tissue regeneration pathways through adenosine receptor signaling. While exosomes support cellular communication and modulate inflammation, PDRN directly promotes repair processes and collagen synthesis through a completely different mechanism.</p>
 
 <p>NAD+ addresses cellular energy needs. Healing requires significant energy, and NAD+ fuels the cellular work that exosome signaling initiates.</p>
 
@@ -132,24 +132,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Are plant exosomes safe for sensitive skin?</h3>
-
-<p>Plant exosomes have an excellent safety profile for sensitive skin. Because they work by supporting natural cellular processes rather than introducing harsh actives, they are well-tolerated even by reactive skin types. Their anti-inflammatory properties actually help calm sensitive skin rather than triggering irritation.</p>
-
-<h3>How are plant exosomes different from plant extracts?</h3>
-
-<p>Traditional plant extracts contain beneficial compounds but rely on passive absorption through the skin. Plant exosomes are structured nanovesicles that can be actively taken up by skin cells, delivering their cargo directly inside cells where it can influence cellular behavior. This represents a more sophisticated and effective delivery system than conventional extracts.</p>
-
-<h3>Can I use plant exosome products every day?</h3>
-
-<p>Yes, plant exosome products are appropriate for daily use. Their benefits for cellular communication, inflammation modulation, and barrier support contribute to ongoing skin health, not just recovery from specific treatments. Consistent use supports healthier, more resilient skin over time while providing cumulative anti-aging benefits.</p>
-
-<h3>Do plant exosomes replace other skincare ingredients?</h3>
-
-<p>Plant exosomes complement rather than replace other beneficial ingredients. They work through unique mechanisms involving cellular communication and signaling that differ from how ingredients like hyaluronic acid, retinoids, or antioxidants function. The most effective approach combines plant exosomes with complementary technologies for comprehensive skin support.</p>
-
-<h3>Why are Centella Asiatica and Panax Ginseng common sources for plant exosomes?</h3>
-
-<p>These botanicals have centuries of documented use for skin healing and vitality. Their cells produce exosomes containing bioactive compounds specifically relevant to skin health, including molecules that support wound healing, reduce inflammation, promote regeneration, and combat signs of aging. Exosomes from these sources deliver the benefits of these traditional botanicals in a highly bioavailable, cell-compatible form.</p>
-
+<details><summary><strong>Are plant exosomes safe for sensitive skin?</strong></summary><p>Plant exosomes have an excellent safety profile for sensitive skin. Because they work by supporting natural cellular processes rather than introducing harsh actives, they are well-tolerated even by reactive skin types. Their anti-inflammatory properties actually help calm sensitive skin rather than triggering irritation.</p></details>
+<details><summary><strong>How are plant exosomes different from plant extracts?</strong></summary><p>Traditional plant extracts contain beneficial compounds but rely on passive absorption through the skin. Plant exosomes are structured nanovesicles that can be actively taken up by skin cells, delivering their cargo directly inside cells where it can influence cellular behavior. This represents a more sophisticated and effective delivery system than conventional extracts.</p></details>
+<details><summary><strong>Can I use plant exosome products every day?</strong></summary><p>Yes, plant exosome products are appropriate for daily use. Their benefits for cellular communication, inflammation modulation, and barrier support contribute to ongoing skin health, not just recovery from specific treatments. Consistent use supports healthier, more resilient skin over time while providing cumulative anti-aging benefits.</p></details>
+<details><summary><strong>Do plant exosomes replace other skincare ingredients?</strong></summary><p>Plant exosomes complement rather than replace other beneficial ingredients. They work through unique mechanisms involving cellular communication and signaling that differ from how ingredients like hyaluronic acid, retinoids, or antioxidants function. The most effective approach combines plant exosomes with complementary technologies for comprehensive skin support.</p></details>
+<details><summary><strong>Why are Centella Asiatica and Panax Ginseng common sources for plant exosomes?</strong></summary><p>These botanicals have centuries of documented use for skin healing and vitality. Their cells produce exosomes containing bioactive compounds specifically relevant to skin health, including molecules that support wound healing, reduce inflammation, promote regeneration, and combat signs of aging. Exosomes from these sources deliver the benefits of these traditional botanicals in a highly bioavailable, cell-compatible form.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

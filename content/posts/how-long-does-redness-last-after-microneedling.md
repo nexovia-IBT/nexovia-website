@@ -68,7 +68,7 @@ format: "html"
 
 <p>What you put on your skin after microneedling significantly influences healing speed. Using appropriate ingredients that calm inflammation, support barrier repair, and provide hydration can help reduce visible redness faster. Conversely, using irritating products, touching your face excessively, or exposing treated skin to heat and sun can prolong redness and potentially cause complications.</p>
 
-<p>For a detailed breakdown of which ingredients help and which to avoid, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
+<p>For a detailed breakdown of which ingredients help and which to avoid, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>.</p>
 
 <h3><strong>Overall Health and Lifestyle</strong></h3>
 
@@ -108,24 +108,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Is it normal for redness to be worse on the second day after microneedling?</h3>
-
-<p>Yes, this is common. Some patients notice that redness appears most intense on day one or day two before beginning to fade. The inflammatory response continues working during this period, and factors like sleep position or room temperature can influence how flushed your skin appears. As long as redness begins improving by day three or four, you are likely progressing normally.</p>
-
-<h3>Can I use ice to reduce redness after microneedling?</h3>
-
-<p>While cold compresses may provide temporary relief, applying ice directly to freshly microneedled skin is not recommended as it can be too harsh on the compromised barrier. If your practitioner approves, you may use a clean, cool compress gently on the skin. Focus instead on using calming, anti-inflammatory skincare ingredients like plant exosomes and PDRN to address redness from within.</p>
-
-<h3>Will makeup cover the redness after microneedling?</h3>
-
-<p>Most practitioners recommend waiting at least 24 hours before applying any makeup. After this initial period, mineral-based, non-comedogenic makeup can help camouflage residual pinkness. Avoid heavy liquid foundations or products containing irritating ingredients during the first week of recovery.</p>
-
-<h3>Does darker skin experience less redness after microneedling?</h3>
-
-<p>Redness may be less visibly apparent on darker skin tones, but the inflammatory process occurs the same way regardless of skin color. Those with darker skin should pay particular attention to aftercare, as they may be more susceptible to post-inflammatory hyperpigmentation. Using products that support barrier repair and contain brightening ingredients like niacinamide can help manage this risk.</p>
-
-<h3>How can I speed up redness recovery after microneedling?</h3>
-
-<p>The fastest path to redness resolution is using aftercare products that address inflammation, barrier damage, and tissue repair simultaneously. Single-ingredient products like a standalone hyaluronic acid serum will hydrate but won&#x27;t actively calm inflammation or support tissue regeneration. Nexovia Skin Serum was formulated specifically for this purpose, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 architecture to support every phase of post-microneedling recovery. Pair that with strict sun protection, gentle cleansing, and avoiding the common mistakes listed above.</p>
-
+<details><summary><strong>Is it normal for redness to be worse on the second day after microneedling?</strong></summary><p>Yes, this is common. Some patients notice that redness appears most intense on day one or day two before beginning to fade. The inflammatory response continues working during this period, and factors like sleep position or room temperature can influence how flushed your skin appears. As long as redness begins improving by day three or four, you are likely progressing normally.</p></details>
+<details><summary><strong>Can I use ice to reduce redness after microneedling?</strong></summary><p>While cold compresses may provide temporary relief, applying ice directly to freshly microneedled skin is not recommended as it can be too harsh on the compromised barrier. If your practitioner approves, you may use a clean, cool compress gently on the skin. Focus instead on using calming, anti-inflammatory skincare ingredients like plant exosomes and PDRN to address redness from within.</p></details>
+<details><summary><strong>Will makeup cover the redness after microneedling?</strong></summary><p>Most practitioners recommend waiting at least 24 hours before applying any makeup. After this initial period, mineral-based, non-comedogenic makeup can help camouflage residual pinkness. Avoid heavy liquid foundations or products containing irritating ingredients during the first week of recovery.</p></details>
+<details><summary><strong>Does darker skin experience less redness after microneedling?</strong></summary><p>Redness may be less visibly apparent on darker skin tones, but the inflammatory process occurs the same way regardless of skin color. Those with darker skin should pay particular attention to aftercare, as they may be more susceptible to post-inflammatory hyperpigmentation. Using products that support barrier repair and contain brightening ingredients like niacinamide can help manage this risk.</p></details>
+<details><summary><strong>How can I speed up redness recovery after microneedling?</strong></summary><p>The fastest path to redness resolution is using aftercare products that address inflammation, barrier damage, and tissue repair simultaneously. Single-ingredient products like a standalone hyaluronic acid serum will hydrate but won&#x27;t actively calm inflammation or support tissue regeneration. Nexovia Skin Serum was formulated specifically for this purpose, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 architecture to support every phase of post-microneedling recovery. Pair that with strict sun protection, gentle cleansing, and avoiding the common mistakes listed above.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

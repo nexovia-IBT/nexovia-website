@@ -70,7 +70,7 @@ format: "html"
 
 <p>Plant exosomes help modulate inflammation and support intercellular communication, allowing your skin cells to coordinate their repair efforts efficiently. PDRN activates signaling pathways that promote tissue regeneration and wound healing. NAD+ fuels the cellular energy production required for intensive repair work. Peptides and growth factors signal fibroblasts to produce collagen and rebuild the skin matrix.</p>
 
-<p>These technologies work synergistically to address the multiple challenges of post-laser recovery, which is why multi-technology formulations outperform single-ingredient products for aftercare. For a full breakdown of which ingredients support healing and which to avoid, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>, as the ingredient principles apply across all post-procedure recovery.</p>
+<p>These technologies work synergistically to address the multiple challenges of post-laser recovery, which is why multi-technology formulations outperform single-ingredient products for aftercare. For a full breakdown of which ingredients support healing and which to avoid, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>, as the ingredient principles apply across all post-procedure recovery.</p>
 
 <h3><strong>Protect Against Infection</strong></h3>
 
@@ -102,28 +102,10 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How long does redness last after laser skin resurfacing?</h3>
-
-<p>Redness duration depends on treatment intensity. Non-ablative treatments may show redness for one to two weeks. Lighter ablative treatments typically cause redness lasting two to four weeks. More intensive ablative resurfacing can result in redness or pinkness persisting for two to three months, though this gradually fades and becomes easier to cover with makeup after the first week or two.</p>
-
-<h3>When can I wear makeup after laser resurfacing?</h3>
-
-<p>Most practitioners recommend waiting until surface healing is complete before applying makeup, typically seven to ten days for lighter treatments and up to two weeks for more intensive procedures. When you resume makeup, use mineral-based, fragrance-free formulas and clean applicators. Your practitioner will advise based on your specific treatment and healing progress. For more detail on safe makeup use during recovery, see our guide on <a href="/can-i-wear-makeup-after-microneedling">wearing makeup after microneedling</a>, as the same principles apply to laser treatments.</p>
-
-<h3>Can I exercise after laser skin resurfacing?</h3>
-
-<p>Avoid exercise that causes sweating for at least seven to ten days after treatment. Sweat can irritate healing skin and introduce bacteria. Heat and increased blood flow may also intensify swelling and redness. Light walking is generally acceptable after the first few days. Resume more vigorous exercise only when your practitioner approves.</p>
-
-<h3>What should I do if I notice signs of infection?</h3>
-
-<p>Contact your practitioner immediately if you notice increasing pain rather than decreasing, spreading redness beyond the treated area, pus or unusual discharge, fever, or any other concerning symptoms. Early intervention is important if infection develops.</p>
-
-<h3>How soon will I see results from laser resurfacing?</h3>
-
-<p>Initial improvement in skin texture is often visible once surface healing completes, typically within two to three weeks. However, the full benefits of collagen remodeling develop over three to six months as new collagen matures and organizes. Patience during this period is rewarded with progressively improving results.</p>
-
-<h3>What is the best serum to use after laser skin resurfacing?</h3>
-
-<p>The best post-laser serum addresses multiple recovery needs at once. Your healing skin needs hydration, inflammation control, barrier support, and tissue regeneration simultaneously. Nexovia Skin Serum was designed specifically for this purpose, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture to support every phase of post-procedure recovery.</p>
-
+<details><summary><strong>How long does redness last after laser skin resurfacing?</strong></summary><p>Redness duration depends on treatment intensity. Non-ablative treatments may show redness for one to two weeks. Lighter ablative treatments typically cause redness lasting two to four weeks. More intensive ablative resurfacing can result in redness or pinkness persisting for two to three months, though this gradually fades and becomes easier to cover with makeup after the first week or two.</p></details>
+<details><summary><strong>When can I wear makeup after laser resurfacing?</strong></summary><p>Most practitioners recommend waiting until surface healing is complete before applying makeup, typically seven to ten days for lighter treatments and up to two weeks for more intensive procedures. When you resume makeup, use mineral-based, fragrance-free formulas and clean applicators. Your practitioner will advise based on your specific treatment and healing progress. For more detail on safe makeup use during recovery, see our guide on <a href="/blog/can-i-wear-makeup-after-microneedling">wearing makeup after microneedling</a>, as the same principles apply to laser treatments.</p></details>
+<details><summary><strong>Can I exercise after laser skin resurfacing?</strong></summary><p>Avoid exercise that causes sweating for at least seven to ten days after treatment. Sweat can irritate healing skin and introduce bacteria. Heat and increased blood flow may also intensify swelling and redness. Light walking is generally acceptable after the first few days. Resume more vigorous exercise only when your practitioner approves.</p></details>
+<details><summary><strong>What should I do if I notice signs of infection?</strong></summary><p>Contact your practitioner immediately if you notice increasing pain rather than decreasing, spreading redness beyond the treated area, pus or unusual discharge, fever, or any other concerning symptoms. Early intervention is important if infection develops.</p></details>
+<details><summary><strong>How soon will I see results from laser resurfacing?</strong></summary><p>Initial improvement in skin texture is often visible once surface healing completes, typically within two to three weeks. However, the full benefits of collagen remodeling develop over three to six months as new collagen matures and organizes. Patience during this period is rewarded with progressively improving results.</p></details>
+<details><summary><strong>What is the best serum to use after laser skin resurfacing?</strong></summary><p>The best post-laser serum addresses multiple recovery needs at once. Your healing skin needs hydration, inflammation control, barrier support, and tissue regeneration simultaneously. Nexovia Skin Serum was designed specifically for this purpose, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture to support every phase of post-procedure recovery.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

@@ -68,7 +68,7 @@ format: "html"
 
 <h3><strong>Accelerated Healing</strong></h3>
 
-<p>Recovery from procedures like <a href="/microneedling-aftercare">microneedling</a>, <a href="/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/chemical-peel-aftercare">chemical peels</a> requires intensive cellular work. Cells must repair damage, produce new tissue, rebuild the barrier, and resolve inflammation. All of this demands significant energy.</p>
+<p>Recovery from procedures like <a href="/microneedling-aftercare">microneedling</a>, <a href="/blog/laser-skin-resurfacing-aftercare">laser treatments</a>, or <a href="/blog/chemical-peel-aftercare">chemical peels</a> requires intensive cellular work. Cells must repair damage, produce new tissue, rebuild the barrier, and resolve inflammation. All of this demands significant energy.</p>
 
 <p>By supporting NAD+ levels during recovery, you provide your skin cells with the fuel they need for efficient repair. Cells can work at full capacity rather than being limited by energy constraints. This translates to faster visible recovery and better outcomes.</p>
 
@@ -120,9 +120,9 @@ format: "html"
 
 <p>While NAD+ is powerful on its own, it delivers optimal results as part of a comprehensive formulation. Cellular energy is essential, but cells also need signaling, repair substrates, and communication support to function optimally. NAD+ is the fuel, but fuel alone does not build a house. You also need blueprints, materials, and coordination.</p>
 
-<p><a href="/plant-exosomes-skincare">Plant exosomes</a> complement NAD+ by supporting intercellular communication and modulating inflammation. They help coordinate the cellular responses that NAD+ energizes.</p>
+<p><a href="/blog/plant-exosomes-skincare">Plant exosomes</a> complement NAD+ by supporting intercellular communication and modulating inflammation. They help coordinate the cellular responses that NAD+ energizes.</p>
 
-<p><a href="/pdrn-in-skincare">PDRN</a> activates tissue regeneration pathways through adenosine receptor signaling, providing repair signals that work synergistically with NAD+-fueled cellular energy.</p>
+<p><a href="/blog/pdrn-in-skincare">PDRN</a> activates tissue regeneration pathways through adenosine receptor signaling, providing repair signals that work synergistically with NAD+-fueled cellular energy.</p>
 
 <p>Peptides and growth factors provide additional regenerative signals, directing the repair and renewal processes that NAD+ makes possible.</p>
 
@@ -132,24 +132,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Is topical NAD+ as effective as oral supplements?</h3>
-
-<p>Topical and oral NAD+ work differently. Oral supplements aim to raise systemic NAD+ levels throughout the body, while topical application delivers NAD+ directly to skin cells where it can be utilized locally. For skin-specific benefits, topical application ensures the ingredient reaches the cells that need it most. Many people use both approaches for comprehensive support.</p>
-
-<h3>Can I use NAD+ products every day?</h3>
-
-<p>Yes, NAD+ products are appropriate for daily use. Supporting cellular energy is beneficial for ongoing skin health, not just recovery from specific treatments. Consistent use helps maintain optimal cellular function over time. Nexovia Skin Serum is designed for both post-procedure recovery and ongoing daily use, with a protocol that transitions from intensive application during healing to daily maintenance.</p>
-
-<h3>Will NAD+ help with skin sensitivity?</h3>
-
-<p>NAD+ supports overall cellular health and function, which can contribute to more resilient, less reactive skin over time. While it is not specifically an anti-sensitivity ingredient, skin with adequate cellular energy and robust repair mechanisms tends to be more resilient to irritants and stressors.</p>
-
-<h3>How long does it take to see results from NAD+ skincare?</h3>
-
-<p>For post-procedure recovery, NAD+ benefits are experienced during the healing period itself as cellular energy supports efficient repair. For anti-aging benefits, consistent daily use post aesthetic procedure is a must to see noticeable improvements in skin texture, firmness, and overall vitality as cumulative cellular benefits manifest visibly.</p>
-
-<h3>Does NAD+ interact with other skincare ingredients?</h3>
-
-<p>NAD+ is compatible with most skincare ingredients and works synergistically with many actives. It complements rather than conflicts with ingredients like hyaluronic acid, peptides, niacinamide, and antioxidants. The cellular energy NAD+ provides actually enhances your skin&#x27;s ability to benefit from other ingredients by ensuring cells have the fuel to utilize them effectively.</p>
-
+<details><summary><strong>Is topical NAD+ as effective as oral supplements?</strong></summary><p>Topical and oral NAD+ work differently. Oral supplements aim to raise systemic NAD+ levels throughout the body, while topical application delivers NAD+ directly to skin cells where it can be utilized locally. For skin-specific benefits, topical application ensures the ingredient reaches the cells that need it most. Many people use both approaches for comprehensive support.</p></details>
+<details><summary><strong>Can I use NAD+ products every day?</strong></summary><p>Yes, NAD+ products are appropriate for daily use. Supporting cellular energy is beneficial for ongoing skin health, not just recovery from specific treatments. Consistent use helps maintain optimal cellular function over time. Nexovia Skin Serum is designed for both post-procedure recovery and ongoing daily use, with a protocol that transitions from intensive application during healing to daily maintenance.</p></details>
+<details><summary><strong>Will NAD+ help with skin sensitivity?</strong></summary><p>NAD+ supports overall cellular health and function, which can contribute to more resilient, less reactive skin over time. While it is not specifically an anti-sensitivity ingredient, skin with adequate cellular energy and robust repair mechanisms tends to be more resilient to irritants and stressors.</p></details>
+<details><summary><strong>How long does it take to see results from NAD+ skincare?</strong></summary><p>For post-procedure recovery, NAD+ benefits are experienced during the healing period itself as cellular energy supports efficient repair. For anti-aging benefits, consistent daily use post aesthetic procedure is a must to see noticeable improvements in skin texture, firmness, and overall vitality as cumulative cellular benefits manifest visibly.</p></details>
+<details><summary><strong>Does NAD+ interact with other skincare ingredients?</strong></summary><p>NAD+ is compatible with most skincare ingredients and works synergistically with many actives. It complements rather than conflicts with ingredients like hyaluronic acid, peptides, niacinamide, and antioxidants. The cellular energy NAD+ provides actually enhances your skin&#x27;s ability to benefit from other ingredients by ensuring cells have the fuel to utilize them effectively.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

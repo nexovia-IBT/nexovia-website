@@ -48,7 +48,7 @@ format: "html"
 
 <h3><strong>Procedure Type and Intensity</strong></h3>
 
-<p>More aggressive procedures that create greater inflammation or thermal injury carry higher hyperpigmentation risk. Ablative lasers, deep chemical peels, and intensive treatments require more careful prevention strategies than gentler procedures. For specific aftercare by procedure type, see our guides on <a href="/laser-skin-resurfacing-aftercare">laser skin resurfacing aftercare</a>, <a href="/chemical-peel-aftercare">chemical peel aftercare</a>, and <a href="/ipl-aftercare">IPL aftercare</a>.</p>
+<p>More aggressive procedures that create greater inflammation or thermal injury carry higher hyperpigmentation risk. Ablative lasers, deep chemical peels, and intensive treatments require more careful prevention strategies than gentler procedures. For specific aftercare by procedure type, see our guides on <a href="/blog/laser-skin-resurfacing-aftercare">laser skin resurfacing aftercare</a>, <a href="/blog/chemical-peel-aftercare">chemical peel aftercare</a>, and <a href="/blog/ipl-aftercare">IPL aftercare</a>.</p>
 
 <figure><img src="/images/blog/preventing-hyperpigmentation-after-aesthetic-procedures-2.webp" alt="Preventing Hyperpigmentation After Aesthetic Procedures" /></figure>
 
@@ -128,24 +128,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>Who is most at risk for hyperpigmentation after aesthetic procedures?</h3>
-
-<p>Individuals with Fitzpatrick skin types III through VI (medium to dark skin tones) carry the highest risk due to more active melanocytes. However, anyone with a history of hyperpigmentation, melasma, or PIH from past injuries or procedures is also at elevated risk regardless of skin tone. Hormonal factors and recent sun exposure further increase susceptibility.</p>
-
-<h3>How long do I need to be strict about sun protection after a procedure?</h3>
-
-<p>Maintain strict sun protection for at least four to six weeks after your procedure, even after visible healing completes. Newly formed skin remains more vulnerable to UV-induced pigmentation for an extended period. Many practitioners recommend making rigorous sun protection a permanent habit to protect your results long-term.</p>
-
-<h3>Can hyperpigmentation from aesthetic procedures be treated?</h3>
-
-<p>Yes, post-inflammatory hyperpigmentation can often be improved with appropriate treatment. Options include topical brightening agents, chemical peels, and certain laser treatments. However, treatment should only begin once healing from the original procedure is complete. Prevention is always preferable to treatment, as some pigmentation can be stubborn to resolve.</p>
-
-<h3>Should I avoid certain procedures if I am prone to hyperpigmentation?</h3>
-
-<p>Discuss your history and concerns with your practitioner before any procedure. They may recommend less aggressive treatment options, additional pre-treatment preparation, or modified protocols for higher-risk patients. Many procedures can be safely performed on pigmentation-prone skin with appropriate precautions and vigilant aftercare.</p>
-
-<h3>Does hyperpigmentation after procedures always appear immediately?</h3>
-
-<p>No, hyperpigmentation can develop days to weeks after a procedure, sometimes after initial healing appears complete. This delayed onset is why continued sun protection and proper aftercare remain important even when your skin looks healed. Monitor your skin throughout the full recovery period and report any concerning changes to your practitioner.</p>
-
+<details><summary><strong>Who is most at risk for hyperpigmentation after aesthetic procedures?</strong></summary><p>Individuals with Fitzpatrick skin types III through VI (medium to dark skin tones) carry the highest risk due to more active melanocytes. However, anyone with a history of hyperpigmentation, melasma, or PIH from past injuries or procedures is also at elevated risk regardless of skin tone. Hormonal factors and recent sun exposure further increase susceptibility.</p></details>
+<details><summary><strong>How long do I need to be strict about sun protection after a procedure?</strong></summary><p>Maintain strict sun protection for at least four to six weeks after your procedure, even after visible healing completes. Newly formed skin remains more vulnerable to UV-induced pigmentation for an extended period. Many practitioners recommend making rigorous sun protection a permanent habit to protect your results long-term.</p></details>
+<details><summary><strong>Can hyperpigmentation from aesthetic procedures be treated?</strong></summary><p>Yes, post-inflammatory hyperpigmentation can often be improved with appropriate treatment. Options include topical brightening agents, chemical peels, and certain laser treatments. However, treatment should only begin once healing from the original procedure is complete. Prevention is always preferable to treatment, as some pigmentation can be stubborn to resolve.</p></details>
+<details><summary><strong>Should I avoid certain procedures if I am prone to hyperpigmentation?</strong></summary><p>Discuss your history and concerns with your practitioner before any procedure. They may recommend less aggressive treatment options, additional pre-treatment preparation, or modified protocols for higher-risk patients. Many procedures can be safely performed on pigmentation-prone skin with appropriate precautions and vigilant aftercare.</p></details>
+<details><summary><strong>Does hyperpigmentation after procedures always appear immediately?</strong></summary><p>No, hyperpigmentation can develop days to weeks after a procedure, sometimes after initial healing appears complete. This delayed onset is why continued sun protection and proper aftercare remain important even when your skin looks healed. Monitor your skin throughout the full recovery period and report any concerning changes to your practitioner.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

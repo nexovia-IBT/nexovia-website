@@ -28,7 +28,7 @@ format: "html"
 
 <h2><strong>What Happens to Your Barrier During Aesthetic Procedures</strong></h2>
 
-<p>Aesthetic procedures work by creating controlled disruption. <a href="/microneedling-aftercare">Microneedling</a> punctures the barrier thousands of times. <a href="/laser-skin-resurfacing-aftercare">Laser treatments</a> deliver thermal energy that damages the outer layers. <a href="/chemical-peel-aftercare">Chemical peels</a> dissolve the bonds holding barrier cells together. <a href="/ipl-aftercare">IPL</a> creates thermal injury to targeted structures.</p>
+<p>Aesthetic procedures work by creating controlled disruption. <a href="/microneedling-aftercare">Microneedling</a> punctures the barrier thousands of times. <a href="/blog/laser-skin-resurfacing-aftercare">Laser treatments</a> deliver thermal energy that damages the outer layers. <a href="/blog/chemical-peel-aftercare">Chemical peels</a> dissolve the bonds holding barrier cells together. <a href="/blog/ipl-aftercare">IPL</a> creates thermal injury to targeted structures.</p>
 
 <p>This disruption is intentional and beneficial. The controlled damage triggers your body&#x27;s healing response, stimulating collagen production, cellular renewal, and skin remodeling. Without this disruption, the improvements you seek would not occur.</p>
 
@@ -82,9 +82,9 @@ format: "html"
 
 <p>Your skin cells are working to rebuild the barrier, but this process requires significant resources and energy. Providing ingredients that support cellular repair accelerates barrier restoration.</p>
 
-<p>Plant exosomes help coordinate the cellular communication necessary for efficient repair. PDRN activates tissue regeneration pathways through adenosine A2A receptor signaling. NAD+ fuels the cellular energy production that repair processes demand. <a href="/peptides-for-skin-barrier-repair">Peptides</a> signal cells to produce the structural proteins and lipids needed for barrier integrity.</p>
+<p>Plant exosomes help coordinate the cellular communication necessary for efficient repair. PDRN activates tissue regeneration pathways through adenosine A2A receptor signaling. NAD+ fuels the cellular energy production that repair processes demand. <a href="/blog/peptides-for-skin-barrier-repair">Peptides</a> signal cells to produce the structural proteins and lipids needed for barrier integrity.</p>
 
-<p>These active ingredients do more than provide temporary relief. They support the underlying biological processes that will ultimately resolve tightness by restoring normal barrier function. Learn more about <a href="/pdrn-in-skincare">how each of these technologies works</a>.</p>
+<p>These active ingredients do more than provide temporary relief. They support the underlying biological processes that will ultimately resolve tightness by restoring normal barrier function. Learn more about <a href="/blog/pdrn-in-skincare">how each of these technologies works</a>.</p>
 
 <h3><strong>Provide Intensive Hydration</strong></h3>
 
@@ -116,24 +116,9 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How long will my skin feel tight after a procedure?</h3>
-
-<p>Most patients experience peak tightness during the first three days, with gradual improvement through day seven and substantial resolution by day fourteen. More intensive procedures may extend this timeline. Using barrier-supporting aftercare with ingredients like plant exosomes, PDRN, NAD+, and peptides can accelerate relief by supporting the cellular repair processes that restore barrier function.</p>
-
-<h3>Should I apply more moisturizer if my skin still feels tight?</h3>
-
-<p>Yes, you can apply moisturizer more frequently during the acute recovery phase. If your skin feels tight shortly after application, reapply as needed. The goal is to keep skin consistently hydrated while your barrier repairs. As barrier function improves, you will find that products provide longer-lasting relief. For best results, layer a hydrating serum underneath your moisturizer to address both the hydration deficit and the repair process simultaneously.</p>
-
-<h3>Is it normal for tightness to feel worse in the morning?</h3>
-
-<p>Yes. Overnight, your skin continues losing moisture while you sleep, and you are not replenishing with products. Applying a slightly heavier moisturizer before bed and rehydrating immediately upon waking can help. A recovery serum with multi-weight hyaluronic acid and barrier-repair actives applied before your evening moisturizer provides a longer window of hydration overnight.</p>
-
-<h3>Can I use facial oil to help with tightness?</h3>
-
-<p>Facial oils can help reduce TEWL by providing an occlusive layer. However, oils do not add water to your skin. For best results, apply hydrating products containing hyaluronic acid first, then seal with oil if desired. Check with your practitioner about which oils are appropriate for your specific procedure and recovery stage.</p>
-
-<h3>Why does my skin feel tight again right after washing my face?</h3>
-
-<p>Cleansing removes oils and some of the moisturizing products you have applied, temporarily increasing TEWL. Use a gentle, non-foaming cleanser with lukewarm water, and apply your hydrating serum and moisturizer immediately after patting dry. This minimizes the window of time when your compromised barrier is unprotected. As your barrier recovers over the first two weeks, this post-cleansing tightness will fade.</p>
-
+<details><summary><strong>How long will my skin feel tight after a procedure?</strong></summary><p>Most patients experience peak tightness during the first three days, with gradual improvement through day seven and substantial resolution by day fourteen. More intensive procedures may extend this timeline. Using barrier-supporting aftercare with ingredients like plant exosomes, PDRN, NAD+, and peptides can accelerate relief by supporting the cellular repair processes that restore barrier function.</p></details>
+<details><summary><strong>Should I apply more moisturizer if my skin still feels tight?</strong></summary><p>Yes, you can apply moisturizer more frequently during the acute recovery phase. If your skin feels tight shortly after application, reapply as needed. The goal is to keep skin consistently hydrated while your barrier repairs. As barrier function improves, you will find that products provide longer-lasting relief. For best results, layer a hydrating serum underneath your moisturizer to address both the hydration deficit and the repair process simultaneously.</p></details>
+<details><summary><strong>Is it normal for tightness to feel worse in the morning?</strong></summary><p>Yes. Overnight, your skin continues losing moisture while you sleep, and you are not replenishing with products. Applying a slightly heavier moisturizer before bed and rehydrating immediately upon waking can help. A recovery serum with multi-weight hyaluronic acid and barrier-repair actives applied before your evening moisturizer provides a longer window of hydration overnight.</p></details>
+<details><summary><strong>Can I use facial oil to help with tightness?</strong></summary><p>Facial oils can help reduce TEWL by providing an occlusive layer. However, oils do not add water to your skin. For best results, apply hydrating products containing hyaluronic acid first, then seal with oil if desired. Check with your practitioner about which oils are appropriate for your specific procedure and recovery stage.</p></details>
+<details><summary><strong>Why does my skin feel tight again right after washing my face?</strong></summary><p>Cleansing removes oils and some of the moisturizing products you have applied, temporarily increasing TEWL. Use a gentle, non-foaming cleanser with lukewarm water, and apply your hydrating serum and moisturizer immediately after patting dry. This minimizes the window of time when your compromised barrier is unprotected. As your barrier recovers over the first two weeks, this post-cleansing tightness will fade.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

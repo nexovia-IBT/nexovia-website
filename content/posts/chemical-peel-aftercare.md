@@ -86,7 +86,7 @@ format: "html"
 
 <p>Peptides and growth factors signal your skin cells to produce collagen and rebuild the extracellular matrix. These signaling molecules accelerate the regenerative response your peel initiated.</p>
 
-<p>For a full breakdown of post-procedure ingredients, see our guide on <a href="/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>. The ingredient principles apply across all post-procedure recovery.</p>
+<p>For a full breakdown of post-procedure ingredients, see our guide on <a href="/blog/what-to-put-on-face-after-microneedling">what to put on your face after microneedling</a>. The ingredient principles apply across all post-procedure recovery.</p>
 
 <h3><strong>Barrier-Supporting Moisturizers</strong></h3>
 
@@ -130,28 +130,10 @@ format: "html"
 
 <h2><strong>Frequently Asked Questions</strong></h2>
 
-<h3>How long after a chemical peel can I wear makeup?</h3>
-
-<p>For superficial peels, you can typically wear mineral makeup after 24 to 48 hours once any initial sensitivity subsides. For medium peels, wait until active peeling completes, usually seven to ten days. For deep peels, follow your physician&#x27;s guidance, which may recommend waiting two weeks or longer. Always use clean applicators and fragrance-free formulas when resuming makeup.</p>
-
-<h3>Is it normal for my skin to look worse before it looks better?</h3>
-
-<p>Yes, this is expected, particularly with medium and deep peels. Your skin will darken, become papery or leathery, and peel visibly before revealing fresh skin beneath. This dramatic shedding phase is normal and indicates successful treatment. The end result is worth the temporary appearance during active peeling.</p>
-
-<h3>What should I do if the peeling is uneven or patchy?</h3>
-
-<p>Uneven peeling is normal, especially around areas with more movement like the mouth. Different facial zones often peel at different rates. Continue your gentle aftercare routine and allow all areas to shed naturally. Do not try to even out peeling by picking at stubborn areas.</p>
-
-<h3>Can I exercise after a chemical peel?</h3>
-
-<p>Avoid exercise that causes sweating for at least 48 to 72 hours after superficial peels and longer after medium or deep peels. Sweat can irritate healing skin and increase discomfort. Heat and increased blood flow may also intensify redness. Resume activity gradually once your practitioner approves.</p>
-
-<h3>When will I see final results from my chemical peel?</h3>
-
-<p>Initial improvement is visible once peeling completes and redness fades. For superficial peels, this may be within one to two weeks. Medium peels show results within two to four weeks. Deep peels require several months for complete healing and final results. Collagen remodeling continues for months after all peel depths, progressively improving skin texture and tone.</p>
-
-<h3>What is the best serum to use after a chemical peel?</h3>
-
-<p>The best post-peel serum addresses hydration, inflammation, barrier repair, and tissue regeneration at the same time. Nexovia Skin Serum was formulated specifically for post-procedure recovery, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture to support every phase of healing in one product. <a href="https://tally.so/r/682L2N">Take our Skin Recovery Assessment</a> to see if it is right for your skin.</p>
-
+<details><summary><strong>How long after a chemical peel can I wear makeup?</strong></summary><p>For superficial peels, you can typically wear mineral makeup after 24 to 48 hours once any initial sensitivity subsides. For medium peels, wait until active peeling completes, usually seven to ten days. For deep peels, follow your physician&#x27;s guidance, which may recommend waiting two weeks or longer. Always use clean applicators and fragrance-free formulas when resuming makeup.</p></details>
+<details><summary><strong>Is it normal for my skin to look worse before it looks better?</strong></summary><p>Yes, this is expected, particularly with medium and deep peels. Your skin will darken, become papery or leathery, and peel visibly before revealing fresh skin beneath. This dramatic shedding phase is normal and indicates successful treatment. The end result is worth the temporary appearance during active peeling.</p></details>
+<details><summary><strong>What should I do if the peeling is uneven or patchy?</strong></summary><p>Uneven peeling is normal, especially around areas with more movement like the mouth. Different facial zones often peel at different rates. Continue your gentle aftercare routine and allow all areas to shed naturally. Do not try to even out peeling by picking at stubborn areas.</p></details>
+<details><summary><strong>Can I exercise after a chemical peel?</strong></summary><p>Avoid exercise that causes sweating for at least 48 to 72 hours after superficial peels and longer after medium or deep peels. Sweat can irritate healing skin and increase discomfort. Heat and increased blood flow may also intensify redness. Resume activity gradually once your practitioner approves.</p></details>
+<details><summary><strong>When will I see final results from my chemical peel?</strong></summary><p>Initial improvement is visible once peeling completes and redness fades. For superficial peels, this may be within one to two weeks. Medium peels show results within two to four weeks. Deep peels require several months for complete healing and final results. Collagen remodeling continues for months after all peel depths, progressively improving skin texture and tone.</p></details>
+<details><summary><strong>What is the best serum to use after a chemical peel?</strong></summary><p>The best post-peel serum addresses hydration, inflammation, barrier repair, and tissue regeneration at the same time. Nexovia Skin Serum was formulated specifically for post-procedure recovery, combining plant exosomes, PDRN, NAD+, and a peptide matrix in its ABA.4 Bio-Intelligent Architecture to support every phase of healing in one product. <a href="https://tally.so/r/682L2N">Take our Skin Recovery Assessment</a> to see if it is right for your skin.</p></details>
 <p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>
