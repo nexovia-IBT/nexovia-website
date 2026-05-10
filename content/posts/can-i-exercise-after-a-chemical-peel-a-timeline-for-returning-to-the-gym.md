@@ -95,3 +95,5 @@ format: "html"
 <h4>How do I know my skin is ready for exercise again?</h4>
 
 <p>Your skin will show clear signals when it is ready. Look for the absence of visible peeling or flaking, no stinging when you apply your regular aftercare products, reduced redness and sensitivity, and skin that feels comfortable without constant moisturizing. When in doubt, give it an extra day and consult your practitioner for personalized guidance based on your specific treatment.</p>
+
+<p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>

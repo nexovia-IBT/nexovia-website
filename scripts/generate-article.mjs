@@ -162,7 +162,8 @@ Format requirements (study existing articles):
 - Place the FIRST <figure><img src="{TOP_IMG_URL}" alt="..." /></figure> tag right after the article title's first paragraph (top of the body).
 - Place the SECOND <figure><img src="{MID_IMG_URL}" alt="..." /></figure> in the middle of the article (between two H2 sections, around the halfway point).
 - Use 2-4 internal links to other Nexovia articles. IMPORTANT: blog articles live at /blog/[slug], so use <a href="/blog/[slug]">anchor</a>. The three pillar guides at /post-procedure-skincare-guide, /microneedling-aftercare, and /laser-treatment-aftercare are top-level routes — link to them as <a href="/post-procedure-skincare-guide">...</a> WITHOUT the /blog prefix. The available slugs will be provided; assume they are blog articles unless they match one of the three guide routes above.
-- Disclaimer (verbatim, italic, last paragraph): This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.
+- MANDATORY DISCLAIMER. The article MUST end with this exact paragraph (italic, in <p><em>...</em></p>) — no exceptions, no rewording, no abbreviation:
+  This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.
 `.trim()
 
 function buildArticlePrompt({ title, focusKeyword, slug, internalLinks, topImgUrl, midImgUrl }) {
@@ -261,7 +262,15 @@ async function main() {
   const article = await callGeminiJson(buildArticlePrompt({ title, focusKeyword, slug, internalLinks: slugs, topImgUrl, midImgUrl }))
   console.log(`     done in ${((Date.now() - t0) / 1000).toFixed(1)}s`)
 
-  // 2. Save markdown FIRST so a quota error on images doesn't lose the article
+  // 2. Safety net: ensure disclaimer is present even if Gemini forgot it
+  const DISCLAIMER_NEEDLE = 'not constitute medical advice'
+  const DISCLAIMER_HTML = '<p><em>This content is for informational purposes only and does not constitute medical advice. Always follow the specific aftercare instructions provided by your practitioner, as recommendations may vary based on your individual treatment and skin type.</em></p>'
+  if (!article.html.includes(DISCLAIMER_NEEDLE)) {
+    console.warn('  !! disclaimer missing in Gemini output — appending it')
+    article.html = article.html.trimEnd() + '\n\n' + DISCLAIMER_HTML
+  }
+
+  // Save markdown FIRST so a quota error on images doesn't lose the article
   const frontmatter = matter.stringify(article.html, {
     title,
     slug,
