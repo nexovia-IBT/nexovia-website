@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: How to Tell If Your Skin Barrier Has Recovered After a Procedure
+Slug: how-to-tell-if-your-skin-barrier-has-recovered-after-a-procedure
+Folder: public/images/blog/Article 29 - how-to-tell-if-your-skin-barrier-has-recovered-after-a-procedure/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 29 - how-to-tell-if-your-skin-barrier-has-recovered-after-a-procedure/Article 29 - how-to-tell-if-your-skin-barrier-has-recovered-after-a-procedure_1.webp
+Macro of a calm jawline and lower cheek showing even tone and refined surface texture, soft cinematic side light catching the subtle natural sheen of fully recovered skin. Pale blush tones, subtle deep burgundy in the recessed areas, near-black background. The image reads as quiet recovery completed. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (chemical-peel-aftercare-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 29 - how-to-tell-if-your-skin-barrier-has-recovered-after-a-procedure_2.webp inside this folder.

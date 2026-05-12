@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Biosaccharide Gum-1 Explained: The Hidden Hero of Sensitive Skincare
+Slug: biosaccharide-gum-1-explained-the-hidden-hero-of-sensitive-skincare
+Folder: public/images/blog/Article 19 - biosaccharide-gum-1-explained-the-hidden-hero-of-sensitive-skincare/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 19 - biosaccharide-gum-1-explained-the-hidden-hero-of-sensitive-skincare/Article 19 - biosaccharide-gum-1-explained-the-hidden-hero-of-sensitive-skincare_1.webp
+Macro photography, abstract close-up of a translucent biosaccharide gel ribbon coiling slowly on a pale travertine surface, catching soft cinematic light. Subtle highlights, shallow depth of field, magazine quality. Pale blush and muted gold tones, deep burgundy in the recessed shadows. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (peptides-for-skin-barrier-repair-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 19 - biosaccharide-gum-1-explained-the-hidden-hero-of-sensitive-skincare_2.webp inside this folder.

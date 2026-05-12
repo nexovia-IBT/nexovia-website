@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Panthenol for Compromised Skin: How Provitamin B5 Supports Recovery
+Slug: panthenol-for-compromised-skin-how-provitamin-b5-supports-recovery
+Folder: public/images/blog/Article 18 - panthenol-for-compromised-skin-how-provitamin-b5-supports-recovery/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 18 - panthenol-for-compromised-skin-how-provitamin-b5-supports-recovery/Article 18 - panthenol-for-compromised-skin-how-provitamin-b5-supports-recovery_1.webp
+Macro shot of a stylized panthenol molecule, abstract yet elegant, rendered with soft, diffused light. Elements of a subtle, calming botanical essence, perhaps a blurred hint of aloe or chamomile, in the background. Photoreal, 16:9, shallow depth of field, brand palette. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (laser-skin-resurfacing-aftercare-2.webp — post-procedure barrier support and hydration).
+No image generation needed for the middle slot. The file is already saved as: Article 18 - panthenol-for-compromised-skin-how-provitamin-b5-supports-recovery_2.webp inside this folder.

@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Centella Asiatica for Post-Procedure Skin: What the Research Says
+Slug: centella-asiatica-for-post-procedure-skin-what-the-research-says
+Folder: public/images/blog/Article 15 - centella-asiatica-for-post-procedure-skin-what-the-research-says/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 15 - centella-asiatica-for-post-procedure-skin-what-the-research-says/Article 15 - centella-asiatica-for-post-procedure-skin-what-the-research-says_1.webp
+Macro shot of fresh Centella asiatica (cica) leaves with delicate water droplets, bathed in soft, ethereal light. The leaves are vibrant green with subtle hints of burgundy veins, against a muted, out-of-focus background in pale blush and near-black tones. Editorial luxury, photoreal, shallow depth of field, 16:9 landscape. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (how-to-calm-swelling-after-rf-microneedling-whats-normal-and-whats-not-2.jpg — calming and inflammation reduction (centella is the key calming botanical)).
+No image generation needed for the middle slot. The file is already saved as: Article 15 - centella-asiatica-for-post-procedure-skin-what-the-research-says_2.webp inside this folder.

@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: How Adenosine Supports Skin Recovery and Anti-Aging
+Slug: how-adenosine-supports-skin-recovery-and-anti-aging
+Folder: public/images/blog/Article 16 - how-adenosine-supports-skin-recovery-and-anti-aging/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 16 - how-adenosine-supports-skin-recovery-and-anti-aging/Article 16 - how-adenosine-supports-skin-recovery-and-anti-aging_1.webp
+Macro shot of an abstract representation of adenosine's molecular structure, rendered in soft, ethereal light against a muted burgundy and pale blush background. The atoms are represented by delicate, glowing spheres, with subtle connections, evoking cellular energy and scientific elegance. Shallow depth of field, 16:9, photoreal, luxury editorial. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (rf-microneedling-vs-traditional-microneedling-recovery-2.webp — recovery mechanism comparison).
+No image generation needed for the middle slot. The file is already saved as: Article 16 - how-adenosine-supports-skin-recovery-and-anti-aging_2.webp inside this folder.

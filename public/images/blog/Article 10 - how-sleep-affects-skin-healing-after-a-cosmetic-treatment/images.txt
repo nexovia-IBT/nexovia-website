@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: How Sleep Affects Skin Healing After a Cosmetic Treatment
+Slug: how-sleep-affects-skin-healing-after-a-cosmetic-treatment
+Folder: public/images/blog/Article 10 - how-sleep-affects-skin-healing-after-a-cosmetic-treatment/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 10 - how-sleep-affects-skin-healing-after-a-cosmetic-treatment/Article 10 - how-sleep-affects-skin-healing-after-a-cosmetic-treatment_1.webp
+A serene bedside table at dawn, soft cinematic light filtering through a window, illuminating a luxurious linen pillow and a small, elegant water glass. The scene evokes calm and rest, emphasizing the quiet moments of skin recovery. Pale blush, deep burgundy, muted gold, near-black palette. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  save as: public/images/blog/Article 10 - how-sleep-affects-skin-healing-after-a-cosmetic-treatment/Article 10 - how-sleep-affects-skin-healing-after-a-cosmetic-treatment_2.webp
+A serene close-up of a calm sleeping figure seen from above the shoulder line (no face shown), a single linen pillow, soft morning light filtering across the cheek and jawline. Skin reads at rest, restoring overnight. The composition suggests deep restorative sleep as the substrate of recovery. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no full face. Negative space, calm composition.

@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: How to Protect Filler Results With the Right Skincare Routine
+Slug: how-to-protect-filler-results-with-the-right-skincare-routine
+Folder: public/images/blog/Article 6 - how-to-protect-filler-results-with-the-right-skincare-routine/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 6 - how-to-protect-filler-results-with-the-right-skincare-routine/Article 6 - how-to-protect-filler-results-with-the-right-skincare-routine_1.webp
+Editorial flat-lay of luxurious, unbranded skincare products—serums, creams, and a gentle cleanser—arranged artfully on a muted, pale blush marble surface with soft, diffused light, 16:9 landscape, photoreal. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (what-to-put-on-face-after-microneedling-2.webp — 4-panel "Bio-Amplifier Technologies" showing Plant Exosomes, PDRN, NAD+, and Peptides).
+No image generation needed for the middle slot. The file is already saved as: Article 6 - how-to-protect-filler-results-with-the-right-skincare-routine_2.webp inside this folder.

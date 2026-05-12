@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: How Long Should You Wait Between Microneedling Sessions
+Slug: how-long-should-you-wait-between-microneedling-sessions
+Folder: public/images/blog/Article 8 - how-long-should-you-wait-between-microneedling-sessions/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 8 - how-long-should-you-wait-between-microneedling-sessions/Article 8 - how-long-should-you-wait-between-microneedling-sessions_1.webp
+A close-up of a gloved practitioner's hands operating a microneedling device on a patient's cheek in an upscale clinic. Patient's face in soft profile, eyes closed. Soft cinematic light, muted gold and pale blush tones. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: 14-day microneedling recovery timeline infographic from Nexovia legacy library (microneedling-aftercare-day-by-day.webp). Phase 1 (Days 0-7) and Phase 2 (Days 8-14) with Nexovia serum protocol and Do/Don't icons.
+No image generation needed for the middle slot. The file is already saved as: Article 8 - how-long-should-you-wait-between-microneedling-sessions_2.webp inside this folder.

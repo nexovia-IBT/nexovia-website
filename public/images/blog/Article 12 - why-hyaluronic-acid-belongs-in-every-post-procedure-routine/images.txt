@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Why Hyaluronic Acid Belongs in Every Post-Procedure Routine
+Slug: why-hyaluronic-acid-belongs-in-every-post-procedure-routine
+Folder: public/images/blog/Article 12 - why-hyaluronic-acid-belongs-in-every-post-procedure-routine/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 12 - why-hyaluronic-acid-belongs-in-every-post-procedure-routine/Article 12 - why-hyaluronic-acid-belongs-in-every-post-procedure-routine_1.webp
+Artistic macro shot of clear, viscous hyaluronic acid serum droplets gracefully falling onto a smooth, reflective surface, creating ripples. Soft, ambient light accentuates its purity and hydration properties. Color palette: pale blush, deep burgundy, muted gold, near-black. 16:9 landscape, photoreal, editorial luxury. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (exosomes-vs-growth-factors-understanding-the-new-generation-of-skin-recovery-2.jpg — premium ingredient mechanism).
+No image generation needed for the middle slot. The file is already saved as: Article 12 - why-hyaluronic-acid-belongs-in-every-post-procedure-routine_2.webp inside this folder.

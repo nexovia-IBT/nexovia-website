@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: What to Know About Combining Microneedling With Exosome Therapy
+Slug: what-to-know-about-combining-microneedling-with-exosome-therapy
+Folder: public/images/blog/Article 23 - what-to-know-about-combining-microneedling-with-exosome-therapy/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 23 - what-to-know-about-combining-microneedling-with-exosome-therapy/Article 23 - what-to-know-about-combining-microneedling-with-exosome-therapy_1.webp
+A practitioner's gloved hands operating a precision microneedling pen on a patient's cheek in an upscale, minimalist clinic. Patient seen in soft profile, eyes closed, calm. Clean clinical environment with warm tonal accents, no harsh hospital lighting. Subtle cinematic side light. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (plant-exosomes-skincare-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 23 - what-to-know-about-combining-microneedling-with-exosome-therapy_2.webp inside this folder.

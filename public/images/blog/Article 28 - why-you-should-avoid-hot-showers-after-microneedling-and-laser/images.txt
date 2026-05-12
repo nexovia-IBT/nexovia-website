@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Why You Should Avoid Hot Showers After Microneedling and Laser
+Slug: why-you-should-avoid-hot-showers-after-microneedling-and-laser
+Folder: public/images/blog/Article 28 - why-you-should-avoid-hot-showers-after-microneedling-and-laser/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 28 - why-you-should-avoid-hot-showers-after-microneedling-and-laser/Article 28 - why-you-should-avoid-hot-showers-after-microneedling-and-laser_1.webp
+Macro of a single droplet of water suspended on bare skin near the jawline, the skin showing very faint warmth and recovery, soft cinematic light catching the meniscus. Background blur of pale blush, deep burgundy in the recessed areas. The image suggests careful contact with water rather than aggression. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (preventing-hyperpigmentation-after-aesthetic-procedures-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 28 - why-you-should-avoid-hot-showers-after-microneedling-and-laser_2.webp inside this folder.

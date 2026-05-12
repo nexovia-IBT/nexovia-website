@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: What Is Transepidermal Water Loss and Why It Matters After a Procedure
+Slug: what-is-transepidermal-water-loss-and-why-it-matters-after-a-procedure
+Folder: public/images/blog/Article 20 - what-is-transepidermal-water-loss-and-why-it-matters-after-a-procedure/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 20 - what-is-transepidermal-water-loss-and-why-it-matters-after-a-procedure/Article 20 - what-is-transepidermal-water-loss-and-why-it-matters-after-a-procedure_1.webp
+Macro close-up of dehydrated skin texture showing fine surface lines, subtle dryness micro-patterns, and a faint sheen of moisture starting to absorb. Cinematic side light, shallow depth of field, magazine-quality. Pale blush highlights, deep burgundy in the recessed shadows, near-black background. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (skin-feels-tight-after-procedure-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 20 - what-is-transepidermal-water-loss-and-why-it-matters-after-a-procedure_2.webp inside this folder.

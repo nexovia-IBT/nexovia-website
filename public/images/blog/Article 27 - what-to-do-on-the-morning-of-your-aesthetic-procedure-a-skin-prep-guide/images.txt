@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: What to Do on the Morning of Your Aesthetic Procedure: A Skin Prep Guide
+Slug: what-to-do-on-the-morning-of-your-aesthetic-procedure-a-skin-prep-guide
+Folder: public/images/blog/Article 27 - what-to-do-on-the-morning-of-your-aesthetic-procedure-a-skin-prep-guide/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 27 - what-to-do-on-the-morning-of-your-aesthetic-procedure-a-skin-prep-guide/Article 27 - what-to-do-on-the-morning-of-your-aesthetic-procedure-a-skin-prep-guide_1.webp
+Editorial overhead flat-lay on linen of a minimalist morning skincare arrangement: a soft cotton cleansing cloth, a small unbranded amber dropper, a folded white linen towel, a glass tumbler of water with a slice of lemon, all under cool soft morning side light. Composition reads as gentle preparation. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (standardized-aftercare-protocols-clinics-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 27 - what-to-do-on-the-morning-of-your-aesthetic-procedure-a-skin-prep-guide_2.webp inside this folder.

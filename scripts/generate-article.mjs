@@ -282,6 +282,8 @@ async function main() {
     readTime: article.readTime || 8,
     order,
     format: 'html',
+    // All newly-generated articles start as drafts. Calendar/publishedAt is set later.
+    draft: true,
   })
   // Ensure article folder exists, then write article.md inside it
   await import('node:fs/promises').then(m => m.mkdir(imgFolderPath, { recursive: true }))

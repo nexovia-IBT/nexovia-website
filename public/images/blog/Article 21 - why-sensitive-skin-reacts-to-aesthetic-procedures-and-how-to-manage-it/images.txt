@@ -1,0 +1,9 @@
+IMAGE PROMPTS for: Why Sensitive Skin Reacts to Aesthetic Procedures and How to Manage It
+Slug: why-sensitive-skin-reacts-to-aesthetic-procedures-and-how-to-manage-it
+Folder: public/images/blog/Article 21 - why-sensitive-skin-reacts-to-aesthetic-procedures-and-how-to-manage-it/
+
+--- TOP IMAGE  ---  save as: public/images/blog/Article 21 - why-sensitive-skin-reacts-to-aesthetic-procedures-and-how-to-manage-it/Article 21 - why-sensitive-skin-reacts-to-aesthetic-procedures-and-how-to-manage-it_1.webp
+Close-up of a calm, slightly reactive cheek and jawline in soft profile, showing a very faint natural pinkness across the cheekbone, eyes off-frame, no full face. Skin texture is fine, soft, real. Cinematic side light, warm ambient glow. Pale blush and deep burgundy in the background. 16:9 landscape, photoreal, editorial luxury, soft cinematic light, brand palette pale blush, deep burgundy, muted gold and near-black only. No text, no logos, no faces. Negative space, calm composition.
+
+--- MIDDLE IMAGE  ---  ALREADY PROVIDED: scientific infographic from Nexovia legacy library (aftercare-mistakes-ruin-procedure-results-2.webp).
+No image generation needed for the middle slot. The file is already saved as: Article 21 - why-sensitive-skin-reacts-to-aesthetic-procedures-and-how-to-manage-it_2.webp inside this folder.
