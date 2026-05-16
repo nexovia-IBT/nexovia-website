@@ -1,0 +1,57 @@
+name: Apply global ingredient rail layout
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-supporting-architecture-global-rail.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Patch shared rail renderer
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'components/sections/SupportingArchitectureSectionLive.tsx';
+          let text = fs.readFileSync(path, 'utf8');
+
+          text = text.replace("  { number: '02', title: 'Biosaccharide', benefit: 'MOISTURE RETENTION', description: 'A plant-derived polysaccharide that forms a lightweight moisture film to reduce water loss and support skin comfort following aesthetic treatment.', details: ['Moisture retention', 'Reduced water loss', 'Skin comfort'], illustration: 'biosaccharide' },", "  { number: '02', title: 'Biosaccharide', benefit: 'MOISTURE RETENTION', description: 'A plant-derived polysaccharide that forms a lightweight moisture film to reduce water loss and support skin comfort following aesthetic treatment.', details: ['Moisture retention', 'Reduced water loss (Decrease TEWL)', 'Skin comfort'], illustration: 'biosaccharide' },");
+
+          if (!text.includes('function getDetailLabel')) {
+            text = text.replace("function DetailIcon({ detail, index }: { detail: string; index: number }) {", "function getDetailLabel(detail: string) {\n  return detail.replace(/\\s*\\([^)]*\\)/g, '')\n}\n\nfunction DetailIcon({ detail, index }: { detail: string; index: number }) {");
+          }
+
+          text = text.replace("width: 30,\n        height: 30,", "width: 28,\n        height: 28,");
+          text = text.replace("style={{ width: 16, height: 16, display: 'block' }}", "style={{ width: 15, height: 15, display: 'block' }}");
+
+          const oldRail = "<div style={{ position: 'absolute', bottom: 'max(54px, 7vh)', left: '6.2vw', zIndex: 4, width: 'min(320px, 27vw)' }}>{slide.details.map((detail, d) => <div key={detail} style={{ display: 'grid', gridTemplateColumns: '28px 26px 1fr', alignItems: 'center', columnGap: 12, paddingBottom: d < slide.details.length - 1 ? 11 : 0, marginBottom: d < slide.details.length - 1 ? 11 : 0, borderBottom: d < slide.details.length - 1 ? '1px solid rgba(115,44,63,0.1)' : undefined }}><DetailIcon detail={detail} index={d} /><div style={{ width: 26, height: 1, backgroundColor: '#EDC967' }} /><span style={{ fontSize: 10, color: '#732C3F', opacity: 0.9, letterSpacing: '0.1em', lineHeight: 1.35, fontWeight: 700, textTransform: 'uppercase', fontFamily: SANS }}>{detail}</span></div>)}</div>";
+          const newRail = "<div style={{ position: 'absolute', bottom: 'max(54px, 7vh)', left: '6.2vw', zIndex: 4, width: 'min(320px, 27vw)' }}>{slide.details.map((detail, d) => <div key={detail} style={{ display: 'grid', gridTemplateColumns: '28px 26px minmax(0, 1fr)', alignItems: 'center', columnGap: 12, height: 40, borderBottom: d < slide.details.length - 1 ? '1px solid rgba(115,44,63,0.1)' : undefined }}><DetailIcon detail={detail} index={d} /><div style={{ width: 26, height: 1, backgroundColor: '#EDC967' }} /><span title={detail} style={{ display: 'block', minWidth: 0, fontSize: 10, color: '#732C3F', opacity: 0.9, letterSpacing: '0.1em', lineHeight: 1.35, fontWeight: 700, textTransform: 'uppercase', fontFamily: SANS, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{getDetailLabel(detail)}</span></div>)}</div>";
+          if (text.includes(oldRail)) {
+            text = text.replace(oldRail, newRail);
+          } else {
+            text = text.replace(/<div style=\{\{ position: 'absolute', bottom: 'max\(54px, 7vh\)', left: '6\.2vw', zIndex: 4, width: 'min\(320px, 27vw\)' \}\}>\{slide\.details\.map[\s\S]*?\)\}<\/div>\n          <\/div>\)\}/, `${newRail}\n          </div>)}`);
+          }
+
+          fs.writeFileSync(path, text);
+          NODE
+      - name: Commit patch and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-supporting-architecture-global-rail.yml
+          git add components/sections/SupportingArchitectureSectionLive.tsx
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Apply global ingredient rail layout"
+            git push
+          fi
