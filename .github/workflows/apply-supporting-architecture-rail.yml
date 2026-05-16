@@ -1,0 +1,52 @@
+name: Restore compact ingredient rail proportions
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-supporting-architecture-rail.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Restore rail proportions
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'components/sections/SupportingArchitectureSectionLive.tsx';
+          let text = fs.readFileSync(path, 'utf8');
+          const replaceAll = (from, to) => { text = text.split(from).join(to); };
+          replaceAll("details: ['Moisture retention', 'Reduced water loss (Decrease TEWL)', 'Skin comfort']", "details: ['Moisture retention', 'Reduced water loss', 'Skin comfort']");
+          replaceAll("width: 30,\n        height: 30,", "width: 28,\n        height: 28,");
+          replaceAll("style={{ width: 16, height: 16, display: 'block' }}", "style={{ width: 15, height: 15, display: 'block' }}");
+          replaceAll("bottom: 'max(48px, 6.5vh)'", "bottom: 'max(54px, 7vh)'");
+          replaceAll("left: '5.8vw'", "left: '6.2vw'");
+          replaceAll("width: 'min(350px, 29vw)'", "width: 'min(320px, 27vw)'");
+          replaceAll("gridTemplateColumns: '30px 28px minmax(0, 1fr)'", "gridTemplateColumns: '28px 26px 1fr'");
+          replaceAll("paddingBottom: d < slide.details.length - 1 ? 10 : 0,", "paddingBottom: d < slide.details.length - 1 ? 11 : 0,");
+          replaceAll("marginBottom: d < slide.details.length - 1 ? 10 : 0,", "marginBottom: d < slide.details.length - 1 ? 11 : 0,");
+          replaceAll("width: 28,\n                        height: 1,", "width: 26,\n                        height: 1,");
+          replaceAll("fontSize: 10.5,", "fontSize: 10,");
+          replaceAll("lineHeight: 1.25,", "lineHeight: 1.35,");
+          fs.writeFileSync(path, text);
+          NODE
+      - name: Commit patch and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-supporting-architecture-rail.yml
+          git add components/sections/SupportingArchitectureSectionLive.tsx
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Restore compact ingredient rail proportions"
+            git push
+          fi
