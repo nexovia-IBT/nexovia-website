@@ -60,8 +60,12 @@ function getDetailIconKind(detail: string, index: number) {
   return 'surface'
 }
 
-function getDetailLabel(detail: string) {
-  return detail.replace(/\s*\([^)]*\)/g, '')
+function getDetailRailConfig(slide: typeof SLIDES[number]) {
+  const longest = Math.max(...slide.details.map((detail) => detail.length))
+  if (longest >= 30) return { width: 'min(390px, 31vw)', rowHeight: 43, fontSize: 9.2, connector: 24, icon: 28 }
+  if (longest >= 24) return { width: 'min(365px, 29vw)', rowHeight: 42, fontSize: 9.6, connector: 25, icon: 28 }
+  if (longest >= 21) return { width: 'min(345px, 28vw)', rowHeight: 41, fontSize: 10, connector: 26, icon: 28 }
+  return { width: 'min(320px, 27vw)', rowHeight: 40, fontSize: 10.5, connector: 28, icon: 30 }
 }
 
 function DetailIcon({ detail, index }: { detail: string; index: number }) {
@@ -134,7 +138,7 @@ export default function SupportingArchitectureSection() {
             <div ref={(el) => { illustrationRefs.current[i] = el }} style={{ position: 'absolute', left: '50%', top: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? '50%' : '47%', transform: 'translate(-50%, -50%)', width: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? 'min(390px, 42vw)' : 'min(280px, 30vw)', height: slide.illustration === 'adenosine' || slide.illustration === 'allantoin' ? 'min(390px, 54vh)' : 'min(280px, 42vh)', zIndex: 3, background: 'transparent', filter: 'drop-shadow(0 24px 34px rgba(115,44,63,0.16))' }}><IngredientIllustration kind={slide.illustration} /></div>
             <div style={{ position: 'absolute', top: 20, left: 48, zIndex: 4 }}><span style={{ fontSize: 13, fontWeight: 600, letterSpacing: '0.1em', color: '#732C3F', fontFamily: SANS }}>{slide.number}</span><span style={{ fontSize: 11, color: '#C57C8A', letterSpacing: '0.06em', marginLeft: 5, fontFamily: SANS }}>/ 08</span></div>
             <div style={{ position: 'absolute', top: '17%', right: '9vw', width: 'min(285px, 24vw)', zIndex: 4, textAlign: 'right' }}><p style={{ fontSize: 11, letterSpacing: '0.13em', textTransform: 'uppercase', color: '#C57C8A', margin: '0 0 10px', fontFamily: SANS }}>{slide.benefit}</p><p style={{ fontSize: 14, lineHeight: 1.75, color: '#5A1F2E', opacity: 0.82, margin: 0, fontFamily: SANS }}>{slide.description}</p></div>
-            <div style={{ position: 'absolute', bottom: 'max(54px, 7vh)', left: '6.2vw', zIndex: 4, width: 'min(320px, 27vw)' }}>{slide.details.map((detail, d) => <div key={detail} style={{ display: 'grid', gridTemplateColumns: '28px 26px minmax(0, 1fr)', alignItems: 'center', columnGap: 12, height: 40, borderBottom: d < slide.details.length - 1 ? '1px solid rgba(115,44,63,0.1)' : undefined }}><DetailIcon detail={detail} index={d} /><div style={{ width: 26, height: 1, backgroundColor: '#EDC967' }} /><span title={detail} style={{ display: 'block', minWidth: 0, fontSize: 10, color: '#732C3F', opacity: 0.9, letterSpacing: '0.1em', lineHeight: 1.35, fontWeight: 700, textTransform: 'uppercase', fontFamily: SANS, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{getDetailLabel(detail)}</span></div>)}</div>
+            {(() => { const rail = getDetailRailConfig(slide); return <div style={{ position: 'absolute', bottom: 'max(54px, 7vh)', left: '6.2vw', zIndex: 4, width: rail.width }}>{slide.details.map((detail, d) => <div key={detail} style={{ display: 'grid', gridTemplateColumns: `${rail.icon}px ${rail.connector}px minmax(0, 1fr)`, alignItems: 'center', columnGap: 12, minHeight: rail.rowHeight, paddingBottom: d < slide.details.length - 1 ? 8 : 0, marginBottom: d < slide.details.length - 1 ? 8 : 0, borderBottom: d < slide.details.length - 1 ? '1px solid rgba(115,44,63,0.1)' : undefined }}><DetailIcon detail={detail} index={d} /><div style={{ width: rail.connector, height: 1, backgroundColor: '#EDC967' }} /><span style={{ display: 'block', minWidth: 0, fontSize: rail.fontSize, color: '#732C3F', opacity: 0.9, letterSpacing: '0.1em', lineHeight: 1.25, fontWeight: 700, textTransform: 'uppercase', fontFamily: SANS }}>{detail}</span></div>)}</div> })()}
           </div>)}
         </div>
         <div style={{ position: 'absolute', right: 26, top: '50%', transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 20 }}>{SLIDES.map((_, i) => <div key={i} ref={(el) => { dotRefs.current[i] = el }} style={{ width: 6, height: 6, borderRadius: '50%', backgroundColor: i === 0 ? '#732C3F' : 'rgba(197,124,138,0.2)' }} />)}</div>
