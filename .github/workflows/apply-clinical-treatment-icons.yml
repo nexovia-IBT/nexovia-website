@@ -1,0 +1,105 @@
+name: Use clinical treatment icons
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-clinical-treatment-icons.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Replace treatment icons with most clinical set
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'components/sections/WhyNexoviaSection.tsx';
+          let text = fs.readFileSync(path, 'utf8');
+
+          const oldFunction = /function TreatmentIcon\(\{ kind \}: \{ kind: string \}\) \{[\s\S]*?\n\}\n\nconst fadeUp/;
+          const newFunction = String.raw`function TreatmentIcon({ kind }: { kind: string }) {
+  const common = {
+    fill: 'none',
+    stroke: GOLD,
+    strokeWidth: 1.45,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  }
+
+  return (
+    <svg viewBox="0 0 64 64" aria-hidden="true" style={{ width: 62, height: 62, display: 'block' }}>
+      {kind === 'laser' && (
+        <g {...common}>
+          <path d="M8 44h48" />
+          <path d="M36 10 27 41" />
+          <path d="M27 41l-8-8" />
+          <path d="M27 41l8-7" />
+          <path d="M27 41l-3 7" />
+          <path d="M27 41l5 6" />
+          {Array.from({ length: 9 }).map((_, i) => <circle key={`laser-dot-a-${i}`} cx={14 + i * 5} cy="50" r="0.9" fill={GOLD} stroke="none" />)}
+          {Array.from({ length: 7 }).map((_, i) => <circle key={`laser-dot-b-${i}`} cx={18 + i * 5} cy="55" r="0.7" fill={GOLD} stroke="none" opacity="0.75" />)}
+        </g>
+      )}
+      {kind === 'needles' && (
+        <g {...common}>
+          {[14, 22, 30, 38, 46, 54].map((x) => (
+            <path key={`needle-${x}`} d={`M${x} 9v29l-2 5 2 3 2-3-2-5V9`} />
+          ))}
+          <path d="M9 48c6-1.8 11-1.8 17 0s10 1.8 16 0 9-1.7 13 0" />
+          {Array.from({ length: 10 }).map((_, i) => <circle key={`needle-dot-a-${i}`} cx={10 + i * 5} cy="54" r="0.8" fill={GOLD} stroke="none" />)}
+          {Array.from({ length: 8 }).map((_, i) => <circle key={`needle-dot-b-${i}`} cx={14 + i * 5} cy="58" r="0.65" fill={GOLD} stroke="none" opacity="0.72" />)}
+        </g>
+      )}
+      {kind === 'rf' && (
+        <g {...common}>
+          <circle cx="32" cy="13" r="6" />
+          <path d="M18 27a20 20 0 0 0 28 0" />
+          <path d="M13 32a27 27 0 0 0 38 0" />
+          <path d="M8 37a34 34 0 0 0 48 0" />
+          <path d="M24 23a12 12 0 0 0 16 0" />
+        </g>
+      )}
+      {kind === 'peel' && (
+        <g {...common}>
+          <path d="M9 14c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 23c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 42c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 51c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          {Array.from({ length: 9 }).map((_, row) => (
+            <circle key={`peel-dot-a-${row}`} cx={12 + row * 5} cy="31" r="0.8" fill={GOLD} stroke="none" />
+          ))}
+          {Array.from({ length: 8 }).map((_, row) => (
+            <circle key={`peel-dot-b-${row}`} cx={15 + row * 5} cy="36" r="0.75" fill={GOLD} stroke="none" opacity="0.72" />
+          ))}
+        </g>
+      )}
+    </svg>
+  )
+}
+
+const fadeUp`;
+
+          if (!oldFunction.test(text)) throw new Error('TreatmentIcon function not found');
+          text = text.replace(oldFunction, newFunction);
+          fs.writeFileSync(path, text);
+          NODE
+      - name: Commit patch and remove workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply-clinical-treatment-icons.yml
+          git add components/sections/WhyNexoviaSection.tsx
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Use clinical treatment icons"
+            git push
+          fi
