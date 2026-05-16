@@ -23,7 +23,10 @@ jobs:
           const path = 'components/sections/WhyNexoviaSection.tsx';
           let text = fs.readFileSync(path, 'utf8');
 
-          const oldFunction = /function TreatmentIcon\(\{ kind \}: \{ kind: string \}\) \{[\s\S]*?\n\}\n\nconst fadeUp/;
+          const start = text.indexOf('function TreatmentIcon');
+          const end = text.indexOf('\n\nconst fadeUp', start);
+          if (start === -1 || end === -1) throw new Error('TreatmentIcon function boundaries not found');
+
           const newFunction = `function TreatmentIcon({ kind }: { kind: string }) {
   const common = {
     fill: 'none',
@@ -113,12 +116,9 @@ jobs:
       )}
     </svg>
   )
-}
+}`;
 
-const fadeUp`;
-
-          if (!oldFunction.test(text)) throw new Error('TreatmentIcon function not found');
-          text = text.replace(oldFunction, newFunction);
+          text = text.slice(0, start) + newFunction + text.slice(end);
           fs.writeFileSync(path, text);
           NODE
       - name: Commit patch and remove workflow
