@@ -93,50 +93,61 @@ function TreatmentIcon({ kind }: { kind: string }) {
   const common = {
     fill: 'none',
     stroke: GOLD,
-    strokeWidth: 1.7,
+    strokeWidth: 1.45,
     strokeLinecap: 'round' as const,
     strokeLinejoin: 'round' as const,
   }
 
   return (
-    <svg viewBox="0 0 48 48" aria-hidden="true" style={{ width: 58, height: 58, display: 'block' }}>
+    <svg viewBox="0 0 64 64" aria-hidden="true" style={{ width: 62, height: 62, display: 'block' }}>
       {kind === 'laser' && (
         <g {...common}>
-          <path d="M8 36c7-2.6 13-2.6 20 0s9 2.2 12 0" />
-          <path d="M36 8 18 29" />
-          <path d="M30 8h8v8" />
-          <path d="M19 28l5 5" />
-          <path d="M24 22l4 4" opacity="0.55" />
-          <path d="M29 16l4 4" opacity="0.55" />
+          <path d="M8 44h48" />
+          <path d="M36 10 27 41" />
+          <path d="M27 41l-8-8" />
+          <path d="M27 41l8-7" />
+          <path d="M27 41l-3 7" />
+          <path d="M27 41l5 6" />
+          {[14, 19, 24, 29, 34, 39, 44, 49].map((cx) => (
+            <circle key={`laser-dot-a-${cx}`} cx={cx} cy="50" r="0.9" fill={GOLD} stroke="none" />
+          ))}
+          {[18, 23, 28, 33, 38, 43].map((cx) => (
+            <circle key={`laser-dot-b-${cx}`} cx={cx} cy="55" r="0.7" fill={GOLD} stroke="none" opacity="0.75" />
+          ))}
         </g>
       )}
       {kind === 'needles' && (
         <g {...common}>
-          <path d="M10 11h28" />
-          <path d="M10 29h28" />
-          <path d="M14 11v18M20 11v18M26 11v18M32 11v18" />
-          <path d="M14 29l-2.4 7M20 29l-2.4 7M26 29l-2.4 7M32 29l-2.4 7M38 29l-2.4 7" />
-          <path d="M12 36h26" opacity="0.38" />
+          {[14, 22, 30, 38, 46, 54].map((cx) => (
+            <path key={`needle-${cx}`} d={`M${cx} 9v29l-2 5 2 3 2-3-2-5V9`} />
+          ))}
+          <path d="M9 48c6-1.8 11-1.8 17 0s10 1.8 16 0 9-1.7 13 0" />
+          {[10, 15, 20, 25, 30, 35, 40, 45, 50].map((cx) => (
+            <circle key={`needle-dot-${cx}`} cx={cx} cy="54" r="0.8" fill={GOLD} stroke="none" />
+          ))}
         </g>
       )}
       {kind === 'rf' && (
         <g {...common}>
-          <path d="M8 36c6-2.1 11.5-2.1 17.5 0s9.5 2.1 14.5 0" />
-          <circle cx="24" cy="21" r="3.2" />
-          <path d="M18 15a9 9 0 0 1 12 0" />
-          <path d="M14 10.5a15 15 0 0 1 20 0" />
-          <path d="M10 6a21 21 0 0 1 28 0" />
-          <path d="M20 28c2.5 1.8 5.5 1.8 8 0" />
+          <circle cx="32" cy="13" r="6" />
+          <path d="M24 23a12 12 0 0 0 16 0" />
+          <path d="M18 27a20 20 0 0 0 28 0" />
+          <path d="M13 32a27 27 0 0 0 38 0" />
+          <path d="M8 37a34 34 0 0 0 48 0" />
         </g>
       )}
       {kind === 'peel' && (
         <g {...common}>
-          <path d="M8 33c7-3 14-3 21 0s8 2.8 11 1" />
-          <path d="M10 26c7-3 14-3 21 0s7 2.3 9 1" />
-          <path d="M13 19c7-2.8 13-2.8 19 0" />
-          <path d="M31 19c5 4.2 6 9.5 2.5 15" />
-          <path d="M34 34c-4-3.2-4-7.2-.2-11.5" />
-          <path d="M17 15h13" opacity="0.45" />
+          <path d="M9 14c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 23c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 42c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          <path d="M9 51c9-2.4 18-2.4 27 0s13 2.4 19 0" />
+          {[12, 17, 22, 27, 32, 37, 42, 47].map((cx) => (
+            <circle key={`peel-dot-a-${cx}`} cx={cx} cy="31" r="0.8" fill={GOLD} stroke="none" />
+          ))}
+          {[15, 20, 25, 30, 35, 40, 45].map((cx) => (
+            <circle key={`peel-dot-b-${cx}`} cx={cx} cy="36" r="0.75" fill={GOLD} stroke="none" opacity="0.72" />
+          ))}
         </g>
       )}
     </svg>
