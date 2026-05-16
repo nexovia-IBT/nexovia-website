@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 const GOLD = '#EDC967'
@@ -61,12 +62,86 @@ const CARDS = [
   },
 ]
 
-const STATS = [
-  { value: '4', label: 'Protocol Phases' },
-  { value: '8', label: 'Formula Pillars' },
-  { value: 'AM', label: 'Morning Use' },
-  { value: 'PM', label: 'Evening Use' },
+const TREATMENTS = [
+  {
+    name: 'Laser',
+    label: 'Thermal recovery support',
+    icon: 'laser',
+    points: ['Calm visible redness', 'Support barrier comfort', 'Hydrate compromised skin'],
+  },
+  {
+    name: 'Microneedling',
+    label: 'Channel-based recovery',
+    icon: 'needles',
+    points: ['Support open-channel aftercare', 'Soothe post-treatment sensitivity', 'Maintain moisture balance'],
+  },
+  {
+    name: 'RF',
+    label: 'Energy-based procedure support',
+    icon: 'rf',
+    points: ['Comfort heat-stressed skin', 'Support the repair window', 'Reinforce hydration'],
+  },
+  {
+    name: 'Peels / IPL',
+    label: 'Resurfacing comfort support',
+    icon: 'peel',
+    points: ['Reduce the look of dryness', 'Support renewed surface comfort', 'Keep skin feeling calm'],
+  },
 ]
+
+function TreatmentIcon({ kind }: { kind: string }) {
+  const common = {
+    fill: 'none',
+    stroke: GOLD,
+    strokeWidth: 1.7,
+    strokeLinecap: 'round' as const,
+    strokeLinejoin: 'round' as const,
+  }
+
+  return (
+    <svg viewBox="0 0 48 48" aria-hidden="true" style={{ width: 58, height: 58, display: 'block' }}>
+      {kind === 'laser' && (
+        <g {...common}>
+          <path d="M8 36c7-2.6 13-2.6 20 0s9 2.2 12 0" />
+          <path d="M36 8 18 29" />
+          <path d="M30 8h8v8" />
+          <path d="M19 28l5 5" />
+          <path d="M24 22l4 4" opacity="0.55" />
+          <path d="M29 16l4 4" opacity="0.55" />
+        </g>
+      )}
+      {kind === 'needles' && (
+        <g {...common}>
+          <path d="M10 11h28" />
+          <path d="M10 29h28" />
+          <path d="M14 11v18M20 11v18M26 11v18M32 11v18" />
+          <path d="M14 29l-2.4 7M20 29l-2.4 7M26 29l-2.4 7M32 29l-2.4 7M38 29l-2.4 7" />
+          <path d="M12 36h26" opacity="0.38" />
+        </g>
+      )}
+      {kind === 'rf' && (
+        <g {...common}>
+          <path d="M8 36c6-2.1 11.5-2.1 17.5 0s9.5 2.1 14.5 0" />
+          <circle cx="24" cy="21" r="3.2" />
+          <path d="M18 15a9 9 0 0 1 12 0" />
+          <path d="M14 10.5a15 15 0 0 1 20 0" />
+          <path d="M10 6a21 21 0 0 1 28 0" />
+          <path d="M20 28c2.5 1.8 5.5 1.8 8 0" />
+        </g>
+      )}
+      {kind === 'peel' && (
+        <g {...common}>
+          <path d="M8 33c7-3 14-3 21 0s8 2.8 11 1" />
+          <path d="M10 26c7-3 14-3 21 0s7 2.3 9 1" />
+          <path d="M13 19c7-2.8 13-2.8 19 0" />
+          <path d="M31 19c5 4.2 6 9.5 2.5 15" />
+          <path d="M34 34c-4-3.2-4-7.2-.2-11.5" />
+          <path d="M17 15h13" opacity="0.45" />
+        </g>
+      )}
+    </svg>
+  )
+}
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -74,6 +149,9 @@ const fadeUp = {
 }
 
 export default function WhyNexoviaSection() {
+  const [activeTreatment, setActiveTreatment] = useState(0)
+  const treatment = TREATMENTS[activeTreatment]
+
   return (
     <section
       id="why-nexovia"
@@ -89,27 +167,34 @@ export default function WhyNexoviaSection() {
           gap: 22px;
           margin-bottom: 64px;
         }
-        .nexovia-stats-grid {
+        .nexovia-treatment-module {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+          gap: clamp(32px, 6vw, 92px);
+          align-items: center;
+          border-top: 1px solid rgba(237,201,103,0.72);
+          border-bottom: 1px solid rgba(237,201,103,0.72);
+          padding: clamp(34px, 5vw, 62px) 0;
         }
-        @media (max-width: 768px) {
+        .nexovia-treatment-tabs {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          border-top: 1px solid rgba(237,201,103,0.45);
+          margin-top: 30px;
+        }
+        @media (max-width: 900px) {
           .nexovia-why-cards {
             grid-template-columns: 1fr;
           }
-          .nexovia-stats-grid {
-            grid-template-columns: repeat(2, 1fr);
+          .nexovia-treatment-module {
+            grid-template-columns: 1fr;
           }
-          .nexovia-stat-cell:nth-child(3) {
-            border-left: none !important;
-          }
-          .nexovia-stat-cell:nth-child(n+3) {
-            border-top: 1px solid #EDC967;
+          .nexovia-treatment-tabs {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
           }
         }
       `}</style>
 
-      {/* Header */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -146,7 +231,6 @@ export default function WhyNexoviaSection() {
         </p>
       </motion.div>
 
-      {/* Cards */}
       <div className="nexovia-why-cards">
         {CARDS.map((card, i) => (
           <motion.div
@@ -210,54 +294,152 @@ export default function WhyNexoviaSection() {
         ))}
       </div>
 
-      {/* Stats strip */}
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-60px' }}
         variants={fadeUp}
         transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1], delay: 0.3 }}
-        className="nexovia-stats-grid"
-        style={{
-          borderTop: `1px solid ${GOLD}`,
-          borderBottom: `1px solid ${GOLD}`,
-        }}
+        className="nexovia-treatment-module"
       >
-        {STATS.map((stat, i) => (
-          <div
-            key={i}
-            className="nexovia-stat-cell"
+        <div>
+          <p
             style={{
-              padding: '32px 24px',
-              textAlign: 'center',
-              borderLeft: i > 0 ? `1px solid ${GOLD}` : undefined,
+              fontSize: 11,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: GOLD,
+              margin: '0 0 18px',
+              fontFamily: SANS,
             }}
           >
+            Treatment Compatibility
+          </p>
+          <h3
+            className="font-serif"
+            style={{
+              fontSize: 'clamp(32px, 4vw, 54px)',
+              fontWeight: 400,
+              color: '#ffffff',
+              lineHeight: 1.08,
+              margin: '0 0 18px',
+            }}
+          >
+            Built For The Recovery Window
+          </h3>
+          <p
+            style={{
+              fontSize: 14,
+              lineHeight: 1.75,
+              color: 'rgba(255,255,255,0.68)',
+              maxWidth: 430,
+              margin: 0,
+              fontFamily: SANS,
+            }}
+          >
+            Nexovia supports the post-treatment window after energy, resurfacing, and channel-based procedures, when skin needs hydration, comfort, and barrier-focused care.
+          </p>
+        </div>
+
+        <div
+          style={{
+            borderLeft: '1px solid rgba(237,201,103,0.52)',
+            paddingLeft: 'clamp(28px, 4vw, 54px)',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
             <div
-              className="font-serif"
               style={{
-                fontSize: 42,
-                fontWeight: 400,
-                color: GOLD,
-                lineHeight: 1,
-                marginBottom: 8,
+                width: 82,
+                height: 82,
+                border: '1px solid rgba(237,201,103,0.72)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
               }}
             >
-              {stat.value}
+              <TreatmentIcon kind={treatment.icon} />
             </div>
-            <div
-              style={{
-                fontSize: 11,
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase' as const,
-                color: 'rgba(255,255,255,0.6)',
-                fontFamily: SANS,
-              }}
-            >
-              {stat.label}
+            <div>
+              <h4
+                className="font-serif"
+                style={{
+                  fontSize: 'clamp(30px, 4vw, 50px)',
+                  fontWeight: 400,
+                  color: GOLD,
+                  lineHeight: 1,
+                  margin: '0 0 10px',
+                }}
+              >
+                {treatment.name}
+              </h4>
+              <p
+                style={{
+                  fontSize: 11,
+                  letterSpacing: '0.14em',
+                  textTransform: 'uppercase',
+                  color: 'rgba(255,255,255,0.72)',
+                  margin: 0,
+                  fontFamily: SANS,
+                }}
+              >
+                {treatment.label}
+              </p>
             </div>
           </div>
-        ))}
+
+          <div style={{ marginTop: 28, display: 'grid', gap: 12 }}>
+            {treatment.points.map((point) => (
+              <div key={point} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                <span style={{ width: 28, height: 1, backgroundColor: GOLD, flexShrink: 0 }} />
+                <span
+                  style={{
+                    fontSize: 13,
+                    lineHeight: 1.45,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: '#ffffff',
+                    fontFamily: SANS,
+                  }}
+                >
+                  {point}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="nexovia-treatment-tabs">
+            {TREATMENTS.map((item, i) => {
+              const active = i === activeTreatment
+              return (
+                <button
+                  key={item.name}
+                  type="button"
+                  onClick={() => setActiveTreatment(i)}
+                  style={{
+                    appearance: 'none',
+                    border: 'none',
+                    borderLeft: i > 0 ? '1px solid rgba(237,201,103,0.28)' : 'none',
+                    backgroundColor: active ? 'rgba(237,201,103,0.14)' : 'transparent',
+                    color: active ? GOLD : 'rgba(255,255,255,0.64)',
+                    cursor: 'pointer',
+                    fontFamily: SANS,
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: '0.1em',
+                    lineHeight: 1.2,
+                    minHeight: 54,
+                    padding: '14px 10px',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {item.name}
+                </button>
+              )
+            })}
+          </div>
+        </div>
       </motion.div>
     </section>
   )
