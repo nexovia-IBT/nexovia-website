@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import ScrollProgress from '@/components/ScrollProgress'
 import OrbitSection from '@/components/sections/OrbitSection'
 import SupportingArchitectureSection from '@/components/sections/SupportingArchitectureSectionLive'
+import ClinicalEvidenceSection from '@/components/sections/ClinicalEvidenceSection'
 import ProtocolSection from '@/components/sections/ProtocolSection'
 import WhyNexoviaSection from '@/components/sections/WhyNexoviaSection'
 import FAQSection from '@/components/sections/FAQSection'
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <OrbitSection />
         <SupportingArchitectureSection />
+        <ClinicalEvidenceSection />
         <ProtocolSection />
         <WhyNexoviaSection />
         <FAQSection />
