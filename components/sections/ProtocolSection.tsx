@@ -9,6 +9,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 const SANS = '"Helvetica Neue", Helvetica, Arial, sans-serif'
 const GOLD = '#EDC967'
 const BURGUNDY = '#732C3F'
+const MOBILE_QUERY = '(max-width: 768px)'
 const STRIP_H = 68
 
 interface AccordionItem {
@@ -206,8 +207,290 @@ function getColors(isDark: boolean): PanelColors {
   }
 }
 
+function MobileProtocolSection({
+  openItems,
+  toggle,
+}: {
+  openItems: Record<string, boolean>
+  toggle: (pIdx: number, aIdx: number) => void
+}) {
+  return (
+    <section id="protocol-section" style={{ backgroundColor: PHASES[0].bg, overflow: 'hidden' }}>
+      {PHASES.map((phase, i) => {
+        const c = getColors(phase.isDark)
+
+        return (
+          <article
+            key={phase.number}
+            style={{
+              position: 'relative',
+              minHeight: '100svh',
+              backgroundColor: phase.bg,
+              padding: '112px 24px 34px',
+              overflow: 'hidden',
+              borderTop: i > 0 ? `1px solid ${c.stripBorder}` : undefined,
+            }}
+          >
+            {phase.bgWord && (
+              <div
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: '36%',
+                  transform: 'translate(-50%, -50%)',
+                  pointerEvents: 'none',
+                  zIndex: 1,
+                }}
+              >
+                <span
+                  className="font-serif"
+                  style={{
+                    fontSize: '31vw',
+                    fontWeight: 400,
+                    color: c.bgWord,
+                    letterSpacing: 0,
+                    lineHeight: 1,
+                    whiteSpace: 'nowrap',
+                    display: 'block',
+                  }}
+                >
+                  {phase.bgWord}
+                </span>
+              </div>
+            )}
+
+            <div style={{ position: 'relative', zIndex: 2, maxWidth: 360, margin: '0 auto' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'end', gap: 18 }}>
+                <div>
+                  <span
+                    className="font-serif"
+                    style={{
+                      fontSize: 86,
+                      fontWeight: 400,
+                      color: c.number,
+                      lineHeight: 0.82,
+                      display: 'block',
+                    }}
+                  >
+                    {phase.number}
+                  </span>
+                  <span
+                    style={{
+                      display: 'block',
+                      marginTop: 9,
+                      fontSize: 11,
+                      letterSpacing: '0.16em',
+                      textTransform: 'uppercase',
+                      color: c.label,
+                      fontFamily: SANS,
+                    }}
+                  >
+                    {phase.label}
+                  </span>
+                </div>
+
+                <div style={{ position: 'relative', width: 92, height: 148, marginBottom: -4 }}>
+                  <Image
+                    src="/products/Nexovia_wo_background.png"
+                    alt="Nexovia Skin Serum"
+                    fill
+                    unoptimized
+                    sizes="92px"
+                    style={{
+                      objectFit: 'contain',
+                      filter: phase.isDark
+                        ? 'drop-shadow(0 20px 28px rgba(0,0,0,0.22))'
+                        : 'drop-shadow(0 18px 24px rgba(90,31,46,0.18))',
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div style={{ marginTop: 42 }}>
+                <h3
+                  className="font-serif"
+                  style={{
+                    fontSize: 34,
+                    fontWeight: 400,
+                    color: c.title,
+                    margin: '0 0 12px',
+                    lineHeight: 1.06,
+                  }}
+                >
+                  {phase.title}
+                </h3>
+                <p
+                  style={{
+                    fontSize: 15,
+                    lineHeight: 1.65,
+                    color: c.subtext,
+                    margin: 0,
+                    fontFamily: SANS,
+                  }}
+                >
+                  {phase.subtext}
+                </p>
+              </div>
+
+              <div style={{ marginTop: 30 }}>
+                <p
+                  style={{
+                    margin: '0 0 4px',
+                    fontSize: 10,
+                    letterSpacing: '0.16em',
+                    textTransform: 'uppercase',
+                    color: c.label,
+                    fontFamily: SANS,
+                  }}
+                >
+                  Questions
+                </p>
+
+                {phase.accordion.map((item, j) => {
+                  const isOpen = openItems[`${i}-${j}`] ?? false
+
+                  return (
+                    <div
+                      key={item.q}
+                      style={{
+                        borderTop: `1px solid ${c.accordionDivider}`,
+                        borderBottom: j === phase.accordion.length - 1 ? `1px solid ${c.accordionDivider}` : undefined,
+                      }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => toggle(i, j)}
+                        aria-expanded={isOpen}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          gap: 14,
+                          width: '100%',
+                          minHeight: 58,
+                          padding: '14px 0',
+                          background: 'none',
+                          border: 'none',
+                          cursor: 'pointer',
+                          textAlign: 'left',
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontSize: 14,
+                            color: c.accordionQ,
+                            fontFamily: SANS,
+                            lineHeight: 1.38,
+                            flex: 1,
+                          }}
+                        >
+                          {item.q}
+                        </span>
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            width: 28,
+                            height: 28,
+                            border: `1px solid ${c.indicatorBorder}`,
+                            borderRadius: 2,
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            flexShrink: 0,
+                            color: c.indicatorColor,
+                            fontSize: 20,
+                            fontFamily: SANS,
+                            lineHeight: 1,
+                          }}
+                        >
+                          {isOpen ? '-' : '+'}
+                        </span>
+                      </button>
+
+                      {isOpen && (
+                        <p
+                          style={{
+                            fontSize: 13,
+                            lineHeight: 1.66,
+                            color: c.accordionA,
+                            fontFamily: SANS,
+                            margin: '0 0 18px',
+                          }}
+                        >
+                          {item.a}
+                        </p>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div
+                style={{
+                  marginTop: 30,
+                  paddingTop: 16,
+                  borderTop: `1px solid ${c.stripBorder}`,
+                }}
+              >
+                <span
+                  style={{
+                    display: 'block',
+                    fontSize: 10,
+                    letterSpacing: '0.14em',
+                    textTransform: 'uppercase',
+                    color: c.stripLabel,
+                    fontFamily: SANS,
+                    marginBottom: 10,
+                  }}
+                >
+                  {phase.stripLabel}
+                </span>
+                <div
+                  style={{
+                    display: 'flex',
+                    gap: 8,
+                    overflowX: 'auto',
+                    paddingBottom: 4,
+                    scrollbarWidth: 'none',
+                  }}
+                >
+                  {phase.chips.map((chip, k) => {
+                    const isActive = k === phase.activeChip
+                    return (
+                      <span
+                        key={chip}
+                        style={{
+                          padding: '8px 13px',
+                          borderRadius: 999,
+                          border: `1px solid ${isActive ? c.chipActiveBorder : c.chipDefaultBorder}`,
+                          backgroundColor: isActive ? c.chipActiveBg : c.chipDefaultBg,
+                          color: isActive ? c.chipActiveText : c.chipDefaultText,
+                          fontSize: 10,
+                          letterSpacing: '0.1em',
+                          textTransform: 'uppercase',
+                          fontFamily: SANS,
+                          flexShrink: 0,
+                          whiteSpace: 'nowrap',
+                        }}
+                      >
+                        {chip}
+                      </span>
+                    )
+                  })}
+                </div>
+              </div>
+            </div>
+          </article>
+        )
+      })}
+    </section>
+  )
+}
+
 export default function ProtocolSection() {
   const [reducedMotion, setReducedMotion] = useState(false)
+  const [mobileLayout, setMobileLayout] = useState(false)
   const [openItems, setOpenItems] = useState<Record<string, boolean>>({})
 
   const sectionRef   = useRef<HTMLElement>(null)
@@ -217,6 +500,16 @@ export default function ProtocolSection() {
   const currentPanel = useRef(0)
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_QUERY)
+    const updateLayout = () => setMobileLayout(mediaQuery.matches)
+
+    updateLayout()
+    mediaQuery.addEventListener('change', updateLayout)
+    return () => mediaQuery.removeEventListener('change', updateLayout)
+  }, [])
+
+  useEffect(() => {
+    if (window.matchMedia(MOBILE_QUERY).matches) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setReducedMotion(true)
       return
@@ -302,6 +595,10 @@ export default function ProtocolSection() {
   }
 
   // ── Reduced-motion fallback — stacked panels ──────────────────────────────
+  if (mobileLayout) {
+    return <MobileProtocolSection openItems={openItems} toggle={toggle} />
+  }
+
   if (reducedMotion) {
     return (
       <section id="protocol-section">

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 
 const SANS = '"Helvetica Neue", Helvetica, Arial, sans-serif'
+const MOBILE_QUERY = '(max-width: 768px)'
 const AMBIENT_BG = ['#F7E8EC', '#F4E2E8', '#F8EBED', '#F2DDE5', '#F6E6EB', '#F3E0E7', '#F8ECF0', '#EDD6DE']
 const ILLUSTRATION_ROTATE = [-5, 8, -10, 6, -8, 12, -6, 9]
 
@@ -66,8 +67,188 @@ function DetailIcon({ detail, index }: { detail: string; index: number }) {
   return <span aria-hidden="true" style={{ width: 26, height: 26, borderRadius: '50%', backgroundColor: 'rgba(197,124,138,0.13)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}><svg viewBox="0 0 24 24" style={{ width: 14, height: 14, display: 'block' }}>{kind === 'drop' && <path d="M12 3c3 4 5 6.8 5 10a5 5 0 0 1-10 0c0-3.2 2-6 5-10Z" {...common} />}{kind === 'dropPlus' && <g {...common}><path d="M10.5 4c2.5 3.4 4.1 5.6 4.1 8.1a4.1 4.1 0 0 1-8.2 0c0-2.5 1.6-4.7 4.1-8.1Z" /><path d="M17 13v5M14.5 15.5h5" /></g>}{kind === 'dryness' && <g {...common}><path d="M4.5 8.5h5.2l1.1-1.8 1.4 3.1 1.2-1.3h6.1" /><path d="M4.5 13h4.1l1.3-1.7 1.6 3.1 1.4-1.4h6.6" /><path d="M4.5 17.5h5.8l1.2-1.5 1.5 2.4 1.3-.9h5.2" /></g>}{kind === 'layers' && <g {...common}><path d="M12 4 4.8 8l7.2 4 7.2-4L12 4Z" /><path d="M5 12l7 4 7-4" /><path d="M5 16l7 4 7-4" /></g>}{kind === 'shieldDrop' && <g {...common}><path d="M12 3 18 5.4v5.2c0 4-2.4 7.1-6 9.4-3.6-2.3-6-5.4-6-9.4V5.4L12 3Z" /><path d="M12 8.2c1.5 2 2.4 3.3 2.4 4.7a2.4 2.4 0 0 1-4.8 0c0-1.4.9-2.7 2.4-4.7Z" /></g>}{kind === 'calm' && <g {...common}><path d="M4 9c2-2 4-2 6 0s4 2 6 0 3-1.5 4 0" /><path d="M4 14c2-2 4-2 6 0s4 2 6 0 3-1.5 4 0" /></g>}{kind === 'leaf' && <g {...common}><path d="M6 17c6.5.4 11-3.5 12-11-7.5 1-11.4 5.5-11 12" /><path d="M7 17c2.6-3.2 5.4-5.4 9-7" /></g>}{kind === 'hand' && <g {...common}><path d="M5 14.5c2.4-1 4.4-1.2 6.3-.4l2.1.9" /><path d="M9.8 14.2h4.1c1.2 0 1.8.7 1.8 1.5 0 .7-.5 1.3-1.5 1.4l-3.3.2" /><path d="M15.4 15.4 18.8 13c.9-.6 1.8-.3 2.2.4.3.6.1 1.3-.6 1.8l-5.1 3.7c-.7.5-1.5.7-2.4.5L5 17.6" /></g>}{kind === 'elastic' && <g {...common}><path d="M5 13c2.2-4.5 5.1-4.5 7 0s4.8 4.5 7 0" /><path d="M5 17c2.2-4.5 5.1-4.5 7 0s4.8 4.5 7 0" /></g>}{kind === 'renewal' && <g {...common}><path d="M18.2 8.2A7 7 0 0 0 6.6 6.7L5 8.3" /><path d="M5 4.5v3.8h3.8" /><path d="M5.8 15.8a7 7 0 0 0 11.6 1.5l1.6-1.6" /><path d="M19 19.5v-3.8h-3.8" /></g>}{kind === 'network' && <g {...common}><path d="M7 7h10v10H7Z" /><path d="M7 7l10 10M17 7 7 17" /></g>}{kind === 'shieldSparkle' && <g {...common}><path d="M12 3 18 5.4v5.2c0 4-2.4 7.1-6 9.4-3.6-2.3-6-5.4-6-9.4V5.4L12 3Z" /><path d="M12 8v6M9 11h6" /></g>}{kind === 'diamond' && <g {...common}><path d="M6 8h12l-6 11L6 8Z" /><path d="M8.5 5h7L18 8H6l2.5-3Z" /><path d="M10 8l2 11 2-11" /></g>}{kind === 'surface' && <g {...common}><path d="M5 8h14" /><path d="M5 12h14" /><path d="M5 16h14" /></g>}</svg></span>
 }
 
+function MobileSupportingArchitectureSection() {
+  return (
+    <section id="sa-section" style={{ backgroundColor: AMBIENT_BG[0], overflow: 'hidden' }}>
+      {SLIDES.map((slide, i) => (
+        <article
+          key={slide.title}
+          style={{
+            position: 'relative',
+            minHeight: '100svh',
+            backgroundColor: AMBIENT_BG[i],
+            padding: '96px 24px 36px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+            overflow: 'hidden',
+          }}
+        >
+          <div
+            aria-hidden="true"
+            style={{
+              position: 'absolute',
+              left: '50%',
+              bottom: '24%',
+              transform: 'translateX(-50%)',
+              color: '#732C3F',
+              opacity: 0.055,
+              fontSize: slide.title.length > 13 ? 54 : 68,
+              lineHeight: 1,
+              whiteSpace: 'nowrap',
+              zIndex: 1,
+              pointerEvents: 'none',
+            }}
+            className="font-serif"
+          >
+            {slide.title}
+          </div>
+
+          <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 360 }}>
+            <div style={{ textAlign: 'center', marginBottom: 28 }}>
+              <h2
+                className="font-serif"
+                style={{
+                  fontSize: 34,
+                  fontWeight: 400,
+                  color: '#732C3F',
+                  lineHeight: 1.06,
+                  margin: '0 0 9px',
+                }}
+              >
+                Supporting Architecture
+              </h2>
+              <p
+                style={{
+                  fontSize: 10,
+                  letterSpacing: '0.18em',
+                  textTransform: 'uppercase',
+                  color: '#C57C8A',
+                  margin: 0,
+                  fontFamily: SANS,
+                }}
+              >
+                Formula Components
+              </p>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+              <p style={{ margin: 0, fontSize: 12, letterSpacing: '0.12em', color: '#732C3F', fontFamily: SANS, fontWeight: 700 }}>
+                {slide.number}
+                <span style={{ color: '#C57C8A', fontWeight: 500, marginLeft: 5 }}>/ 08</span>
+              </p>
+              <div style={{ display: 'flex', gap: 5 }}>
+                {SLIDES.map((_, dotIdx) => (
+                  <span
+                    key={dotIdx}
+                    aria-hidden="true"
+                    style={{
+                      width: dotIdx === i ? 18 : 5,
+                      height: 5,
+                      borderRadius: 999,
+                      backgroundColor: dotIdx === i ? '#732C3F' : 'rgba(197,124,138,0.24)',
+                      display: 'block',
+                    }}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div style={{ textAlign: 'center' }}>
+              <p
+                style={{
+                  margin: '0 0 10px',
+                  fontSize: 11,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: '#C57C8A',
+                  fontFamily: SANS,
+                  fontWeight: 700,
+                }}
+              >
+                {slide.benefit}
+              </p>
+              <h3
+                className="font-serif"
+                style={{
+                  margin: 0,
+                  color: '#732C3F',
+                  fontSize: slide.title.length > 14 ? 32 : 38,
+                  fontWeight: 400,
+                  lineHeight: 1.05,
+                }}
+              >
+                {slide.title}
+              </h3>
+            </div>
+
+            <div
+              style={{
+                width: 156,
+                height: 156,
+                margin: '18px auto 14px',
+                filter: 'drop-shadow(0 22px 30px rgba(115,44,63,0.14))',
+              }}
+            >
+              <IngredientIllustration kind={slide.illustration} />
+            </div>
+
+            <p
+              style={{
+                margin: '0 auto',
+                maxWidth: 326,
+                textAlign: 'center',
+                fontSize: 14,
+                lineHeight: 1.58,
+                color: 'rgba(90,31,46,0.82)',
+                fontFamily: SANS,
+              }}
+            >
+              {slide.description}
+            </p>
+
+            <div style={{ marginTop: 20 }}>
+              {slide.details.map((detail, detailIdx) => (
+                <div
+                  key={detail}
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: '30px 24px minmax(0, 1fr)',
+                    alignItems: 'center',
+                    columnGap: 10,
+                    padding: detailIdx === 0 ? '0 0 10px' : '10px 0',
+                    borderBottom: detailIdx < slide.details.length - 1 ? '1px solid rgba(115,44,63,0.11)' : undefined,
+                  }}
+                >
+                  <DetailIcon detail={detail} index={detailIdx} />
+                  <span aria-hidden="true" style={{ width: 24, height: 1, backgroundColor: '#EDC967', display: 'block' }} />
+                  <span
+                    style={{
+                      color: '#732C3F',
+                      fontSize: 11,
+                      lineHeight: 1.28,
+                      letterSpacing: '0.12em',
+                      textTransform: 'uppercase',
+                      fontFamily: SANS,
+                      fontWeight: 700,
+                    }}
+                  >
+                    {detail}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </section>
+  )
+}
+
 export default function SupportingArchitectureSection() {
   const [reducedMotion, setReducedMotion] = useState(false)
+  const [mobileLayout, setMobileLayout] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
   const stageRef = useRef<HTMLDivElement>(null)
   const slideRefs = useRef<(HTMLDivElement | null)[]>([])
@@ -76,6 +257,16 @@ export default function SupportingArchitectureSection() {
   const currentSlide = useRef(0)
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_QUERY)
+    const updateLayout = () => setMobileLayout(mediaQuery.matches)
+
+    updateLayout()
+    mediaQuery.addEventListener('change', updateLayout)
+    return () => mediaQuery.removeEventListener('change', updateLayout)
+  }, [])
+
+  useEffect(() => {
+    if (window.matchMedia(MOBILE_QUERY).matches) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { setReducedMotion(true); return }
     let scrollRaf: number | null = null
     const getSectionProgress = () => {
@@ -114,6 +305,10 @@ export default function SupportingArchitectureSection() {
     if (illustration) { gsap.killTweensOf(illustration); gsap.set(illustration, { rotate: ILLUSTRATION_ROTATE[prev], scale: 0.96 }); gsap.to(illustration, { rotate: ILLUSTRATION_ROTATE[next], scale: 1, duration: 0.7, ease: 'power2.out' }) }
     gsap.to(stageRef.current, { backgroundColor: AMBIENT_BG[next], duration: 0.6, ease: 'power2.inOut' })
     dotRefs.current.forEach((dot, i) => { if (dot) gsap.to(dot, { backgroundColor: i === next ? '#732C3F' : 'rgba(197,124,138,0.2)', duration: 0.3 }) })
+  }
+
+  if (mobileLayout) {
+    return <MobileSupportingArchitectureSection />
   }
 
   if (reducedMotion) {
