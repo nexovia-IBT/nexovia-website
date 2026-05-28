@@ -13,6 +13,7 @@ const SECTIONS = [
   { id: 'synergy',     label: 'The Synergy' },
   { id: 'aba4',        label: 'ABA.4' },
   { id: 'ingredients', label: 'Ingredients' },
+  { id: 'clinical-evidence', label: 'Clinical Evidence' },
   { id: 'protocol',    label: 'Protocol' },
   { id: 'why',         label: 'Why Nexovia' },
   { id: 'faq',         label: 'FAQ' },
@@ -46,6 +47,7 @@ function getTargetScrollTop(id: string): number {
 function getActiveSection(scrollY: number): string {
   const orbitEl = document.getElementById('orbit-outer')
   const saEl    = document.getElementById('sa-section')
+  const clinicalEl = document.getElementById('clinical-evidence')
   const protoEl = document.getElementById('protocol-section')
   const whyEl   = document.getElementById('why-nexovia')
   const faqEl   = document.getElementById('faq')
@@ -53,6 +55,7 @@ function getActiveSection(scrollY: number): string {
   if (faqEl   && scrollY >= faqEl.offsetTop   - 80) return 'faq'
   if (whyEl   && scrollY >= whyEl.offsetTop   - 80) return 'why'
   if (protoEl && scrollY >= protoEl.offsetTop - 80) return 'protocol'
+  if (clinicalEl && scrollY >= clinicalEl.offsetTop - 80) return 'clinical-evidence'
   if (saEl    && scrollY >= saEl.offsetTop    - 80) return 'ingredients'
 
   if (orbitEl) {
