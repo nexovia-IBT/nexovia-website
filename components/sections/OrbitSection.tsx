@@ -64,7 +64,7 @@ const ABA4_INGREDIENTS = [
   {
     name: 'Plant Exosomes',
     detail: '4B particles/mL',
-    role: 'Delivery + calm',
+    role: 'Delivery + soothing',
     image: 'https://images.squarespace-cdn.com/content/v1/6954c55e1b5b1e1843f265d0/0c5d7bda-d4db-45d1-869a-fc507f4e605f/Exosomes.webp?format=500w',
   },
   {
