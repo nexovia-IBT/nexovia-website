@@ -163,12 +163,12 @@ interface PanelColors {
 function getColors(isDark: boolean): PanelColors {
   if (!isDark) {
     return {
-      number: BURGUNDY,
+      number: GOLD,
       label: 'rgba(115,44,63,0.5)',
-      title: BURGUNDY,
-      subtext: 'rgba(115,44,63,0.6)',
-      accordionQ: BURGUNDY,
-      accordionA: 'rgba(115,44,63,0.6)',
+      title: '#ffffff',
+      subtext: '#ffffff',
+      accordionQ: '#ffffff',
+      accordionA: '#ffffff',
       accordionDivider: 'rgba(115,44,63,0.12)',
       indicatorBorder: 'rgba(115,44,63,0.2)',
       indicatorColor: BURGUNDY,
@@ -188,9 +188,9 @@ function getColors(isDark: boolean): PanelColors {
     number: GOLD,
     label: 'rgba(237,201,103,0.55)',
     title: '#ffffff',
-    subtext: 'rgba(255,255,255,0.6)',
+    subtext: '#ffffff',
     accordionQ: '#ffffff',
-    accordionA: 'rgba(255,255,255,0.55)',
+    accordionA: '#ffffff',
     accordionDivider: 'rgba(255,255,255,0.1)',
     indicatorBorder: 'rgba(255,255,255,0.2)',
     indicatorColor: GOLD,
@@ -725,9 +725,9 @@ export default function ProtocolSection() {
                   right: 0,
                   bottom: STRIP_H,
                   display: 'grid',
-                  gridTemplateColumns: '180px 1fr 300px',
+                  gridTemplateColumns: '180px 1fr 430px',
                   columnGap: 40,
-                  padding: '0 64px',
+                  padding: '0 120px 0 64px',
                   alignItems: 'center',
                   alignContent: 'center',
                   zIndex: 2,
@@ -787,8 +787,8 @@ export default function ProtocolSection() {
                     <h3
                       className="font-serif"
                       style={{
-                        fontSize: 'clamp(20px, 2.2vw, 32px)',
-                        fontWeight: 400,
+                        fontSize: 'clamp(28px, 3vw, 46px)',
+                        fontWeight: 700,
                         color: c.title,
                         margin: '0 0 10px',
                         lineHeight: 1.15,
@@ -798,11 +798,11 @@ export default function ProtocolSection() {
                     </h3>
                     <p
                       style={{
-                        fontSize: 13,
+                        fontSize: 22,
                         lineHeight: 1.7,
                         color: c.subtext,
-                        margin: 0,
-                        maxWidth: 340,
+                        margin: '0 auto',
+                        maxWidth: 760,
                         fontFamily: SANS,
                       }}
                     >
@@ -838,7 +838,8 @@ export default function ProtocolSection() {
                         >
                           <span
                             style={{
-                              fontSize: 13,
+                              fontSize: 19,
+                              fontWeight: 700,
                               color: c.accordionQ,
                               fontFamily: SANS,
                               lineHeight: 1.4,
@@ -869,14 +870,14 @@ export default function ProtocolSection() {
                         </button>
                         <div
                           style={{
-                            maxHeight: isOpen ? '200px' : '0',
+                            maxHeight: isOpen ? '1000px' : '0',
                             overflow: 'hidden',
                             transition: 'max-height 0.3s ease',
                           }}
                         >
                           <p
                             style={{
-                              fontSize: 12,
+                              fontSize: 18,
                               lineHeight: 1.75,
                               color: c.accordionA,
                               fontFamily: SANS,

@@ -30,7 +30,7 @@ const DAY_28: Metric[] = [
 function EvidenceIcon({ kind }: { kind: IconKind }) {
   const common = {
     fill: 'none',
-    stroke: ROSE,
+    stroke: '#FFFFFF',
     strokeWidth: 1.7,
     strokeLinecap: 'round' as const,
     strokeLinejoin: 'round' as const,
@@ -73,9 +73,9 @@ function EvidenceIcon({ kind }: { kind: IconKind }) {
           <path d="M11 16h26" />
           <path d="M11 24h26" />
           <path d="M11 32h26" />
-          <circle cx="16" cy="38" r="1.7" fill={ROSE} stroke="none" />
-          <circle cx="24" cy="38" r="1.7" fill={ROSE} stroke="none" />
-          <circle cx="32" cy="38" r="1.7" fill={ROSE} stroke="none" />
+          <circle cx="16" cy="38" r="1.7" fill="#FFFFFF" stroke="none" />
+          <circle cx="24" cy="38" r="1.7" fill="#FFFFFF" stroke="none" />
+          <circle cx="32" cy="38" r="1.7" fill="#FFFFFF" stroke="none" />
         </g>
       )}
       {kind === 'lifting' && (
@@ -165,7 +165,7 @@ export default function ClinicalEvidenceSection() {
           font-weight: 700;
           letter-spacing: 0.28em;
           text-transform: uppercase;
-          color: ${BURGUNDY};
+          color: #000000;
           white-space: nowrap;
         }
         .clinical-topline span:last-child {
@@ -179,7 +179,7 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-header h2 {
           margin: 0;
-          color: ${BURGUNDY_DEEP};
+          color: #000000;
           font-family: var(--font-serif), Georgia, serif;
           font-size: clamp(30px, 4.1vw, 78px);
           font-weight: 400;
@@ -190,7 +190,7 @@ export default function ClinicalEvidenceSection() {
         .clinical-header p {
           max-width: none;
           margin: 22px 0 0;
-          color: rgba(26, 11, 18, 0.72);
+          color: #000000;
           font-family: ${SANS};
           font-size: clamp(13px, 1.05vw, 18px);
           line-height: 1.65;
@@ -207,7 +207,7 @@ export default function ClinicalEvidenceSection() {
           position: relative;
           z-index: 1;
           border: 1px solid rgba(237, 201, 103, 0.72);
-          background: rgba(247, 232, 236, 0.46);
+          background: ${BURGUNDY};
           padding: clamp(32px, 3.2vw, 48px);
           min-height: 560px;
           box-shadow: 0 26px 90px rgba(90, 31, 46, 0.12);
@@ -228,7 +228,7 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-panel-heading p {
           margin: 0;
-          color: ${BURGUNDY_DEEP};
+          color: #FFFFFF;
           font-family: var(--font-serif), Georgia, serif;
           font-size: clamp(64px, 6vw, 104px);
           font-weight: 400;
@@ -236,7 +236,7 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-panel-heading h3 {
           margin: 18px 0 0;
-          color: ${BURGUNDY};
+          color: #FFFFFF;
           font-family: ${SANS};
           font-size: clamp(12px, 1.15vw, 15px);
           font-weight: 700;
@@ -255,8 +255,8 @@ export default function ClinicalEvidenceSection() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          border: 1px solid rgba(115, 44, 63, 0.2);
-          background: rgba(247, 232, 236, 0.42);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          background: rgba(255, 255, 255, 0.06);
           padding: 28px 18px;
           text-align: center;
         }
@@ -266,7 +266,7 @@ export default function ClinicalEvidenceSection() {
           height: 64px;
           align-items: center;
           justify-content: center;
-          border: 1px solid rgba(115, 44, 63, 0.26);
+          border: 1px solid rgba(255, 255, 255, 0.3);
           border-radius: 50%;
           margin-bottom: 24px;
         }
@@ -278,7 +278,7 @@ export default function ClinicalEvidenceSection() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          color: ${BURGUNDY_DEEP};
+          color: #FFFFFF;
           font-family: var(--font-serif), Georgia, serif;
           font-size: clamp(34px, 2.75vw, 50px);
           font-weight: 400;
@@ -307,7 +307,7 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-metric-card p {
           margin: 0;
-          color: rgba(26, 11, 18, 0.78);
+          color: #FFFFFF;
           font-family: ${SANS};
           font-size: 12px;
           font-weight: 700;

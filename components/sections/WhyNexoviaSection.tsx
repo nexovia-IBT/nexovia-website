@@ -11,7 +11,7 @@ const CARDS = [
     title: 'Engineered Synergy',
     body: 'Most serums feature one or two actives at token doses. Nexovia\'s ABA.4 architecture combines four bio-amplifiers, each at concentrations that stand up to scrutiny. PDRN at 1%. NAD+ at 1%. Plant exosomes at 4 billion particles per milliliter. A multi-peptide matrix. They work as a system, not a highlight reel.',
     icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <svg width="26" height="26" viewBox="0 0 20 20" fill="none">
         <circle cx="10" cy="10" r="3" stroke={GOLD} strokeWidth="1.5" />
         <line x1="10" y1="4" x2="10" y2="7" stroke={GOLD} strokeWidth="1.5" strokeLinecap="round" />
         <line x1="10" y1="13" x2="10" y2="16" stroke={GOLD} strokeWidth="1.5" strokeLinecap="round" />
@@ -28,7 +28,7 @@ const CARDS = [
     title: 'Purpose-Built for Aftercare',
     body: 'Nexovia is not a general skincare product repositioned for post-procedure use. It was formulated from the ground up for the 14-to-28-day recovery window. One product. One protocol. One purpose. Every ingredient decision was made with post-treatment skin in mind.',
     icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <svg width="26" height="26" viewBox="0 0 20 20" fill="none">
         <path
           d="M10 2L17 5.5V10C17 14 13.5 17.5 10 18.5C6.5 17.5 3 14 3 10V5.5L10 2Z"
           stroke={GOLD}
@@ -49,7 +49,7 @@ const CARDS = [
     title: 'K-Beauty Formulation Science',
     body: 'Manufactured in South Korea under ISO 22716 GMP standards. The ABA.4 bio-amplifier architecture was developed specifically for post-procedure skin: four actives, each selected for a distinct function in the recovery window, formulated together at concentrations most brands will not match.',
     icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <svg width="26" height="26" viewBox="0 0 20 20" fill="none">
         <path
           d="M10 18C10 18 3 13 3 7.5C3 5 5.5 3 8 4C9 4.5 9.5 5 10 6C10.5 5 11 4.5 12 4C14.5 3 17 5 17 7.5C17 13 10 18 10 18Z"
           stroke={GOLD}
@@ -99,7 +99,7 @@ function TreatmentIcon({ kind }: { kind: string }) {
   }
 
   return (
-    <svg viewBox="0 0 64 64" aria-hidden="true" style={{ width: 62, height: 62, display: 'block' }}>
+    <svg viewBox="0 0 64 64" aria-hidden="true" style={{ width: 78, height: 78, display: 'block' }}>
       {kind === 'laser' && (
         <g {...common}>
           <path d="M8 44h48" />
@@ -168,7 +168,7 @@ export default function WhyNexoviaSection() {
       id="why-nexovia"
       style={{
         backgroundColor: '#C57C8A',
-        padding: 'clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px)',
+        padding: 'clamp(36px, 5vw, 72px) clamp(24px, 6vw, 80px) clamp(64px, 10vw, 120px)',
       }}
     >
       <style>{`
@@ -185,7 +185,7 @@ export default function WhyNexoviaSection() {
           align-items: center;
           border-top: 1px solid rgba(237,201,103,0.72);
           border-bottom: 1px solid rgba(237,201,103,0.72);
-          padding: clamp(34px, 5vw, 62px) 0;
+          padding: clamp(46px, 6vw, 84px) 0;
         }
         .nexovia-treatment-tabs {
           display: grid;
@@ -212,13 +212,13 @@ export default function WhyNexoviaSection() {
         viewport={{ once: true, margin: '-80px' }}
         variants={fadeUp}
         transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
-        style={{ textAlign: 'center', marginBottom: 64 }}
+        style={{ textAlign: 'center', marginBottom: 40 }}
       >
         <h2
           className="font-serif"
           style={{
-            fontSize: 'clamp(32px, 4vw, 52px)',
-            fontWeight: 400,
+            fontSize: 'clamp(38px, 4.6vw, 62px)',
+            fontWeight: 700,
             color: '#ffffff',
             margin: '0 0 16px',
             lineHeight: 1.15,
@@ -228,12 +228,12 @@ export default function WhyNexoviaSection() {
         </h2>
         <p
           style={{
-            fontSize: 15,
-            color: 'rgba(255,255,255,0.58)',
+            fontSize: 20,
+            color: '#ffffff',
             margin: 0,
             fontFamily: SANS,
             lineHeight: 1.6,
-            maxWidth: 480,
+            maxWidth: 560,
             marginLeft: 'auto',
             marginRight: 'auto',
           }}
@@ -261,14 +261,14 @@ export default function WhyNexoviaSection() {
               borderWidth: 1,
               borderStyle: 'solid',
               borderColor: 'rgba(237,201,103,0.1)',
-              padding: '44px 32px',
+              padding: '72px 48px',
               cursor: 'default',
             }}
           >
             <div
               style={{
-                width: 46,
-                height: 46,
+                width: 60,
+                height: 60,
                 border: `1px solid ${GOLD}`,
                 display: 'flex',
                 alignItems: 'center',
@@ -281,8 +281,8 @@ export default function WhyNexoviaSection() {
             <h3
               className="font-serif"
               style={{
-                fontSize: 22,
-                fontWeight: 400,
+                fontSize: 34,
+                fontWeight: 700,
                 color: '#ffffff',
                 margin: '0 0 12px',
                 lineHeight: 1.2,
@@ -292,9 +292,9 @@ export default function WhyNexoviaSection() {
             </h3>
             <p
               style={{
-                fontSize: 13,
+                fontSize: 20,
                 lineHeight: 1.7,
-                color: 'rgba(255,255,255,0.6)',
+                color: '#ffffff',
                 margin: 0,
                 fontFamily: SANS,
               }}
@@ -316,10 +316,10 @@ export default function WhyNexoviaSection() {
         <div>
           <p
             style={{
-              fontSize: 11,
+              fontSize: 13,
               letterSpacing: '0.18em',
               textTransform: 'uppercase',
-              color: GOLD,
+              color: '#ffffff',
               margin: '0 0 18px',
               fontFamily: SANS,
             }}
@@ -329,8 +329,8 @@ export default function WhyNexoviaSection() {
           <h3
             className="font-serif"
             style={{
-              fontSize: 'clamp(32px, 4vw, 54px)',
-              fontWeight: 400,
+              fontSize: 'clamp(42px, 5vw, 72px)',
+              fontWeight: 700,
               color: '#ffffff',
               lineHeight: 1.08,
               margin: '0 0 18px',
@@ -340,10 +340,10 @@ export default function WhyNexoviaSection() {
           </h3>
           <p
             style={{
-              fontSize: 14,
+              fontSize: 20,
               lineHeight: 1.75,
-              color: 'rgba(255,255,255,0.68)',
-              maxWidth: 430,
+              color: '#ffffff',
+              maxWidth: 'none',
               margin: 0,
               fontFamily: SANS,
             }}
@@ -361,8 +361,8 @@ export default function WhyNexoviaSection() {
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
             <div
               style={{
-                width: 82,
-                height: 82,
+                width: 100,
+                height: 100,
                 border: '1px solid rgba(237,201,103,0.72)',
                 display: 'flex',
                 alignItems: 'center',
@@ -376,9 +376,9 @@ export default function WhyNexoviaSection() {
               <h4
                 className="font-serif"
                 style={{
-                  fontSize: 'clamp(30px, 4vw, 50px)',
-                  fontWeight: 400,
-                  color: GOLD,
+                  fontSize: 'clamp(36px, 4.6vw, 58px)',
+                  fontWeight: 700,
+                  color: '#ffffff',
                   lineHeight: 1,
                   margin: '0 0 10px',
                 }}
@@ -387,10 +387,10 @@ export default function WhyNexoviaSection() {
               </h4>
               <p
                 style={{
-                  fontSize: 11,
+                  fontSize: 15,
                   letterSpacing: '0.14em',
                   textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,0.72)',
+                  color: '#ffffff',
                   margin: 0,
                   fontFamily: SANS,
                 }}
@@ -406,7 +406,7 @@ export default function WhyNexoviaSection() {
                 <span style={{ width: 28, height: 1, backgroundColor: GOLD, flexShrink: 0 }} />
                 <span
                   style={{
-                    fontSize: 13,
+                    fontSize: 17,
                     lineHeight: 1.45,
                     letterSpacing: '0.08em',
                     textTransform: 'uppercase',
@@ -433,14 +433,14 @@ export default function WhyNexoviaSection() {
                     border: 'none',
                     borderLeft: i > 0 ? '1px solid rgba(237,201,103,0.28)' : 'none',
                     backgroundColor: active ? 'rgba(237,201,103,0.14)' : 'transparent',
-                    color: active ? GOLD : 'rgba(255,255,255,0.64)',
+                    color: active ? GOLD : '#ffffff',
                     cursor: 'pointer',
                     fontFamily: SANS,
-                    fontSize: 11,
+                    fontSize: 13,
                     fontWeight: 700,
                     letterSpacing: '0.1em',
                     lineHeight: 1.2,
-                    minHeight: 54,
+                    minHeight: 62,
                     padding: '14px 10px',
                     textTransform: 'uppercase',
                   }}

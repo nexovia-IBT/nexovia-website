@@ -41,13 +41,13 @@ function MarkdownContent({ content }: { content: string }) {
   const blocks = content.split(/\n{2,}/).map((block) => block.trim()).filter(Boolean)
 
   return (
-    <div className="mx-auto mt-14 max-w-[760px] font-body text-[20px] font-light leading-[1.75] text-dark/70">
+    <div className="mx-auto mt-14 max-w-[760px] font-body text-[20px] font-light leading-[1.75] text-black">
       {blocks.map((block, index) => {
         if (block.startsWith('## ')) {
-          return <h2 key={index} className="mb-5 mt-12 font-display text-[34px] font-normal leading-[1.15] text-dark">{block.replace(/^## /, '')}</h2>
+          return <h2 key={index} className="mb-5 mt-12 font-display text-[34px] font-normal leading-[1.15] text-black">{block.replace(/^## /, '')}</h2>
         }
         if (block.startsWith('### ')) {
-          return <h3 key={index} className="mb-4 mt-9 font-display text-[26px] font-normal leading-[1.2] text-dark">{block.replace(/^### /, '')}</h3>
+          return <h3 key={index} className="mb-4 mt-9 font-display text-[26px] font-normal leading-[1.2] text-black">{block.replace(/^### /, '')}</h3>
         }
         if (block.startsWith('- ')) {
           return (
@@ -89,13 +89,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   return (
     <>
       <MainNav />
-      <main className="min-h-screen bg-pale text-dark">
+      <main className="min-h-screen bg-pale text-black">
         <article className="px-6 pb-24 pt-40 sm:px-8 lg:px-12">
           <header className="mx-auto max-w-[980px] text-center">
-            <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">Journal</p>
-            <h1 className="mt-6 font-display text-[clamp(44px,6vw,76px)] font-normal leading-[1.02] text-dark">{post.title}</h1>
-            <p className="mx-auto mt-7 max-w-[760px] font-body text-[21px] font-light leading-[1.5] text-dark/50">{post.excerpt}</p>
-            <p className="mt-6 font-body text-[14px] tracking-[0.06em] text-dark/40">
+            <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-black">Journal</p>
+            <h1 className="mt-6 font-display text-[clamp(44px,6vw,76px)] font-normal leading-[1.02] text-black">{post.title}</h1>
+            <p className="mx-auto mt-7 max-w-[760px] font-body text-[21px] font-light leading-[1.5] text-black/50">{post.excerpt}</p>
+            <p className="mt-6 font-body text-[14px] tracking-[0.06em] text-black/40">
               {formatPostDate(post.date)}{post.readTime ? ` / ${post.readTime} min read` : ''}
             </p>
           </header>
@@ -105,7 +105,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         {related.length > 0 ? (
           <section className="border-t border-burgundy/10 px-6 py-20 sm:px-8 lg:px-12">
             <div className="mx-auto max-w-[1320px]">
-              <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">Related Articles</p>
+              <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-black">Related Articles</p>
               <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
                 {related.map((item, index) => (
                   <ArticleCard

@@ -13,10 +13,10 @@ const PANELS = [
     subtext: 'A focused at-home serum for the 14-to-28-day window after aesthetic treatment. Formulated with ABA.4 to support hydration, smoothness, and refreshed-looking skin. Plant exosomes - PDRN 1% - NAD+ 1% - peptide matrix',
     bg: '#C57C8A',
     textSide: 'left' as const,
-    bottleLeft: '62%',
+    bottleLeft: '68%',
     scale: 1,
     bottleY: 0,
-    bloomLeft: '62%',
+    bloomLeft: '68%',
     bloomTop: '45%',
   },
   {
@@ -26,10 +26,10 @@ const PANELS = [
     subtext: 'Following aesthetic treatment, skin often responds better to lighter textures, measured hydration, and fewer unnecessary layers.',
     bg: '#BA6F7E',
     textSide: 'right' as const,
-    bottleLeft: '38%',
+    bottleLeft: '32%',
     scale: 1.03,
     bottleY: 0,
-    bloomLeft: '38%',
+    bloomLeft: '32%',
     bloomTop: '45%',
   },
   {
@@ -39,10 +39,10 @@ const PANELS = [
     subtext: 'Hydration, softer textures, botanical inputs, and bio-amplifiers composed within one focused post-procedure serum.',
     bg: '#C57C8A',
     textSide: 'left' as const,
-    bottleLeft: '62%',
+    bottleLeft: '68%',
     scale: 0.97,
     bottleY: 10,
-    bloomLeft: '62%',
+    bloomLeft: '68%',
     bloomTop: '55%',
   },
   {
@@ -52,10 +52,10 @@ const PANELS = [
     subtext: 'Plant exosomes, PDRN, NAD+, and peptides arranged within a focused post-procedure composition.',
     bg: '#CC8899',
     textSide: 'right' as const,
-    bottleLeft: '38%',
+    bottleLeft: '32%',
     scale: 1.04,
     bottleY: -10,
-    bloomLeft: '38%',
+    bloomLeft: '32%',
     bloomTop: '40%',
   },
 ]
@@ -184,13 +184,13 @@ export default function OrbitSection() {
 
     const ctx = gsap.context(() => {
       panelLabelRefs.current.forEach((el, i) => {
-        if (el) gsap.set(el, { opacity: i === 0 ? 0.55 : 0, y: i === 0 ? 0 : 20 })
+        if (el) gsap.set(el, { opacity: i === 0 ? 1 : 0, y: i === 0 ? 0 : 20 })
       })
       panelTitleRefs.current.forEach((el, i) => {
         if (el) gsap.set(el, { opacity: i === 0 ? 1 : 0, y: i === 0 ? 0 : 30 })
       })
       panelBodyRefs.current.forEach((el, i) => {
-        if (el) gsap.set(el, { opacity: i === 0 ? 0.65 : 0, y: i === 0 ? 0 : 22 })
+        if (el) gsap.set(el, { opacity: i === 0 ? 1 : 0, y: i === 0 ? 0 : 22 })
       })
       gsap.set(bottleInnerRef.current, { opacity: 1, y: PANELS[0].bottleY, scale: PANELS[0].scale })
       gsap.set(bloomRef.current, { opacity: 1 })
@@ -327,9 +327,9 @@ export default function OrbitSection() {
       })
     )
 
-    gsap.to(nextLabel, { opacity: next === 3 ? 0.9 : 0.55, y: 0, duration: 0.65, ease: 'power3.out', delay: 0.52 })
+    gsap.to(nextLabel, { opacity: 1, y: 0, duration: 0.65, ease: 'power3.out', delay: 0.52 })
     gsap.to(nextTitle, { opacity: 1, y: 0, duration: 0.85, ease: 'power3.out', delay: 0.67 })
-    gsap.to(nextBody, { opacity: next === 3 ? 1 : 0.65, y: 0, duration: 0.75, ease: 'power3.out', delay: 0.82 })
+    gsap.to(nextBody, { opacity: next === 3 ? 1 : next === 0 || next === 1 || next === 2 ? 1 : 0.65, y: 0, duration: 0.75, ease: 'power3.out', delay: 0.82 })
   }
 
   if (reducedMotion) {
@@ -390,24 +390,24 @@ export default function OrbitSection() {
         {PANELS.map((p, i) => {
           const isLeft = p.textSide === 'left'
           return (
-            <div key={p.id} style={{ position: 'absolute', top: '50%', ...(isLeft ? { left: '8%' } : { right: '8%' }), transform: 'translateY(-50%)', maxWidth: '38%', zIndex: 20, pointerEvents: i === 0 ? 'auto' : 'none' }}>
+            <div key={p.id} style={{ position: 'absolute', top: '50%', ...(isLeft ? { left: '8%' } : { right: '8%' }), transform: 'translateY(-50%)', maxWidth: i === 0 || i === 1 || i === 2 || i === 3 ? '47%' : '38%', zIndex: 20, pointerEvents: i === 0 ? 'auto' : 'none' }}>
               <div className="nexovia-text-drift" style={{ pointerEvents: 'inherit' }}>
                 <div ref={(el) => { panelRefs.current[i] = el }} style={{ color: '#ffffff', pointerEvents: 'inherit' }}>
-                  <p ref={(el) => { panelLabelRefs.current[i] = el }} style={{ fontSize: 11, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 20, fontFamily: SANS, opacity: i === 0 ? 0.55 : 0 }}>{p.tag}</p>
-                  <h2 ref={(el) => { panelTitleRefs.current[i] = el }} className="font-serif" style={{ fontSize: 'clamp(36px, 4vw, 56px)', lineHeight: 1.1, fontWeight: 400, margin: '0 0 20px', opacity: i === 0 ? 1 : 0 }}>{p.heading}</h2>
-                  <div ref={(el) => { panelBodyRefs.current[i] = el }} style={{ fontSize: 14, lineHeight: 1.75, maxWidth: p.id === 3 ? 420 : 340, margin: 0, fontFamily: SANS, opacity: p.id === 3 ? 1 : i === 0 ? 0.65 : 0 }}>
+                  <p ref={(el) => { panelLabelRefs.current[i] = el }} style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 18 : 11, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 20, fontFamily: SANS, opacity: i === 0 ? 1 : 0 }}>{p.tag}</p>
+                  <h2 ref={(el) => { panelTitleRefs.current[i] = el }} className="font-serif" style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 'clamp(44px, 5vw, 74px)' : 'clamp(36px, 4vw, 56px)', lineHeight: 1.1, fontWeight: 400, margin: '0 0 20px', opacity: i === 0 ? 1 : 0 }}>{p.heading}</h2>
+                  <div ref={(el) => { panelBodyRefs.current[i] = el }} style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 22 : 14, lineHeight: 1.7, maxWidth: p.id === 3 ? 'none' : p.id === 0 || p.id === 1 || p.id === 2 ? 'none' : 340, margin: 0, fontFamily: SANS, opacity: p.id === 3 ? 1 : i === 0 ? 1 : 0 }}>
                     {p.id === 3 ? (
                       <div>
-                        <p style={{ margin: '0 0 18px', maxWidth: 340, color: '#ffffff' }}>Four coordinated actives arranged for post-procedure recovery.</p>
-                        <div className="aba4-matrix" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 10, width: 'min(420px, 100%)' }}>
+                        <p style={{ margin: '0 0 24px', maxWidth: 'none', color: '#ffffff' }}>Four coordinated actives arranged for post-procedure recovery.</p>
+                        <div className="aba4-matrix" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 16, width: '100%' }}>
                           {ABA4_INGREDIENTS.map((ingredient) => (
                             <div key={ingredient.name} style={{ borderTop: '1px solid rgba(255,255,255,0.26)', paddingTop: 9 }}>
-                              <div className="aba4-image" style={{ height: 78, marginBottom: 9, overflow: 'hidden', backgroundColor: 'rgba(255,255,255,0.2)' }}>
+                              <div className="aba4-image" style={{ height: 120, marginBottom: 10, overflow: 'hidden', backgroundColor: 'rgba(255,255,255,0.2)' }}>
                                 <img src={ingredient.image} alt={ingredient.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                               </div>
-                              <p className="aba4-name" style={{ margin: '0 0 2px', fontSize: 11, lineHeight: 1.2, fontWeight: 600, color: '#ffffff' }}>{ingredient.name}</p>
-                              <p className="aba4-detail" style={{ margin: '0 0 2px', fontSize: 10, lineHeight: 1.35, color: '#FFE680', fontWeight: 800, textShadow: '0 1px 10px rgba(90,31,46,0.28)' }}>{ingredient.detail}</p>
-                              <p className="aba4-role" style={{ margin: 0, fontSize: 10, lineHeight: 1.35, color: '#ffffff' }}>{ingredient.role}</p>
+                              <p className="aba4-name" style={{ margin: '0 0 2px', fontSize: 16, lineHeight: 1.2, fontWeight: 600, color: '#ffffff' }}>{ingredient.name}</p>
+                              <p className="aba4-detail" style={{ margin: '0 0 2px', fontSize: 14, lineHeight: 1.35, color: '#FFE680', fontWeight: 800, textShadow: '0 1px 10px rgba(90,31,46,0.28)' }}>{ingredient.detail}</p>
+                              <p className="aba4-role" style={{ margin: 0, fontSize: 14, lineHeight: 1.35, color: '#ffffff' }}>{ingredient.role}</p>
                             </div>
                           ))}
                         </div>

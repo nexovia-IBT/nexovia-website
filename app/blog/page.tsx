@@ -42,12 +42,12 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   return (
     <>
       <MainNav />
-      <main className="min-h-screen bg-pale text-dark">
+      <main className="min-h-screen bg-pale text-black">
         <BlogHero />
 
         <section className="px-6 pb-4 pt-10 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-[1320px]">
-            <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">Recovery Guides</p>
+            <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-black">Recovery Guides</p>
             <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-3">
               {featuredGuides.map((guide, index) => (
                 <ArticleCard
@@ -70,8 +70,8 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <section className="px-6 pb-28 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-[1320px]">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-              <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">All Articles</p>
-              <p className="font-body text-[15px] text-dark/45">({posts.length} posts)</p>
+              <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-black">All Articles</p>
+              <p className="font-body text-[15px] text-black/45">({posts.length} posts)</p>
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
@@ -98,7 +98,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                     href={pageHref(pageNumber)}
                     className={[
                       'flex h-11 w-11 items-center justify-center font-sans text-[12px] uppercase tracking-[0.12em] no-underline transition-colors duration-200',
-                      pageNumber === safePage ? 'bg-burgundy text-cream' : 'text-burgundy hover:bg-burgundy/8',
+                      pageNumber === safePage ? 'bg-burgundy text-cream' : 'text-black hover:bg-burgundy/8',
                     ].join(' ')}
                   >
                     {pageNumber}

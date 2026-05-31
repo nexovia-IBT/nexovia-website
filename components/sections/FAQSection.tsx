@@ -49,7 +49,7 @@ export default function FAQSection() {
       id="faq"
       style={{
         background: 'linear-gradient(to bottom, #C57C8A 0%, #1A0B12 100%)',
-        padding: 'clamp(64px, 10vw, 120px) clamp(24px, 6vw, 80px)',
+        padding: 'clamp(32px, 4vw, 56px) clamp(24px, 6vw, 80px) clamp(64px, 10vw, 120px)',
       }}
     >
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -65,8 +65,8 @@ export default function FAQSection() {
           <h2
             className="font-serif"
             style={{
-              fontSize: 'clamp(32px, 4vw, 52px)',
-              fontWeight: 400,
+              fontSize: 'clamp(46px, 5.4vw, 76px)',
+              fontWeight: 700,
               color: '#ffffff',
               margin: '0 0 16px',
               lineHeight: 1.15,
@@ -76,8 +76,8 @@ export default function FAQSection() {
           </h2>
           <p
             style={{
-              fontSize: 15,
-              color: 'rgba(255,255,255,0.52)',
+              fontSize: 21,
+              color: '#ffffff',
               margin: 0,
               fontFamily: SANS,
               lineHeight: 1.6,
@@ -121,8 +121,8 @@ export default function FAQSection() {
                 <span
                   className="font-serif"
                   style={{
-                    fontSize: 18,
-                    fontWeight: 400,
+                    fontSize: 26,
+                    fontWeight: 700,
                     color: '#ffffff',
                     lineHeight: 1.3,
                     flex: 1,
@@ -160,16 +160,16 @@ export default function FAQSection() {
               </button>
               <div
                 style={{
-                  maxHeight: isOpen ? '200px' : '0',
+                  maxHeight: isOpen ? '600px' : '0',
                   overflow: 'hidden',
                   transition: 'max-height 0.5s cubic-bezier(0.4,0,0.2,1)',
                 }}
               >
                 <p
                   style={{
-                    fontSize: 14,
+                    fontSize: 19,
                     lineHeight: 1.75,
-                    color: 'rgba(255,255,255,0.58)',
+                    color: '#ffffff',
                     fontFamily: SANS,
                     margin: '0 0 24px',
                     paddingRight: 46,

@@ -68,19 +68,19 @@ export default function ArticleCard({
 
         <div className={isFeatured ? 'pt-7' : 'pt-5'}>
           {!isFeatured && date ? (
-            <p className="font-body text-[13px] tracking-[0.04em] text-dark/40">
+            <p className="font-body text-[13px] tracking-[0.04em] text-black/40">
               {date}
               {readTime ? <span className="ml-3">{readTime} min read</span> : null}
             </p>
           ) : null}
-          <h3 className={isFeatured ? 'font-display text-[28px] leading-[1.15] text-dark' : 'mt-2 line-clamp-2 font-display text-[22px] leading-[1.2] text-dark'}>
+          <h3 className={isFeatured ? 'font-display text-[28px] leading-[1.15] text-black' : 'mt-2 line-clamp-2 font-display text-[22px] leading-[1.2] text-black'}>
             {title}
           </h3>
-          <p className={isFeatured ? 'mt-3 font-body text-[16px] font-light leading-[1.55] text-dark/50' : 'mt-2 line-clamp-3 font-body text-[15px] font-light leading-[1.55] text-dark/45'}>
+          <p className={isFeatured ? 'mt-3 font-body text-[16px] font-light leading-[1.55] text-black/50' : 'mt-2 line-clamp-3 font-body text-[15px] font-light leading-[1.55] text-black/45'}>
             {excerpt}
           </p>
           {!isFeatured ? (
-            <span className="mt-4 inline-flex items-center gap-2 font-sans text-[12px] uppercase tracking-[0.16em] text-burgundy">
+            <span className="mt-4 inline-flex items-center gap-2 font-sans text-[12px] uppercase tracking-[0.16em] text-black">
               Read more
               <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">
                 &rarr;
