@@ -17,14 +17,14 @@ type Metric = {
 
 const DAY_7: Metric[] = [
   { value: '98.4%', label: 'TEWL Recovery', icon: 'barrier' },
-  { value: '+36.8%', label: 'Hydration', icon: 'hydration' },
-  { value: '-23.6%', label: 'Redness', icon: 'redness' },
+  { value: '1.9x', label: 'Hydration', icon: 'hydration' },
+  { value: '23.6%', label: 'Redness', icon: 'redness' },
 ]
 
 const DAY_28: Metric[] = [
-  { value: 'Up to 3.0x', label: 'Elasticity', icon: 'elasticity' },
+  { value: '3x', label: 'Elasticity', icon: 'elasticity' },
   { value: '2.2x', label: 'Tone Evenness', icon: 'tone' },
-  { value: '2.2x', label: 'Skin Lifting', icon: 'lifting' },
+  { value: '2.6x', label: 'Skin Lifting', icon: 'lifting' },
 ]
 
 function EvidenceIcon({ kind }: { kind: IconKind }) {
@@ -408,10 +408,10 @@ export default function ClinicalEvidenceSection() {
         </div>
 
         <header className="clinical-header">
-          <h2 id="clinical-evidence-title">Nexovia Skin Serum Clinical Study</h2>
+          <h2 id="clinical-evidence-title">Nexovia Clinical Evidence</h2>
           <p>
             Split-face, single-blind evaluation after fractional Er:YAG laser. Final analysis set:
-            21 female participants, ages 39-59.
+            21 female participants, ages 30-60.
           </p>
         </header>
 
