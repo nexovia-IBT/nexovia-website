@@ -92,10 +92,15 @@ export async function getAllPosts(): Promise<Post[]> {
     .filter((post): post is Post => post !== null)
     .filter(isVisible)
   return posts.sort((a, b) => {
-    if (typeof a.order === 'number' && typeof b.order === 'number') return a.order - b.order
-    if (typeof a.order === 'number') return -1
-    if (typeof b.order === 'number') return 1
-    return a.date < b.date ? 1 : -1
+    // Newest published first: sort by date descending. Ties break by campaign
+    // order (higher = newer), then title, for a stable, predictable order.
+    const da = a.date || ''
+    const db = b.date || ''
+    if (da !== db) return da < db ? 1 : -1
+    const oa = typeof a.order === 'number' ? a.order : -Infinity
+    const ob = typeof b.order === 'number' ? b.order : -Infinity
+    if (oa !== ob) return ob - oa
+    return a.title < b.title ? -1 : a.title > b.title ? 1 : 0
   })
 }
 
