@@ -16,6 +16,7 @@ type IconKind = 'barrier' | 'hydration' | 'redness' | 'elasticity' | 'tone' | 'l
 type Metric = {
   value: string
   label: string
+  detail: string
   icon: IconKind
 }
 
@@ -35,15 +36,45 @@ type ImagingGroup = {
 }
 
 const DAY_7: Metric[] = [
-  { value: '98.4%', label: 'Barrier Recovery', icon: 'barrier' },
-  { value: '36.8%', label: 'Hydration Improvement', icon: 'hydration' },
-  { value: '23.6%', label: 'Redness Decrease', icon: 'redness' },
+  {
+    value: '98.4%',
+    label: 'TEWL Barrier Recovery',
+    detail: 'TEWL reduction 11.5x stronger than a published topical exosome study by Day 28.',
+    icon: 'barrier',
+  },
+  {
+    value: '36.8%',
+    label: 'Skin Hydration',
+    detail: '1.9x higher than leading cosmetic benchmarks.',
+    icon: 'hydration',
+  },
+  {
+    value: '23.6%',
+    label: 'Decrease in Skin Redness',
+    detail: '2.0x stronger than leading cosmetic benchmarks.',
+    icon: 'redness',
+  },
 ]
 
 const DAY_28: Metric[] = [
-  { value: '1.9x', label: 'Elasticity Improvement', icon: 'elasticity' },
-  { value: '3.2x', label: 'Tone Evenness', icon: 'tone' },
-  { value: '1.6x', label: 'Facial Lifting', icon: 'lifting' },
+  {
+    value: '1.9x',
+    label: 'Skin Elasticity',
+    detail: '23.5% improvement vs 12.5% for industry benchmark.',
+    icon: 'elasticity',
+  },
+  {
+    value: '3.2x',
+    label: 'Skin Tone Evenness',
+    detail: '8.8% improvement vs 2.7% for industry benchmark.',
+    icon: 'tone',
+  },
+  {
+    value: '1.6x',
+    label: 'Facial Lifting',
+    detail: '11.5% lifting improvement vs 7% for industry benchmark.',
+    icon: 'lifting',
+  },
 ]
 
 const IMAGING_GROUPS: ImagingGroup[] = [
@@ -167,7 +198,8 @@ function MetricCard({ metric }: { metric: Metric }) {
         )}
       </strong>
       <span aria-hidden="true" className="clinical-gold-rule" />
-      <p>{metric.label}</p>
+      <p className="clinical-metric-label">{metric.label}</p>
+      <span className="clinical-metric-detail">{metric.detail}</span>
     </article>
   )
 }
@@ -381,12 +413,16 @@ export default function ClinicalEvidenceSection() {
           line-height: 1.65;
           white-space: nowrap;
         }
+        .clinical-header .clinical-header-lede {
+          max-width: 1120px;
+          white-space: normal;
+        }
         .clinical-stage {
           position: relative;
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           align-items: end;
-          gap: clamp(72px, 13vw, 240px);
+          gap: clamp(56px, 8vw, 150px);
         }
         .clinical-panel {
           position: relative;
@@ -394,7 +430,7 @@ export default function ClinicalEvidenceSection() {
           border: 1px solid rgba(237, 201, 103, 0.72);
           background: ${BURGUNDY};
           padding: clamp(32px, 3.2vw, 48px);
-          min-height: 560px;
+          min-height: 680px;
           box-shadow: 0 26px 90px rgba(90, 31, 46, 0.12);
         }
         .clinical-panel:first-child {
@@ -436,13 +472,13 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-metric-card {
           display: flex;
-          min-height: 280px;
+          min-height: 390px;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           border: 1px solid rgba(255, 255, 255, 0.18);
           background: rgba(255, 255, 255, 0.06);
-          padding: 28px 18px;
+          padding: 30px 18px 26px;
           text-align: center;
         }
         .clinical-icon-shell {
@@ -490,7 +526,7 @@ export default function ClinicalEvidenceSection() {
           background: ${GOLD};
           margin: 22px 0 16px;
         }
-        .clinical-metric-card p {
+        .clinical-metric-label {
           margin: 0;
           color: #FFFFFF;
           font-family: ${SANS};
@@ -500,6 +536,20 @@ export default function ClinicalEvidenceSection() {
           line-height: 1.35;
           text-transform: uppercase;
         }
+        .clinical-metric-detail {
+          display: block;
+          width: 100%;
+          margin-top: 20px;
+          padding-top: 18px;
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          color: rgba(255, 255, 255, 0.72);
+          font-family: ${SANS};
+          font-size: clamp(11px, 0.82vw, 14px);
+          font-weight: 400;
+          letter-spacing: 0;
+          line-height: 1.45;
+          text-transform: none;
+        }
         .clinical-product {
           position: absolute;
           display: flex;
@@ -507,7 +557,7 @@ export default function ClinicalEvidenceSection() {
           justify-content: center;
           left: 50%;
           top: 50%;
-          width: clamp(190px, 13vw, 260px);
+          width: clamp(135px, 9vw, 190px);
           min-height: 0;
           pointer-events: none;
           transform: translate(-50%, -50%);
@@ -858,7 +908,7 @@ export default function ClinicalEvidenceSection() {
             grid-template-columns: 1fr;
           }
           .clinical-metric-card {
-            min-height: 184px;
+            min-height: 260px;
           }
           .clinical-metric-card strong {
             font-size: clamp(40px, 13vw, 54px);
@@ -938,6 +988,10 @@ export default function ClinicalEvidenceSection() {
 
         <header className="clinical-header">
           <h2 id="clinical-evidence-title">Nexovia Clinical Evidence</h2>
+          <p className="clinical-header-lede">
+            Skin should feel supported, not overwhelmed. Clinical evaluation after fractional laser showed
+            visible support in two windows: recovery in the first week, then improved skin quality by Day 28.
+          </p>
           <p>
             Split-face, single-blind evaluation following fractional Er:YAG laser treatment. Final analysis set:
             21 female participants, ages 30-60.
