@@ -229,7 +229,7 @@ function ClinicalImagingViewer() {
       </div>
       <header className="clinical-imagery-header">
         <h3 id="clinical-imagery-title">Clinical Imaging Results</h3>
-        <p>High-resolution imaging by measured outcome.</p>
+        <p>Nexovia Skin Serum</p>
       </header>
 
       <div className="clinical-imagery-tabs" role="tablist" aria-label="Clinical imaging measurements">
@@ -248,10 +248,10 @@ function ClinicalImagingViewer() {
         ))}
       </div>
 
-      <div className="clinical-viewer-card">
-        <div className="clinical-viewer-meta">
-          <span>{activeGroup.measure}</span>
-          <span>{activeGroup.afterLabel}</span>
+        <div className="clinical-viewer-card">
+          <div className="clinical-viewer-meta">
+            <span>{activeGroup.measure}</span>
+          {hasComparison ? <span>{activeGroup.afterLabel}</span> : null}
         </div>
 
         <div
@@ -261,11 +261,11 @@ function ClinicalImagingViewer() {
           {hasComparison ? (
             <>
               <div className="clinical-comparison-pane clinical-comparison-before">
-                <Image src={activeCase.before as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1} before`} fill sizes="(max-width: 760px) 92vw, 980px" />
+                <Image src={activeCase.before as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1} before`} fill sizes="(max-width: 760px) 92vw, 980px" quality={100} unoptimized />
                 <span>Before</span>
               </div>
               <div className="clinical-comparison-pane clinical-comparison-after">
-                <Image src={activeCase.after as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1} after`} fill sizes="(max-width: 760px) 92vw, 980px" />
+                <Image src={activeCase.after as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1} after`} fill sizes="(max-width: 760px) 92vw, 980px" quality={100} unoptimized />
                 <span>{activeGroup.afterLabel}</span>
               </div>
               <div className="clinical-comparison-divider" aria-hidden="true">
@@ -283,7 +283,12 @@ function ClinicalImagingViewer() {
             </>
           ) : (
             <div className="clinical-triptych-image">
-              <Image src={activeCase.image as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1}`} fill sizes="(max-width: 760px) 92vw, 980px" />
+              <Image src={activeCase.image as string} alt={`${activeGroup.label} case ${activeCaseIndex + 1}`} fill sizes="(max-width: 760px) 92vw, 1200px" quality={100} unoptimized />
+              <div className="clinical-triptych-labels" aria-hidden="true">
+                <span>Before</span>
+                <span>Immediately after treatment</span>
+                <span>After 7 days</span>
+              </div>
             </div>
           )}
         </div>
@@ -726,6 +731,32 @@ export default function ClinicalEvidenceSection() {
         .clinical-triptych-image {
           position: absolute;
           inset: 0;
+        }
+        .clinical-triptych-image img {
+          object-fit: contain;
+          image-rendering: auto;
+        }
+        .clinical-triptych-labels {
+          position: absolute;
+          top: clamp(10px, 1.4vw, 18px);
+          left: 0;
+          right: 0;
+          z-index: 2;
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 0;
+          padding: 0 clamp(14px, 1.8vw, 28px);
+          pointer-events: none;
+        }
+        .clinical-triptych-labels span {
+          display: block;
+          color: ${BURGUNDY};
+          font-family: ${SANS};
+          font-size: clamp(10px, 0.9vw, 14px);
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          line-height: 1.2;
+          text-align: center;
         }
         .clinical-case-controls {
           display: grid;
