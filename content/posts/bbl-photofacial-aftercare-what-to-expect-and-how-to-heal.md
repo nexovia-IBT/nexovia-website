@@ -7,7 +7,7 @@ image: '/images/blog/placeholder.jpg'
 metaDescription: 'Navigate BBL Photofacial aftercare with Nexovia''s expert guide. Learn what to expect, healing timelines, and essential practices for optimal recovery and lasting, luminous results.'
 focusKeyword: 'bbl photofacial aftercare'
 readTime: 7
-format: markdown
+format: html
 draft: false
 publishedAt: '2026-06-03'
 ---
