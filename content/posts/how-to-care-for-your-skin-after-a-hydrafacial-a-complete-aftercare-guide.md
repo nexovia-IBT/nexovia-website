@@ -7,7 +7,7 @@ image: '/images/blog/placeholder.jpg'
 metaDescription: 'Elevate your HydraFacial results with expert aftercare. Learn essential steps, key ingredients, and common mistakes to avoid for radiant, resilient skin.'
 focusKeyword: 'hydrafacial aftercare'
 readTime: 8
-format: markdown
+format: html
 draft: false
 publishedAt: '2026-06-03'
 ---
