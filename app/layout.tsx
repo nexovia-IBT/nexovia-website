@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     url: 'https://nexovia.pro',
     title: 'Nexovia | Post-Procedure Recovery Skincare',
     description: 'A focused post-procedure recovery serum for comfort, hydration, and barrier support.',
+    images: ['/logo.png'],
   },
 }
 
@@ -44,6 +45,7 @@ const brandJsonLd = {
       url: 'https://nexovia.pro',
       description:
         'Nexovia is a post-procedure skincare brand. Its focused recovery serum supports skin comfort, hydration, and barrier support after aesthetic procedures.',
+      logo: 'https://nexovia.pro/logo.png',
       sameAs: ['https://www.instagram.com/nexoviaofficial/'],
     },
     {
