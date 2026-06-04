@@ -17,6 +17,7 @@ type Metric = {
   value: string
   label: string
   detail: string
+  refs: string[]
   icon: IconKind
 }
 
@@ -40,18 +41,21 @@ const DAY_7: Metric[] = [
     value: '98.4%',
     label: 'TEWL Barrier Recovery',
     detail: 'TEWL reduction 11.5x stronger than topical exosome study by Day 28.',
+    refs: ['1'],
     icon: 'barrier',
   },
   {
     value: '36.8%',
     label: 'Skin Hydration',
     detail: '1.9x higher than leading cosmetic benchmarks.',
+    refs: ['2', '3'],
     icon: 'hydration',
   },
   {
     value: '23.6%',
     label: 'Decrease in Skin Redness',
     detail: '2.0x stronger than leading cosmetic benchmarks.',
+    refs: ['2', '3'],
     icon: 'redness',
   },
 ]
@@ -61,20 +65,34 @@ const DAY_28: Metric[] = [
     value: '1.9x',
     label: 'Skin Elasticity',
     detail: '23.5% improvement vs 12.5% for industry benchmark.',
+    refs: ['4'],
     icon: 'elasticity',
   },
   {
     value: '3.2x',
     label: 'Skin Tone Evenness',
     detail: '8.8% improvement vs 2.7% for industry benchmark.',
+    refs: ['4', '5'],
     icon: 'tone',
   },
   {
     value: '1.6x',
     label: 'Facial Lifting',
     detail: '11.5% lifting improvement vs 7% for industry benchmark.',
+    refs: ['5'],
     icon: 'lifting',
   },
+]
+
+const DAY_7_SOURCES = [
+  '[1] Ye et al., 2022, hMSC exosomes.',
+  '[2] Qin et al., 2025, CE Ferulic after fractional laser.',
+  '[3] Weinstein Velez et al., 2022, peptide gel after hybrid fractional laser.',
+]
+
+const DAY_28_SOURCES = [
+  '[4] Tran et al., 2014, anti-aging skin-care system biomechanical study.',
+  '[5] SkinMedica TNS Advanced+ clinical materials.',
 ]
 
 const IMAGING_GROUPS: ImagingGroup[] = [
@@ -199,7 +217,10 @@ function MetricCard({ metric }: { metric: Metric }) {
       </strong>
       <span aria-hidden="true" className="clinical-gold-rule" />
       <p className="clinical-metric-label">{metric.label}</p>
-      <span className="clinical-metric-detail">{metric.detail}</span>
+      <span className="clinical-metric-detail">
+        {metric.detail}{' '}
+        <span className="clinical-reference">{metric.refs.map((ref) => `[${ref}]`).join('')}</span>
+      </span>
     </article>
   )
 }
@@ -208,10 +229,12 @@ function CheckpointPanel({
   day,
   title,
   metrics,
+  sources,
 }: {
   day: string
   title: string
   metrics: Metric[]
+  sources: string[]
 }) {
   return (
     <section className="clinical-panel" aria-labelledby={`clinical-${day.toLowerCase().replace(' ', '-')}`}>
@@ -222,6 +245,11 @@ function CheckpointPanel({
       <div className="clinical-metrics">
         {metrics.map((metric) => (
           <MetricCard key={metric.label} metric={metric} />
+        ))}
+      </div>
+      <div className="clinical-panel-sources" aria-label={`${day} sources`}>
+        {sources.map((source) => (
+          <p key={source}>{source}</p>
         ))}
       </div>
     </section>
@@ -427,6 +455,8 @@ export default function ClinicalEvidenceSection() {
         .clinical-panel {
           position: relative;
           z-index: 1;
+          display: flex;
+          flex-direction: column;
           border: 1px solid rgba(237, 201, 103, 0.72);
           background: ${BURGUNDY};
           padding: clamp(32px, 3.2vw, 48px);
@@ -553,6 +583,29 @@ export default function ClinicalEvidenceSection() {
           letter-spacing: 0;
           line-height: 1.45;
           text-transform: none;
+        }
+        .clinical-reference {
+          display: inline-block;
+          font-size: 0.5em;
+          font-style: normal;
+          line-height: 1;
+          vertical-align: super;
+        }
+        .clinical-panel-sources {
+          margin-top: auto;
+          padding-top: 22px;
+          color: #FFFFFF;
+          font-family: ${SANS};
+          font-size: clamp(9px, 0.68vw, 12px);
+          font-style: italic;
+          line-height: 1.35;
+          text-align: left;
+        }
+        .clinical-panel-sources p {
+          margin: 0;
+        }
+        .clinical-panel-sources p + p {
+          margin-top: 3px;
         }
         .clinical-product {
           position: absolute;
@@ -1003,7 +1056,7 @@ export default function ClinicalEvidenceSection() {
         </header>
 
         <div className="clinical-stage">
-          <CheckpointPanel day="DAY 7" title="Day 7 Recovery" metrics={DAY_7} />
+          <CheckpointPanel day="DAY 7" title="Day 7 Recovery" metrics={DAY_7} sources={DAY_7_SOURCES} />
 
           <div className="clinical-product" aria-hidden="true">
             <div className="clinical-product-frame">
@@ -1017,7 +1070,7 @@ export default function ClinicalEvidenceSection() {
             </div>
           </div>
 
-          <CheckpointPanel day="DAY 28" title="Day 28 Skin Quality" metrics={DAY_28} />
+          <CheckpointPanel day="DAY 28" title="Day 28 Skin Quality" metrics={DAY_28} sources={DAY_28_SOURCES} />
         </div>
 
         <ClinicalImagingViewer />
