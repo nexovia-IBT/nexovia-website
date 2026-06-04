@@ -527,6 +527,10 @@ export default function ClinicalEvidenceSection() {
           margin: 22px 0 16px;
         }
         .clinical-metric-label {
+          display: flex;
+          min-height: 32px;
+          align-items: center;
+          justify-content: center;
           margin: 0;
           color: #FFFFFF;
           font-family: ${SANS};
