@@ -39,7 +39,7 @@ const DAY_7: Metric[] = [
   {
     value: '98.4%',
     label: 'TEWL Barrier Recovery',
-    detail: 'TEWL reduction 11.5x stronger than a published topical exosome study by Day 28.',
+    detail: 'TEWL reduction 11.5x stronger than topical exosome study by Day 28.',
     icon: 'barrier',
   },
   {
@@ -542,7 +542,7 @@ export default function ClinicalEvidenceSection() {
           margin-top: 20px;
           padding-top: 18px;
           border-top: 1px solid rgba(255, 255, 255, 0.12);
-          color: rgba(255, 255, 255, 0.72);
+          color: #FFFFFF;
           font-family: ${SANS};
           font-size: clamp(11px, 0.82vw, 14px);
           font-weight: 400;

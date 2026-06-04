@@ -37,11 +37,11 @@ export default function MainNav() {
         </Link>
 
         <div className="hidden items-center gap-10 lg:flex">
-          <Link className="min-h-[44px] content-center font-sans text-[12px] uppercase tracking-[0.12em] text-dark/70 no-underline transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35" href="/">
+          <Link className="min-h-[44px] content-center font-sans text-[12px] font-bold uppercase tracking-[0.12em] text-dark/70 no-underline transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35" href="/">
             Home
           </Link>
           <RecoveryGuidesDropdown />
-          <Link className="min-h-[44px] content-center font-sans text-[12px] uppercase tracking-[0.12em] text-dark/70 no-underline transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35" href="/contact">
+          <Link className="min-h-[44px] content-center font-sans text-[12px] font-bold uppercase tracking-[0.12em] text-dark/70 no-underline transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35" href="/contact">
             Contact
           </Link>
         </div>

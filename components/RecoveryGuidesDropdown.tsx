@@ -68,7 +68,7 @@ export default function RecoveryGuidesDropdown() {
         aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
         onFocus={openMenu}
-        className="flex min-h-[44px] items-center gap-2 font-sans text-[12px] uppercase tracking-[0.12em] text-dark/70 transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35"
+        className="flex min-h-[44px] items-center gap-2 font-sans text-[12px] font-bold uppercase tracking-[0.12em] text-dark/70 transition-colors duration-200 hover:text-burgundy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35"
       >
         Recovery Guides
         <svg
