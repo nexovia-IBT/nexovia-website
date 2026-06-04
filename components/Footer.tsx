@@ -1,6 +1,7 @@
 const FOOTER_LINKS = [
   { label: 'Recovery Guides', href: '/blog' },
   { label: 'Contact',         href: '/contact' },
+  { label: 'Instagram',       href: 'https://www.instagram.com/nexoviaofficial/' },
 ] as const
 
 export default function Footer() {
@@ -22,6 +23,7 @@ export default function Footer() {
             <li key={link.label}>
               <a
                 href={link.href}
+                {...(link.href.startsWith('http') ? { target: '_blank', rel: 'me noopener noreferrer' } : {})}
                 className="text-[10px] uppercase tracking-[0.12em] text-white/30 no-underline
                   transition-colors duration-300 hover:text-gold"
               >
