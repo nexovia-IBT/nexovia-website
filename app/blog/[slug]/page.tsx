@@ -86,8 +86,35 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   const related = await getRelatedPosts(post.slug, 3)
 
+  const pageUrl = `https://nexovia.pro/blog/${post.slug}`
+  const imageUrl = post.image
+    ? (post.image.startsWith('http') ? post.image : `https://nexovia.pro${post.image}`)
+    : 'https://nexovia.pro/logo.png'
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.metaDescription ?? post.excerpt,
+    image: [imageUrl],
+    datePublished: post.publishedAt ?? post.date,
+    dateModified: post.publishedAt ?? post.date,
+    inLanguage: 'en',
+    mainEntityOfPage: pageUrl,
+    url: pageUrl,
+    author: { '@type': 'Organization', name: 'Nexovia', url: 'https://nexovia.pro' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Nexovia',
+      logo: { '@type': 'ImageObject', url: 'https://nexovia.pro/logo.png' },
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <MainNav />
       <main className="min-h-screen bg-pale text-black">
         <article className="px-6 pb-24 pt-40 sm:px-8 lg:px-12">
