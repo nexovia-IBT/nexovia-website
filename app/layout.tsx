@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     'Nexovia is a post-procedure skincare brand. Our focused recovery serum supports skin comfort, hydration, and barrier support in the days after aesthetic procedures.',
   applicationName: 'Nexovia',
   alternates: { canonical: 'https://nexovia.pro' },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
   openGraph: {
     type: 'website',
     siteName: 'Nexovia',
