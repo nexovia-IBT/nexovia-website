@@ -936,43 +936,80 @@ export default function ClinicalEvidenceSection() {
         }
         @media (max-width: 760px) {
           .clinical-evidence-section {
-            padding: 64px 18px;
+            scroll-margin-top: 76px;
+            padding: 88px 16px 64px;
           }
           .clinical-topline {
             grid-template-columns: 1fr;
-            gap: 14px;
+            gap: 10px;
+            margin-bottom: 24px;
           }
           .clinical-header {
-            margin-bottom: 34px;
+            margin-bottom: 30px;
           }
           .clinical-header h2 {
-            font-size: clamp(34px, 9.5vw, 52px);
-            line-height: 1.02;
+            font-size: clamp(30px, 8.8vw, 38px);
+            line-height: 1.04;
             white-space: normal;
           }
           .clinical-header p {
-            font-size: 14px;
+            margin-top: 14px;
+            font-size: 13px;
+            line-height: 1.55;
             white-space: normal;
           }
           .clinical-panel {
-            padding: 30px 18px;
+            padding: 24px 14px 20px;
             min-height: auto;
           }
+          .clinical-panel-heading {
+            margin-bottom: 20px;
+            padding-bottom: 18px;
+          }
           .clinical-panel-heading p {
-            font-size: clamp(56px, 18vw, 82px);
+            font-size: clamp(50px, 15vw, 68px);
+          }
+          .clinical-panel-heading h3 {
+            margin-top: 12px;
+            font-size: 11px;
           }
           .clinical-metrics {
             grid-template-columns: 1fr;
+            gap: 12px;
           }
           .clinical-metric-card {
-            min-height: 260px;
+            min-height: 218px;
+            padding: 22px 14px 18px;
+          }
+          .clinical-icon-shell {
+            width: 54px;
+            height: 54px;
+            margin-bottom: 14px;
           }
           .clinical-metric-card strong {
-            font-size: clamp(40px, 13vw, 54px);
+            min-height: 58px;
+            font-size: clamp(38px, 11.5vw, 48px);
+          }
+          .clinical-gold-rule {
+            margin: 16px 0 12px;
+          }
+          .clinical-metric-label {
+            min-height: 30px;
+            font-size: 11px;
+          }
+          .clinical-metric-detail {
+            margin-top: 14px;
+            padding-top: 14px;
+            font-size: 11px;
+            line-height: 1.42;
+          }
+          .clinical-panel-sources {
+            padding-top: 18px;
+            font-size: 9px;
           }
           .clinical-imagery {
-            margin-top: 56px;
-            padding: 30px 14px;
+            margin-top: 48px;
+            padding: 26px 12px;
           }
           .clinical-imagery-topline {
             grid-template-columns: 1fr;
@@ -983,17 +1020,34 @@ export default function ClinicalEvidenceSection() {
             display: none;
           }
           .clinical-imagery-header h3 {
-            font-size: clamp(34px, 11vw, 52px);
+            font-size: clamp(30px, 9vw, 38px);
+          }
+          .clinical-imagery-header {
+            margin-bottom: 24px;
+          }
+          .clinical-imagery-header p {
+            margin-top: 10px;
+            font-size: 12px;
           }
           .clinical-imagery-tabs {
-            grid-template-columns: 1fr;
-            gap: 0;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 6px;
           }
           .clinical-imagery-tabs button {
-            padding: 16px 8px;
+            min-width: 0;
+            padding: 12px 3px;
+          }
+          .clinical-imagery-tabs button span {
+            font-size: 10px;
+            letter-spacing: 0.08em;
+          }
+          .clinical-imagery-tabs button small {
+            margin-top: 5px;
+            font-size: 8px;
+            letter-spacing: 0.12em;
           }
           .clinical-viewer-card {
-            padding: 14px;
+            padding: 12px;
           }
           .clinical-viewer-meta {
             flex-direction: column;
@@ -1001,7 +1055,7 @@ export default function ClinicalEvidenceSection() {
             gap: 8px;
           }
           .clinical-comparison {
-            min-height: 420px;
+            min-height: 360px;
           }
           .clinical-comparison-pane span {
             top: 12px;
@@ -1031,8 +1085,9 @@ export default function ClinicalEvidenceSection() {
             gap: 8px;
           }
           .clinical-case-list button {
-            min-width: 86px;
-            padding: 11px 12px;
+            min-width: 76px;
+            padding: 10px 8px;
+            font-size: 9px;
           }
         }
       `}</style>

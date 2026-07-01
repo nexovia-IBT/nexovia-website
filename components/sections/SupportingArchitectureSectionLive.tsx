@@ -77,7 +77,7 @@ function MobileSupportingArchitectureSection() {
             position: 'relative',
             minHeight: '100svh',
             backgroundColor: AMBIENT_BG[i],
-            padding: '96px 24px 36px',
+            padding: '92px 20px 32px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -105,12 +105,12 @@ function MobileSupportingArchitectureSection() {
             {slide.title}
           </div>
 
-          <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 360 }}>
-            <div style={{ textAlign: 'center', marginBottom: 28 }}>
+          <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 372 }}>
+            <div style={{ textAlign: 'center', marginBottom: 22 }}>
               <h2
                 className="font-serif"
                 style={{
-                  fontSize: 34,
+                  fontSize: 30,
                   fontWeight: 400,
                   color: '#732C3F',
                   lineHeight: 1.06,
@@ -133,7 +133,7 @@ function MobileSupportingArchitectureSection() {
               </p>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18 }}>
               <p style={{ margin: 0, fontSize: 12, letterSpacing: '0.12em', color: '#732C3F', fontFamily: SANS, fontWeight: 700 }}>
                 {slide.number}
                 <span style={{ color: '#C57C8A', fontWeight: 500, marginLeft: 5 }}>/ 08</span>
@@ -174,7 +174,7 @@ function MobileSupportingArchitectureSection() {
                 style={{
                   margin: 0,
                   color: '#732C3F',
-                  fontSize: slide.title.length > 14 ? 32 : 38,
+                  fontSize: slide.title.length > 14 ? 30 : 34,
                   fontWeight: 400,
                   lineHeight: 1.05,
                 }}
@@ -185,9 +185,9 @@ function MobileSupportingArchitectureSection() {
 
             <div
               style={{
-                width: 156,
-                height: 156,
-                margin: '18px auto 14px',
+                width: 138,
+                height: 138,
+                margin: '14px auto 12px',
                 filter: 'drop-shadow(0 22px 30px rgba(115,44,63,0.14))',
               }}
             >
@@ -199,8 +199,8 @@ function MobileSupportingArchitectureSection() {
                 margin: '0 auto',
                 maxWidth: 326,
                 textAlign: 'center',
-                fontSize: 14,
-                lineHeight: 1.58,
+                fontSize: 13,
+                lineHeight: 1.52,
                 color: 'rgba(90,31,46,0.82)',
                 fontFamily: SANS,
               }}
@@ -208,7 +208,7 @@ function MobileSupportingArchitectureSection() {
               {slide.description}
             </p>
 
-            <div style={{ marginTop: 20 }}>
+            <div style={{ marginTop: 16 }}>
               {slide.details.map((detail, detailIdx) => (
                 <div
                   key={detail}

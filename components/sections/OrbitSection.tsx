@@ -183,6 +183,8 @@ export default function OrbitSection() {
     }
 
     const ctx = gsap.context(() => {
+      const mobileLayout = window.matchMedia('(max-width: 768px)').matches
+      const initialBottleLeft = mobileLayout ? '76%' : PANELS[0].bottleLeft
       panelLabelRefs.current.forEach((el, i) => {
         if (el) gsap.set(el, { opacity: i === 0 ? 1 : 0, y: i === 0 ? 0 : 20 })
       })
@@ -193,6 +195,9 @@ export default function OrbitSection() {
         if (el) gsap.set(el, { opacity: i === 0 ? 1 : 0, y: i === 0 ? 0 : 22 })
       })
       gsap.set(bottleInnerRef.current, { opacity: 1, y: PANELS[0].bottleY, scale: PANELS[0].scale })
+      gsap.set(bottleOuterRef.current, { left: initialBottleLeft })
+      gsap.set(glowRingRef.current, { left: initialBottleLeft })
+      gsap.set(bloomRef.current, { left: initialBottleLeft })
       gsap.set(bloomRef.current, { opacity: 1 })
       gsap.set(scrollHintRef.current, { opacity: 1 })
       gsap.set(stageRef.current, { backgroundColor: PANELS[0].bg })
@@ -222,6 +227,8 @@ export default function OrbitSection() {
 
   function transitionToPanel(next: number, prev: number) {
     const nextData = PANELS[next]
+    const mobileLayout = window.matchMedia('(max-width: 768px)').matches
+    const bottleLeft = mobileLayout ? (nextData.textSide === 'left' ? '76%' : '24%') : nextData.bottleLeft
     const prevLabel = panelLabelRefs.current[prev]
     const prevTitle = panelTitleRefs.current[prev]
     const prevBody = panelBodyRefs.current[prev]
@@ -264,7 +271,7 @@ export default function OrbitSection() {
     )
 
     gsap.to(bottleOuterRef.current, {
-      left: nextData.bottleLeft,
+      left: bottleLeft,
       duration: DURATION.bottleGlide,
       ease: EASE.bottleGlide,
       delay: 0.18,
@@ -280,13 +287,13 @@ export default function OrbitSection() {
       .to(bottleInnerRef.current, { scale: nextData.scale, duration: 0.65, ease: 'power2.in' })
 
     gsap.to(glowRingRef.current, {
-      left: nextData.bottleLeft,
+      left: bottleLeft,
       duration: DURATION.bottleGlide,
       ease: EASE.bottleGlide,
       delay: 0.18,
     })
     gsap.to(bloomRef.current, {
-      left: nextData.bloomLeft,
+      left: mobileLayout ? bottleLeft : nextData.bloomLeft,
       top: nextData.bloomTop,
       duration: DURATION.bloomShift,
       ease: EASE.bloomShift,
@@ -363,22 +370,35 @@ export default function OrbitSection() {
         .nexovia-text-drift { animation: nexoviaTextDrift 6s ease-in-out infinite; }
         @media (max-width: 768px) {
           .nexovia-camera-drift { animation-duration: 11s; }
-          .aba4-matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-width: 320px; }
-          .aba4-image { height: 72px; }
-          .aba4-name { font-size: 10px; }
-          .aba4-detail, .aba4-role { font-size: 9px; }
+          .nexovia-orbit-stage { height: 100svh !important; min-height: 680px; }
+          .nexovia-orbit-bloom { width: 440px !important; height: 420px !important; }
+          .nexovia-orbit-glow { width: 250px !important; height: 250px !important; }
+          .nexovia-orbit-bottle-frame { width: clamp(104px, 28vw, 124px) !important; height: clamp(205px, 52vw, 245px) !important; }
+          .nexovia-orbit-panel { max-width: 50% !important; }
+          .nexovia-orbit-panel-left { left: 24px !important; }
+          .nexovia-orbit-panel-right { right: 24px !important; }
+          .nexovia-orbit-panel.is-aba4 { max-width: 52% !important; }
+          .nexovia-orbit-tag { font-size: 11px !important; margin-bottom: 12px !important; }
+          .nexovia-orbit-title { font-size: clamp(31px, 8.7vw, 38px) !important; line-height: 1.06 !important; margin-bottom: 14px !important; }
+          .nexovia-orbit-body { max-width: 100% !important; font-size: clamp(13px, 3.55vw, 15px) !important; line-height: 1.5 !important; }
+          .nexovia-orbit-dots { right: 10px !important; gap: 8px !important; }
+          .nexovia-orbit-scroll-hint { bottom: 16px !important; }
+          .aba4-matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px !important; max-width: 100%; }
+          .aba4-image { height: 64px !important; }
+          .aba4-name { font-size: 10px !important; }
+          .aba4-detail, .aba4-role { font-size: 9px !important; }
         }
       `}</style>
 
-      <div ref={stageRef} className="sticky top-0 overflow-hidden" style={{ height: '100vh', backgroundColor: PANELS[0].bg }}>
-        <div ref={bloomRef} style={{ position: 'absolute', left: PANELS[0].bloomLeft, top: PANELS[0].bloomTop, transform: 'translate(-50%, -50%)', width: 800, height: 600, pointerEvents: 'none', zIndex: 1 }}>
+      <div ref={stageRef} className="nexovia-orbit-stage sticky top-0 overflow-hidden" style={{ height: '100vh', backgroundColor: PANELS[0].bg }}>
+        <div ref={bloomRef} className="nexovia-orbit-bloom" style={{ position: 'absolute', left: PANELS[0].bloomLeft, top: PANELS[0].bloomTop, transform: 'translate(-50%, -50%)', width: 800, height: 600, pointerEvents: 'none', zIndex: 1 }}>
           <div className="nexovia-bloom-drift" style={{ width: '100%', height: '100%', borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(255,240,244,0.45) 0%, transparent 70%)', filter: 'blur(60px)' }} />
         </div>
 
-        <div ref={glowRingRef} aria-hidden="true" className="animate-orbit-glow" style={{ position: 'absolute', left: PANELS[0].bottleLeft, top: '50%', transform: 'translate(-50%, -50%)', width: 480, height: 480, borderRadius: '50%', background: 'conic-gradient(from 0deg, transparent 0%, rgba(237,201,103,0.28) 15%, rgba(237,201,103,0.06) 30%, transparent 45%)', filter: 'blur(5px)', pointerEvents: 'none', zIndex: 2 }} />
+        <div ref={glowRingRef} aria-hidden="true" className="nexovia-orbit-glow animate-orbit-glow" style={{ position: 'absolute', left: PANELS[0].bottleLeft, top: '50%', transform: 'translate(-50%, -50%)', width: 480, height: 480, borderRadius: '50%', background: 'conic-gradient(from 0deg, transparent 0%, rgba(237,201,103,0.28) 15%, rgba(237,201,103,0.06) 30%, transparent 45%)', filter: 'blur(5px)', pointerEvents: 'none', zIndex: 2 }} />
 
         <div ref={bottleOuterRef} style={{ position: 'absolute', left: PANELS[0].bottleLeft, top: '50%', transform: 'translate(-50%, -50%)', zIndex: 10 }}>
-          <div ref={bottleInnerRef} style={{ position: 'relative', width: 'clamp(220px, 25vw, 360px)', height: 'clamp(330px, 38vw, 520px)', opacity: 1 }}>
+          <div ref={bottleInnerRef} className="nexovia-orbit-bottle-frame" style={{ position: 'relative', width: 'clamp(220px, 25vw, 360px)', height: 'clamp(330px, 38vw, 520px)', opacity: 1 }}>
             <div ref={bottleFloatRef} className="nexovia-bottle-float" style={{ width: '100%', height: '100%', position: 'relative' }}>
               <div className="nexovia-camera-drift" style={{ width: '100%', height: '100%', position: 'relative' }}>
                 <Image src="/products/Nexovia_wo_background.png" alt="Nexovia Skin Serum" fill unoptimized priority sizes="(max-width: 768px) 62vw, 360px" style={{ objectFit: 'contain', transform: 'scale(1.1)', transformOrigin: '50% 56%', filter: 'drop-shadow(0 28px 42px rgba(72, 18, 35, 0.22))' }} />
@@ -390,12 +410,12 @@ export default function OrbitSection() {
         {PANELS.map((p, i) => {
           const isLeft = p.textSide === 'left'
           return (
-            <div key={p.id} style={{ position: 'absolute', top: '50%', ...(isLeft ? { left: '8%' } : { right: '8%' }), transform: 'translateY(-50%)', maxWidth: i === 0 || i === 1 || i === 2 || i === 3 ? '47%' : '38%', zIndex: 20, pointerEvents: i === 0 ? 'auto' : 'none' }}>
+            <div key={p.id} className={`nexovia-orbit-panel nexovia-orbit-panel-${isLeft ? 'left' : 'right'}${i === 3 ? ' is-aba4' : ''}`} style={{ position: 'absolute', top: '50%', ...(isLeft ? { left: '8%' } : { right: '8%' }), transform: 'translateY(-50%)', maxWidth: i === 0 || i === 1 || i === 2 || i === 3 ? '47%' : '38%', zIndex: 20, pointerEvents: i === 0 ? 'auto' : 'none' }}>
               <div className="nexovia-text-drift" style={{ pointerEvents: 'inherit' }}>
                 <div ref={(el) => { panelRefs.current[i] = el }} style={{ color: '#ffffff', pointerEvents: 'inherit' }}>
-                  <p ref={(el) => { panelLabelRefs.current[i] = el }} style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 18 : 11, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 20, fontFamily: SANS, opacity: i === 0 ? 1 : 0 }}>{p.tag}</p>
-                  <h2 ref={(el) => { panelTitleRefs.current[i] = el }} className="font-serif" style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 'clamp(44px, 5vw, 74px)' : 'clamp(36px, 4vw, 56px)', lineHeight: 1.1, fontWeight: 400, margin: '0 0 20px', opacity: i === 0 ? 1 : 0 }}>{p.heading}</h2>
-                  <div ref={(el) => { panelBodyRefs.current[i] = el }} style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 22 : 14, lineHeight: 1.7, maxWidth: p.id === 3 ? 'none' : p.id === 0 || p.id === 1 || p.id === 2 ? 'none' : 340, margin: 0, fontFamily: SANS, opacity: p.id === 3 ? 1 : i === 0 ? 1 : 0 }}>
+                  <p ref={(el) => { panelLabelRefs.current[i] = el }} className="nexovia-orbit-tag" style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 18 : 11, letterSpacing: '0.16em', textTransform: 'uppercase', marginBottom: 20, fontFamily: SANS, opacity: i === 0 ? 1 : 0 }}>{p.tag}</p>
+                  <h2 ref={(el) => { panelTitleRefs.current[i] = el }} className="nexovia-orbit-title font-serif" style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 'clamp(44px, 5vw, 74px)' : 'clamp(36px, 4vw, 56px)', lineHeight: 1.1, fontWeight: 400, margin: '0 0 20px', opacity: i === 0 ? 1 : 0 }}>{p.heading}</h2>
+                  <div ref={(el) => { panelBodyRefs.current[i] = el }} className="nexovia-orbit-body" style={{ fontSize: i === 0 || i === 1 || i === 2 || i === 3 ? 22 : 14, lineHeight: 1.7, maxWidth: p.id === 3 ? 'none' : p.id === 0 || p.id === 1 || p.id === 2 ? 'none' : 340, margin: 0, fontFamily: SANS, opacity: p.id === 3 ? 1 : i === 0 ? 1 : 0 }}>
                     {p.id === 3 ? (
                       <div>
                         <p style={{ margin: '0 0 24px', maxWidth: 'none', color: '#ffffff' }}>Four coordinated actives arranged for post-procedure recovery.</p>
@@ -422,13 +442,13 @@ export default function OrbitSection() {
           )
         })}
 
-        <div style={{ position: 'absolute', right: 28, top: '50%', transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, zIndex: 30 }}>
+        <div className="nexovia-orbit-dots" style={{ position: 'absolute', right: 28, top: '50%', transform: 'translateY(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, zIndex: 30 }}>
           {PANELS.map((_, i) => (
             <div key={i} ref={(el) => { dotRefs.current[i] = el }} style={{ width: i === 0 ? 18 : 6, height: 6, borderRadius: 3, backgroundColor: i === 0 ? '#EDC967' : 'rgba(255,255,255,0.25)' }} />
           ))}
         </div>
 
-        <div ref={scrollHintRef} style={{ position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 30 }}>
+        <div ref={scrollHintRef} className="nexovia-orbit-scroll-hint" style={{ position: 'absolute', bottom: 32, left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, zIndex: 30 }}>
           <div className="animate-scroll-line" style={{ width: 1, height: 50, background: 'linear-gradient(to bottom, transparent, rgba(255,255,255,0.4))' }} />
           <p style={{ fontSize: 10, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.4)', fontFamily: SANS, margin: 0 }}>Scroll</p>
         </div>

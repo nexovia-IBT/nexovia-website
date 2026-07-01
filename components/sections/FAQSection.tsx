@@ -47,15 +47,50 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
+      className="nexovia-faq-section"
       style={{
         background: 'linear-gradient(to bottom, #C57C8A 0%, #1A0B12 100%)',
         padding: 'clamp(32px, 4vw, 56px) clamp(24px, 6vw, 80px) clamp(64px, 10vw, 120px)',
       }}
     >
+      <style>{`
+        @media (max-width: 768px) {
+          .nexovia-faq-section {
+            scroll-margin-top: 76px;
+            padding: 92px 20px 64px !important;
+          }
+          .nexovia-faq-header {
+            margin-bottom: 38px !important;
+          }
+          .nexovia-faq-title {
+            font-size: 38px !important;
+            line-height: 1.08 !important;
+            margin-bottom: 12px !important;
+          }
+          .nexovia-faq-intro {
+            font-size: 15px !important;
+            line-height: 1.55 !important;
+          }
+          .nexovia-faq-button {
+            min-height: 68px;
+            padding: 18px 0 !important;
+          }
+          .nexovia-faq-question {
+            font-size: 21px !important;
+            line-height: 1.2 !important;
+          }
+          .nexovia-faq-answer {
+            padding-right: 38px !important;
+            font-size: 15px !important;
+            line-height: 1.6 !important;
+          }
+        }
+      `}</style>
       <div style={{ maxWidth: 900, margin: '0 auto' }}>
 
         {/* Header */}
         <motion.div
+          className="nexovia-faq-header"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
@@ -63,7 +98,7 @@ export default function FAQSection() {
           style={{ textAlign: 'center', marginBottom: 64 }}
         >
           <h2
-            className="font-serif"
+            className="nexovia-faq-title font-serif"
             style={{
               fontSize: 'clamp(46px, 5.4vw, 76px)',
               fontWeight: 700,
@@ -75,6 +110,7 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p
+            className="nexovia-faq-intro"
             style={{
               fontSize: 21,
               color: '#ffffff',
@@ -103,6 +139,7 @@ export default function FAQSection() {
               }}
             >
               <button
+                className="nexovia-faq-button"
                 type="button"
                 onClick={() => setOpenIdx(isOpen ? null : i)}
                 style={{
@@ -119,7 +156,7 @@ export default function FAQSection() {
                 }}
               >
                 <span
-                  className="font-serif"
+                  className="nexovia-faq-question font-serif"
                   style={{
                     fontSize: 26,
                     fontWeight: 700,
@@ -166,6 +203,7 @@ export default function FAQSection() {
                 }}
               >
                 <p
+                  className="nexovia-faq-answer"
                   style={{
                     fontSize: 19,
                     lineHeight: 1.75,

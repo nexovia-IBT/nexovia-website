@@ -226,7 +226,7 @@ function MobileProtocolSection({
               position: 'relative',
               minHeight: '100svh',
               backgroundColor: phase.bg,
-              padding: '112px 24px 34px',
+              padding: '96px 20px 30px',
               overflow: 'hidden',
               borderTop: i > 0 ? `1px solid ${c.stripBorder}` : undefined,
             }}
@@ -260,13 +260,13 @@ function MobileProtocolSection({
               </div>
             )}
 
-            <div style={{ position: 'relative', zIndex: 2, maxWidth: 360, margin: '0 auto' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'end', gap: 18 }}>
+            <div style={{ position: 'relative', zIndex: 2, maxWidth: 372, margin: '0 auto' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'end', gap: 14 }}>
                 <div>
                   <span
                     className="font-serif"
                     style={{
-                      fontSize: 86,
+                      fontSize: 74,
                       fontWeight: 400,
                       color: c.number,
                       lineHeight: 0.82,
@@ -290,13 +290,13 @@ function MobileProtocolSection({
                   </span>
                 </div>
 
-                <div style={{ position: 'relative', width: 92, height: 148, marginBottom: -4 }}>
+                <div style={{ position: 'relative', width: 80, height: 128, marginBottom: -2 }}>
                   <Image
                     src="/products/Nexovia_wo_background.png"
                     alt="Nexovia Skin Serum"
                     fill
                     unoptimized
-                    sizes="92px"
+                    sizes="80px"
                     style={{
                       objectFit: 'contain',
                       filter: phase.isDark
@@ -307,11 +307,11 @@ function MobileProtocolSection({
                 </div>
               </div>
 
-              <div style={{ marginTop: 42 }}>
+              <div style={{ marginTop: 30 }}>
                 <h3
                   className="font-serif"
                   style={{
-                    fontSize: 34,
+                    fontSize: 30,
                     fontWeight: 400,
                     color: c.title,
                     margin: '0 0 12px',
@@ -322,8 +322,8 @@ function MobileProtocolSection({
                 </h3>
                 <p
                   style={{
-                    fontSize: 15,
-                    lineHeight: 1.65,
+                    fontSize: 14,
+                    lineHeight: 1.58,
                     color: c.subtext,
                     margin: 0,
                     fontFamily: SANS,
@@ -333,7 +333,7 @@ function MobileProtocolSection({
                 </p>
               </div>
 
-              <div style={{ marginTop: 30 }}>
+              <div style={{ marginTop: 24 }}>
                 <p
                   style={{
                     margin: '0 0 4px',
@@ -378,7 +378,7 @@ function MobileProtocolSection({
                       >
                         <span
                           style={{
-                            fontSize: 14,
+                            fontSize: 13,
                             color: c.accordionQ,
                             fontFamily: SANS,
                             lineHeight: 1.38,
@@ -428,7 +428,7 @@ function MobileProtocolSection({
 
               <div
                 style={{
-                  marginTop: 30,
+                  marginTop: 24,
                   paddingTop: 16,
                   borderTop: `1px solid ${c.stripBorder}`,
                 }}

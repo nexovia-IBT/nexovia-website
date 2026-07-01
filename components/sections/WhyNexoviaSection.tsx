@@ -166,6 +166,7 @@ export default function WhyNexoviaSection() {
   return (
     <section
       id="why-nexovia"
+      className="nexovia-why-section"
       style={{
         backgroundColor: '#C57C8A',
         padding: 'clamp(36px, 5vw, 72px) clamp(24px, 6vw, 80px) clamp(64px, 10vw, 120px)',
@@ -194,19 +195,96 @@ export default function WhyNexoviaSection() {
           margin-top: 30px;
         }
         @media (max-width: 900px) {
+          .nexovia-why-section {
+            scroll-margin-top: 76px;
+            padding: 92px 20px 64px !important;
+          }
+          .nexovia-why-header {
+            margin-bottom: 30px !important;
+          }
+          .nexovia-why-title {
+            font-size: 38px !important;
+            line-height: 1.08 !important;
+            margin-bottom: 12px !important;
+          }
+          .nexovia-why-intro,
+          .nexovia-why-card-copy,
+          .nexovia-treatment-copy {
+            font-size: 15px !important;
+            line-height: 1.58 !important;
+          }
           .nexovia-why-cards {
             grid-template-columns: 1fr;
+            gap: 14px;
+            margin-bottom: 44px;
+          }
+          .nexovia-why-card {
+            padding: 30px 22px !important;
+          }
+          .nexovia-why-card-icon {
+            width: 50px !important;
+            height: 50px !important;
+            margin-bottom: 18px !important;
+          }
+          .nexovia-why-card-title {
+            font-size: 28px !important;
+            margin-bottom: 10px !important;
           }
           .nexovia-treatment-module {
             grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 38px 0;
+          }
+          .nexovia-treatment-kicker {
+            font-size: 11px !important;
+            margin-bottom: 12px !important;
+          }
+          .nexovia-treatment-title {
+            font-size: 36px !important;
+            line-height: 1.06 !important;
+            margin-bottom: 14px !important;
+          }
+          .nexovia-treatment-detail {
+            border-top: 1px solid rgba(237,201,103,0.52);
+            border-left: 0 !important;
+            padding: 28px 0 0 !important;
+          }
+          .nexovia-treatment-heading-row {
+            gap: 16px !important;
+          }
+          .nexovia-treatment-icon {
+            width: 72px !important;
+            height: 72px !important;
+          }
+          .nexovia-treatment-name {
+            font-size: 32px !important;
+          }
+          .nexovia-treatment-label {
+            font-size: 11px !important;
+            letter-spacing: 0.1em !important;
+          }
+          .nexovia-treatment-points {
+            margin-top: 22px !important;
+            gap: 10px !important;
+          }
+          .nexovia-treatment-point {
+            font-size: 13px !important;
+            letter-spacing: 0.06em !important;
           }
           .nexovia-treatment-tabs {
             grid-template-columns: repeat(2, minmax(0, 1fr));
+            margin-top: 24px;
+          }
+          .nexovia-treatment-tab {
+            min-height: 54px !important;
+            padding: 11px 8px !important;
+            font-size: 11px !important;
           }
         }
       `}</style>
 
       <motion.div
+        className="nexovia-why-header"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-80px' }}
@@ -215,7 +293,7 @@ export default function WhyNexoviaSection() {
         style={{ textAlign: 'center', marginBottom: 40 }}
       >
         <h2
-          className="font-serif"
+          className="nexovia-why-title font-serif"
           style={{
             fontSize: 'clamp(38px, 4.6vw, 62px)',
             fontWeight: 700,
@@ -227,6 +305,7 @@ export default function WhyNexoviaSection() {
           Why Nexovia
         </h2>
         <p
+          className="nexovia-why-intro"
           style={{
             fontSize: 20,
             color: '#ffffff',
@@ -245,6 +324,7 @@ export default function WhyNexoviaSection() {
       <div className="nexovia-why-cards">
         {CARDS.map((card, i) => (
           <motion.div
+            className="nexovia-why-card"
             key={i}
             initial="hidden"
             whileInView="visible"
@@ -266,6 +346,7 @@ export default function WhyNexoviaSection() {
             }}
           >
             <div
+              className="nexovia-why-card-icon"
               style={{
                 width: 60,
                 height: 60,
@@ -279,7 +360,7 @@ export default function WhyNexoviaSection() {
               {card.icon}
             </div>
             <h3
-              className="font-serif"
+              className="nexovia-why-card-title font-serif"
               style={{
                 fontSize: 34,
                 fontWeight: 700,
@@ -291,6 +372,7 @@ export default function WhyNexoviaSection() {
               {card.title}
             </h3>
             <p
+              className="nexovia-why-card-copy"
               style={{
                 fontSize: 20,
                 lineHeight: 1.7,
@@ -315,6 +397,7 @@ export default function WhyNexoviaSection() {
       >
         <div>
           <p
+            className="nexovia-treatment-kicker"
             style={{
               fontSize: 13,
               letterSpacing: '0.18em',
@@ -327,7 +410,7 @@ export default function WhyNexoviaSection() {
             Treatment Compatibility
           </p>
           <h3
-            className="font-serif"
+            className="nexovia-treatment-title font-serif"
             style={{
               fontSize: 'clamp(42px, 5vw, 72px)',
               fontWeight: 700,
@@ -339,6 +422,7 @@ export default function WhyNexoviaSection() {
             Built For The Recovery Window
           </h3>
           <p
+            className="nexovia-treatment-copy"
             style={{
               fontSize: 20,
               lineHeight: 1.75,
@@ -353,13 +437,15 @@ export default function WhyNexoviaSection() {
         </div>
 
         <div
+          className="nexovia-treatment-detail"
           style={{
             borderLeft: '1px solid rgba(237,201,103,0.52)',
             paddingLeft: 'clamp(28px, 4vw, 54px)',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
+          <div className="nexovia-treatment-heading-row" style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
             <div
+              className="nexovia-treatment-icon"
               style={{
                 width: 100,
                 height: 100,
@@ -374,7 +460,7 @@ export default function WhyNexoviaSection() {
             </div>
             <div>
               <h4
-                className="font-serif"
+                className="nexovia-treatment-name font-serif"
                 style={{
                   fontSize: 'clamp(36px, 4.6vw, 58px)',
                   fontWeight: 700,
@@ -386,6 +472,7 @@ export default function WhyNexoviaSection() {
                 {treatment.name}
               </h4>
               <p
+                className="nexovia-treatment-label"
                 style={{
                   fontSize: 15,
                   letterSpacing: '0.14em',
@@ -400,11 +487,12 @@ export default function WhyNexoviaSection() {
             </div>
           </div>
 
-          <div style={{ marginTop: 28, display: 'grid', gap: 12 }}>
+          <div className="nexovia-treatment-points" style={{ marginTop: 28, display: 'grid', gap: 12 }}>
             {treatment.points.map((point) => (
               <div key={point} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <span style={{ width: 28, height: 1, backgroundColor: GOLD, flexShrink: 0 }} />
                 <span
+                  className="nexovia-treatment-point"
                   style={{
                     fontSize: 17,
                     lineHeight: 1.45,
@@ -425,6 +513,7 @@ export default function WhyNexoviaSection() {
               const active = i === activeTreatment
               return (
                 <button
+                  className="nexovia-treatment-tab"
                   key={item.name}
                   type="button"
                   onClick={() => setActiveTreatment(i)}
