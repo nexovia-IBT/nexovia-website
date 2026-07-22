@@ -1,5 +1,7 @@
 const FOOTER_LINKS = [
   { label: 'Recovery Guides', href: '/blog' },
+  { label: 'Microneedling Aftercare', href: '/microneedling-aftercare' },
+  { label: 'Laser Aftercare', href: '/laser-treatment-aftercare' },
   { label: 'Contact',         href: '/contact' },
   { label: 'Instagram',       href: 'https://www.instagram.com/nexoviaofficial/' },
 ] as const

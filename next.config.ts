@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
         destination: "https://nexovia.pro/:path*",
         permanent: true,
       },
+      // Consolidate the overlapping recovery calendar into the cornerstone guide.
+      {
+        source: "/blog/microneedling-aftercare-day-by-day",
+        destination: "/microneedling-aftercare",
+        permanent: true,
+      },
       // Articles that still exist, now under /blog/<slug>
       { source: "/peptides-for-skin-barrier-repair", destination: "/blog/peptides-for-skin-barrier-repair", permanent: true },
       { source: "/pdrn-in-skincare", destination: "/blog/pdrn-in-skincare", permanent: true },

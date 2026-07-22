@@ -56,16 +56,40 @@ function GuideContentSection({ section, index }: { section: GuideSection; index:
 }
 
 
-function ImportedGuidePage({ guide }: { guide: FeaturedGuide }) {
+type GuidePageProps = {
+  guide: FeaturedGuide
+  publishedAt?: string
+  updatedAt?: string
+}
+
+function GuideBreadcrumbs({ current }: { current: string }) {
+  return (
+    <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-2 font-sans text-[11px] uppercase tracking-[0.14em] text-burgundy/65">
+      <Link href="/" className="no-underline transition-colors hover:text-burgundy">Home</Link>
+      <span aria-hidden="true">/</span>
+      <Link href="/blog" className="no-underline transition-colors hover:text-burgundy">Recovery Guides</Link>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page" className="text-dark/45">{current}</span>
+    </nav>
+  )
+}
+
+function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
   return (
     <main className="min-h-screen bg-pale text-dark">
       <article>
         <section className="px-6 pb-20 pt-40 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-end">
             <div>
+              <GuideBreadcrumbs current={guide.title} />
               <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">{guide.eyebrow}</p>
               <h1 className="mt-6 font-display text-[clamp(42px,6vw,80px)] font-normal leading-[0.98] text-dark">{guide.pageTitle}</h1>
               <p className="mt-7 max-w-[760px] font-body text-[22px] font-light leading-[1.5] text-dark/54">{guide.excerpt}</p>
+              {publishedAt || updatedAt ? (
+                <p className="mt-5 font-sans text-[11px] uppercase tracking-[0.12em] text-dark/45">
+                  By Nexovia Editorial Team{publishedAt ? ` / Published ${publishedAt}` : ''}{updatedAt ? ` / Updated ${updatedAt}` : ''}
+                </p>
+              ) : null}
               <a
                 href="https://tally.so/r/682L2N"
                 target="_blank"
@@ -103,8 +127,10 @@ function ImportedGuidePage({ guide }: { guide: FeaturedGuide }) {
     </main>
   )
 }
-export default function GuidePage({ guide }: { guide: FeaturedGuide }) {
-  if (guide.content && guide.format === 'html') return <ImportedGuidePage guide={guide} />
+export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
+  if (guide.content && guide.format === 'html') {
+    return <ImportedGuidePage guide={guide} publishedAt={publishedAt} updatedAt={updatedAt} />
+  }
 
   const introParagraphs = Array.isArray(guide.intro) ? guide.intro : [guide.intro]
 
@@ -114,6 +140,7 @@ export default function GuidePage({ guide }: { guide: FeaturedGuide }) {
         <section className="px-6 pb-20 pt-40 sm:px-8 lg:px-12">
           <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-end">
             <div>
+              <GuideBreadcrumbs current={guide.title} />
               <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">{guide.eyebrow}</p>
               <h1 className="mt-6 font-display text-[clamp(42px,6vw,80px)] font-normal leading-[0.98] text-dark">{guide.pageTitle}</h1>
               {introParagraphs.map((paragraph) => (
@@ -121,6 +148,11 @@ export default function GuidePage({ guide }: { guide: FeaturedGuide }) {
                   {paragraph}
                 </p>
               ))}
+              {publishedAt || updatedAt ? (
+                <p className="mt-5 font-sans text-[11px] uppercase tracking-[0.12em] text-dark/45">
+                  By Nexovia Editorial Team{publishedAt ? ` / Published ${publishedAt}` : ''}{updatedAt ? ` / Updated ${updatedAt}` : ''}
+                </p>
+              ) : null}
               <a
                 href="https://tally.so/r/682L2N"
                 target="_blank"

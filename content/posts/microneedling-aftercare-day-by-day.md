@@ -9,6 +9,7 @@ metaDescription: "Quick-reference microneedling aftercare calendar. See exactly 
 readTime: 5
 order: 20
 format: "html"
+draft: true
 ---
 <figure><img src="/images/blog/microneedling-aftercare-day-by-day.webp" alt="Microneedling Aftercare Day by Day: Your Quick Recovery Calendar" /></figure>
 
