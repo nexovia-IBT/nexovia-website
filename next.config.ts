@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
   // ranking/links those pages had carry over instead of hitting a 404.
   async redirects() {
     return [
+      // Consolidate every www URL onto the canonical apex domain.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.nexovia.pro" }],
+        destination: "https://nexovia.pro/:path*",
+        permanent: true,
+      },
       // Articles that still exist, now under /blog/<slug>
       { source: "/peptides-for-skin-barrier-repair", destination: "/blog/peptides-for-skin-barrier-repair", permanent: true },
       { source: "/pdrn-in-skincare", destination: "/blog/pdrn-in-skincare", permanent: true },
