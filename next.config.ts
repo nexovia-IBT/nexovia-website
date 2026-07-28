@@ -53,6 +53,7 @@ const nextConfig: NextConfig = {
       { source: "/blog/tag/:tag*", destination: "/blog", permanent: true },
       // Retire obsolete Squarespace routes still reported by Search Console.
       { source: "/home", destination: "/", permanent: true },
+      { source: "/for-practitioners", destination: "/contact", permanent: true },
     ];
   },
 };
