@@ -15,6 +15,16 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/blog",
+        has: [{ type: "query", key: "format", value: "rss" }],
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, follow",
+          },
+        ],
+      },
     ];
   },
   // 301/308 redirects from old Squarespace URLs to their new homes, so any
@@ -43,12 +53,6 @@ const nextConfig: NextConfig = {
       { source: "/blog/tag/:tag*", destination: "/blog", permanent: true },
       // Retire obsolete Squarespace routes still reported by Search Console.
       { source: "/home", destination: "/", permanent: true },
-      {
-        source: "/blog",
-        has: [{ type: "query", key: "format", value: "rss" }],
-        destination: "/blog",
-        permanent: true,
-      },
     ];
   },
 };
