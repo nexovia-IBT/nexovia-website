@@ -4,6 +4,19 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async headers() {
+    return [
+      {
+        source: "/favicon.ico",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow",
+          },
+        ],
+      },
+    ];
+  },
   // 301/308 redirects from old Squarespace URLs to their new homes, so any
   // ranking/links those pages had carry over instead of hitting a 404.
   async redirects() {
@@ -27,7 +40,17 @@ const nextConfig: NextConfig = {
       { source: "/laser-skin-resurfacing-aftercare", destination: "/blog/laser-skin-resurfacing-aftercare", permanent: true },
       // Old guides hub and Squarespace tag pages -> Recovery Guides index
       { source: "/aftercare-guides", destination: "/blog", permanent: true },
+      { source: "/recovery-guides", destination: "/blog", permanent: true },
       { source: "/blog/tag/:tag*", destination: "/blog", permanent: true },
+      // Retire obsolete Squarespace routes still reported by Search Console.
+      { source: "/home", destination: "/", permanent: true },
+      { source: "/for-practitioners", destination: "/contact", permanent: true },
+      {
+        source: "/blog",
+        has: [{ type: "query", key: "format", value: "rss" }],
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
 };
