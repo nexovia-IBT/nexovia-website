@@ -44,6 +44,12 @@ const nextConfig: NextConfig = {
         destination: "/microneedling-aftercare",
         permanent: true,
       },
+      // Replace the opaque legacy article URL with its descriptive canonical URL.
+      {
+        source: "/blog/07tu3lf9zx6xx7vh6c8m2gbdujl5nd",
+        destination: "/blog/skin-barrier-compromise-post-procedure-sensitivity",
+        permanent: true,
+      },
       // Articles that still exist, now under /blog/<slug>
       { source: "/peptides-for-skin-barrier-repair", destination: "/blog/peptides-for-skin-barrier-repair", permanent: true },
       { source: "/pdrn-in-skincare", destination: "/blog/pdrn-in-skincare", permanent: true },

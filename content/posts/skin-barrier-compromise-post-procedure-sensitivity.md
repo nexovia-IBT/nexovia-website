@@ -1,6 +1,6 @@
 ---
 title: "What Is Skin Barrier Compromise? The Science Behind Post-Procedure Sensitivity"
-slug: "07tu3lf9zx6xx7vh6c8m2gbdujl5nd"
+slug: "skin-barrier-compromise-post-procedure-sensitivity"
 excerpt: "Every aftercare guide you read after microneedling, laser resurfacing, or a chemical peel mentions the same phrase: your skin barrier has been compromised. Your practitioner..."
 date: "2026-05-05"
 image: "/images/blog/07tu3lf9zx6xx7vh6c8m2gbdujl5nd.jpg"
