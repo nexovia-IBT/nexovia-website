@@ -40,11 +40,9 @@ const nextConfig: NextConfig = {
       { source: "/laser-skin-resurfacing-aftercare", destination: "/blog/laser-skin-resurfacing-aftercare", permanent: true },
       // Old guides hub and Squarespace tag pages -> Recovery Guides index
       { source: "/aftercare-guides", destination: "/blog", permanent: true },
-      { source: "/recovery-guides", destination: "/blog", permanent: true },
       { source: "/blog/tag/:tag*", destination: "/blog", permanent: true },
       // Retire obsolete Squarespace routes still reported by Search Console.
       { source: "/home", destination: "/", permanent: true },
-      { source: "/for-practitioners", destination: "/contact", permanent: true },
       {
         source: "/blog",
         has: [{ type: "query", key: "format", value: "rss" }],
