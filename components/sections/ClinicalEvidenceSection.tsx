@@ -449,8 +449,8 @@ export default function ClinicalEvidenceSection() {
           position: relative;
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
-          align-items: end;
-          gap: clamp(56px, 8vw, 150px);
+          align-items: stretch;
+          gap: clamp(36px, 5vw, 92px);
         }
         .clinical-panel {
           position: relative;
@@ -460,6 +460,7 @@ export default function ClinicalEvidenceSection() {
           border: 1px solid rgba(237, 201, 103, 0.72);
           background: ${BURGUNDY};
           padding: clamp(32px, 3.2vw, 48px);
+          height: 100%;
           min-height: 680px;
           box-shadow: 0 26px 90px rgba(90, 31, 46, 0.12);
         }
@@ -606,38 +607,6 @@ export default function ClinicalEvidenceSection() {
         }
         .clinical-panel-sources p + p {
           margin-top: 3px;
-        }
-        .clinical-product {
-          position: absolute;
-          display: flex;
-          align-items: flex-end;
-          justify-content: center;
-          left: 50%;
-          top: 50%;
-          width: clamp(135px, 9vw, 190px);
-          min-height: 0;
-          pointer-events: none;
-          transform: translate(-50%, -50%);
-          z-index: 2;
-        }
-        .clinical-product::before {
-          content: "";
-          position: absolute;
-          left: 50%;
-          bottom: 0;
-          width: 190px;
-          height: 28px;
-          background: rgba(90, 31, 46, 0.24);
-          filter: blur(18px);
-          transform: translateX(-50%);
-        }
-        .clinical-product-frame {
-          position: relative;
-          width: 100%;
-          filter: drop-shadow(0 32px 40px rgba(90, 31, 46, 0.26));
-        }
-        .clinical-product-frame img {
-          object-fit: contain;
         }
         .clinical-imagery {
           position: relative;
@@ -927,9 +896,6 @@ export default function ClinicalEvidenceSection() {
             grid-column: auto;
             grid-row: auto;
           }
-          .clinical-product {
-            display: none;
-          }
           .clinical-comparison {
             min-height: clamp(360px, 58vw, 620px);
           }
@@ -1112,18 +1078,6 @@ export default function ClinicalEvidenceSection() {
 
         <div className="clinical-stage">
           <CheckpointPanel day="DAY 7" title="Day 7 Recovery" metrics={DAY_7} sources={DAY_7_SOURCES} />
-
-          <div className="clinical-product" aria-hidden="true">
-            <div className="clinical-product-frame">
-              <Image
-                src="/products/Nexovia_wo_background.png"
-                alt=""
-                width={220}
-                height={520}
-                sizes="(max-width: 1180px) 0px, 260px"
-              />
-            </div>
-          </div>
 
           <CheckpointPanel day="DAY 28" title="Day 28 Skin Quality" metrics={DAY_28} sources={DAY_28_SOURCES} />
         </div>

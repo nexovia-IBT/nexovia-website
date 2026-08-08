@@ -99,8 +99,8 @@ function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
                 Discover Your Skin Recovery Score
               </a>
             </div>
-            <div className="relative aspect-[4/5] overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
-              <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <div className="relative aspect-[4/5] w-full max-w-[430px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)] lg:justify-self-end">
+              <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority sizes="(min-width: 1024px) 430px, 92vw" className="object-cover" />
             </div>
           </div>
         </section>
@@ -162,8 +162,8 @@ export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePagePr
                 Discover Your Skin Recovery Score
               </a>
             </div>
-            <div className="relative aspect-[4/5] overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
-              <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+            <div className="relative aspect-[4/5] w-full max-w-[430px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)] lg:justify-self-end">
+              <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority sizes="(min-width: 1024px) 430px, 92vw" className="object-cover" />
             </div>
           </div>
         </section>
