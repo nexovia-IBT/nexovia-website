@@ -79,7 +79,7 @@ function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
     <main className="min-h-screen bg-pale text-dark">
       <article>
         <section className="px-6 pb-20 pt-40 sm:px-8 lg:px-12">
-          <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-end">
+          <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-center">
             <div>
               <GuideBreadcrumbs current={guide.title} />
               <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">{guide.eyebrow}</p>
@@ -99,7 +99,7 @@ function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
                 Discover Your Skin Recovery Score
               </a>
             </div>
-            <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)] lg:justify-self-end">
+            <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
               <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority quality={100} sizes="(min-width: 1024px) 320px, 82vw" className="object-cover" />
             </div>
           </div>
@@ -138,7 +138,7 @@ export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePagePr
     <main className="min-h-screen bg-pale text-dark">
       <article>
         <section className="px-6 pb-20 pt-40 sm:px-8 lg:px-12">
-          <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-end">
+          <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-center">
             <div>
               <GuideBreadcrumbs current={guide.title} />
               <p className="font-sans text-[11px] uppercase tracking-[0.34em] text-burgundy">{guide.eyebrow}</p>
@@ -162,7 +162,7 @@ export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePagePr
                 Discover Your Skin Recovery Score
               </a>
             </div>
-            <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)] lg:justify-self-end">
+            <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
               <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority quality={100} sizes="(min-width: 1024px) 320px, 82vw" className="object-cover" />
             </div>
           </div>
