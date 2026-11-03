@@ -90,14 +90,18 @@ function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
                   By Nexovia Editorial Team{publishedAt ? ` / Published ${publishedAt}` : ''}{updatedAt ? ` / Updated ${updatedAt}` : ''}
                 </p>
               ) : null}
-              <a
-                href="https://www.amazon.com/dp/B0GPMFJSYN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-9 inline-flex min-h-[44px] items-center bg-burgundy px-6 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy"
-              >
-                Get Nexovia on Amazon
-              </a>
+              <div className="mt-9 inline-flex flex-col items-center gap-2">
+                <a
+                  href="https://www.amazon.com/dp/B0GPMFJSYN"
+                  aria-label="Shop Nexovia on Amazon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center bg-burgundy px-6 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy"
+                >
+                  Shop Nexovia
+                </a>
+                <span className="font-sans text-[10px] leading-3 tracking-[0.04em] text-dark/70">Available on Amazon</span>
+              </div>
             </div>
             <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
               <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority quality={100} sizes="(min-width: 1024px) 320px, 82vw" className="object-cover" />
@@ -153,14 +157,18 @@ export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePagePr
                   By Nexovia Editorial Team{publishedAt ? ` / Published ${publishedAt}` : ''}{updatedAt ? ` / Updated ${updatedAt}` : ''}
                 </p>
               ) : null}
-              <a
-                href="https://www.amazon.com/dp/B0GPMFJSYN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-9 inline-flex min-h-[44px] items-center bg-burgundy px-6 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy"
-              >
-                Get Nexovia on Amazon
-              </a>
+              <div className="mt-9 inline-flex flex-col items-center gap-2">
+                <a
+                  href="https://www.amazon.com/dp/B0GPMFJSYN"
+                  aria-label="Shop Nexovia on Amazon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center bg-burgundy px-6 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy"
+                >
+                  Shop Nexovia
+                </a>
+                <span className="font-sans text-[10px] leading-3 tracking-[0.04em] text-dark/70">Available on Amazon</span>
+              </div>
             </div>
             <div className="relative aspect-[4/5] w-full max-w-[320px] justify-self-center overflow-hidden bg-rose/20 shadow-[0_30px_70px_rgba(115,44,63,0.12)]">
               <Image src={guide.image} alt={`${guide.title} recovery guide`} fill priority quality={100} sizes="(min-width: 1024px) 320px, 82vw" className="object-cover" />

@@ -46,15 +46,17 @@ export default function MainNav() {
           </Link>
         </div>
 
-        <div className="hidden items-center lg:flex">
+        <div className="hidden flex-col items-center gap-1.5 lg:flex">
           <a
             href={CTA_URL}
+            aria-label="Shop Nexovia on Amazon"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-[44px] items-center justify-center bg-burgundy px-5 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35"
           >
-            Get Nexovia on Amazon
+            Shop Nexovia
           </a>
+          <span className="font-sans text-[10px] leading-3 tracking-[0.04em] text-dark/70">Available on Amazon</span>
         </div>
 
         <button
@@ -121,14 +123,18 @@ export default function MainNav() {
               <Link href="/contact" onClick={() => setMobileOpen(false)} className="flex min-h-[44px] items-center font-sans text-[12px] uppercase tracking-[0.12em] text-dark/75 no-underline">
                 Contact
               </Link>
-              <a
-                href={CTA_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-flex min-h-[44px] items-center justify-center bg-burgundy px-5 py-3 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline"
-              >
-                Get Nexovia on Amazon
-              </a>
+              <div className="mt-3 flex flex-col gap-2">
+                <a
+                  href={CTA_URL}
+                  aria-label="Shop Nexovia on Amazon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center justify-center bg-burgundy px-5 py-3 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline"
+                >
+                  Shop Nexovia
+                </a>
+                <span className="text-center font-sans text-[10px] leading-3 tracking-[0.04em] text-dark/70">Available on Amazon</span>
+              </div>
             </div>
           </motion.div>
         )}
