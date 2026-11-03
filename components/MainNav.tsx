@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import RecoveryGuidesDropdown, { RECOVERY_GUIDE_LINKS } from '@/components/RecoveryGuidesDropdown'
 
-const CTA_URL = 'https://tally.so/r/682L2N'
+const CTA_URL = 'https://www.amazon.com/dp/B0GPMFJSYN'
 
 export default function MainNav() {
   const [scrolled, setScrolled] = useState(false)
@@ -53,7 +53,7 @@ export default function MainNav() {
             rel="noopener noreferrer"
             className="inline-flex min-h-[44px] items-center justify-center bg-burgundy px-5 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline transition-colors duration-200 hover:bg-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-burgundy/35"
           >
-            Discover Your Skin Recovery Score
+            Get Nexovia on Amazon
           </a>
         </div>
 
@@ -127,7 +127,7 @@ export default function MainNav() {
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex min-h-[44px] items-center justify-center bg-burgundy px-5 py-3 text-center font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-cream no-underline"
               >
-                Discover Your Skin Recovery Score
+                Get Nexovia on Amazon
               </a>
             </div>
           </motion.div>
