@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import RecoveryGuidesDropdown, { RECOVERY_GUIDE_LINKS } from '@/components/RecoveryGuidesDropdown'
 
-const CTA_URL = 'https://www.amazon.com/dp/B0GPMFJSYN'
+const CTA_URL = 'https://www.amazon.com/dp/B0GPMFJSYN?maas=maas_adg_C2595C84C28B148D8C3F68B68C49F52E_afap_abs&ref_=aa_maas&tag=maas'
 
 export default function MainNav() {
   const [scrolled, setScrolled] = useState(false)

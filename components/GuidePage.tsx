@@ -92,7 +92,7 @@ function ImportedGuidePage({ guide, publishedAt, updatedAt }: GuidePageProps) {
               ) : null}
               <div className="mt-9 inline-flex flex-col items-center gap-2">
                 <a
-                  href="https://www.amazon.com/dp/B0GPMFJSYN"
+                  href="https://www.amazon.com/dp/B0GPMFJSYN?maas=maas_adg_C2595C84C28B148D8C3F68B68C49F52E_afap_abs&ref_=aa_maas&tag=maas"
                   aria-label="Shop Nexovia on Amazon"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -159,7 +159,7 @@ export default function GuidePage({ guide, publishedAt, updatedAt }: GuidePagePr
               ) : null}
               <div className="mt-9 inline-flex flex-col items-center gap-2">
                 <a
-                  href="https://www.amazon.com/dp/B0GPMFJSYN"
+                  href="https://www.amazon.com/dp/B0GPMFJSYN?maas=maas_adg_C2595C84C28B148D8C3F68B68C49F52E_afap_abs&ref_=aa_maas&tag=maas"
                   aria-label="Shop Nexovia on Amazon"
                   target="_blank"
                   rel="noopener noreferrer"
